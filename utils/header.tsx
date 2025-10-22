@@ -12,7 +12,7 @@ export default function Header() {
         </div>
 
         <div className="nav-btn">
-          <a className="font-navbar" href="#skills">ACTIVITY</a>
+          <a className="font-navbar" href="#activity">ACTIVITY</a>
         </div>
 
         <div className="nav-btn">
