@@ -42,17 +42,27 @@
 
 
 
-/*   Content Styles    */
+/*   Navbar & Footer Styles   */
 
 .navbar-container{
   display: flex;
+  justify-content: space-between; 
   width: 100%;
   height: auto;
   margin: 0px;
-  padding: 0.5rem 5.5%;  
+  padding: 0.5rem 10.3%; 
   gap: 0rem;
 
   background-color: lightpink;
+}
+
+.nav-left-group{
+  display: flex;
+  flex-direction: row; 
+}
+.nav-right-group{
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-btn{
@@ -61,6 +71,7 @@
   width: auto;
   height: auto;
   padding: 0.2rem 0.65rem;  
+  transition: 0.2s;  
 }
 .nav-btn:hover{
   background-color: lightblue;
@@ -68,21 +79,27 @@
   cursor: pointer;
 }
 
-.footer-container{
+.footer-container{ 
   display: flex;
   width: 100%;
   height: auto;
   margin: 0px;
-  padding: 1rem 6.6%; 
+  padding: 1rem 11.2%;   
 
   background-color: lightpink;
 }
 
+
+
+
+/*   Main App    */
+
 .app-container {
   display: flex;
   justify-self: center;
-  width: 90%;
-  height: auto;
+  width: 80%;
+  max-width: 75rem; 
+  height: auto; 
   margin: 0px;
   padding: 1rem;
 
