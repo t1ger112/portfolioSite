@@ -10,14 +10,72 @@
     --background-light: #171717;
     --content-light: #ffffff;
   }
+}  
+
+
+
+/*    Text Styles    */
+
+.font-navbar {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
+
+.font-heading {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.font-normal {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1rem; 
+}
+
+.font-small {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+
+
+/*   Content Styles    */
 
 .navbar-container{
   display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0.5rem 5.5%;  
+  gap: 0rem;
+
+  background-color: lightpink;
+}
+
+.nav-btn{
+  display: flex;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 0.2rem 0.65rem;  
+}
+.nav-btn:hover{
+  background-color: lightblue;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .footer-container{
   display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 1rem 6.6%; 
+
+  background-color: lightpink;
 }
 
 .app-container {
