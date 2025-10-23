@@ -1,21 +1,20 @@
 //import Image from "next/image";
 
-export default function Home() {
+export default function About() {
 
   return (
     
     <div className="app-container">
 
-      <title>Freddie Robinson - Home</title>
+      <title>Freddie Robinson - About</title>
       
       <div className="content-container">
 
         <div className="miniNavCont">
 
           <div className="trail-cont font-small">
-            <a href="./">Home</a>{'>'}  
-            <a href="#">tempPage</a>{'>'}
-            <a href="#">tempPage</a>
+            <a href="#">Home</a>{'>'} 
+            <a href="#">About</a>
           </div>
 
           <div className="themeCont">
@@ -29,10 +28,9 @@ export default function Home() {
          
         </div>
 
-        <h1>Welcome to My Portfolio Site</h1>
+        <h1>Welcome to My About</h1>
         
-        <p>This is the home page of my portfolio website.</p> 
-
+        <p>aboutme</p> 
         
 
       </div>

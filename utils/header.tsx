@@ -8,25 +8,25 @@ export default function Header() {
 
       <div className="nav-left-group">
         <div className="nav-btn">
-          <a className="font-navbar" href="#home">HOME</a>
+          <a id="navHome" className="font-navbar" href="./">HOME</a>
         </div>
 
         <div className="nav-btn">
-          <a className="font-navbar" href="#activity">ACTIVITY</a>
+          <a id="navActivity" className="font-navbar" href="./activity">ACTIVITY</a>
         </div>
 
         <div className="nav-btn">
-          <a className="font-navbar" target="_blank" href="https://github.com/t1ger112">GITHUB</a>
+          <a id="navGithub" className="font-navbar" target="_blank" href="https://github.com/t1ger112">GITHUB</a>
         </div>
 
         <div className="nav-btn">
-          <a className="font-navbar" href="#about">ABOUT</a>
+          <a id="navAbout" className="font-navbar" href="./about">ABOUT</a>
         </div>
       </div>
 
       <div className="nav-right-group">
         <div className="nav-btn">
-          <a className="font-navbar" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">CONTACT</a>
+          <a id="navLinkedin" className="font-navbar" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">CONTACT</a>
         </div>
       </div>
 
