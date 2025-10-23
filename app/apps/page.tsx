@@ -13,8 +13,8 @@ export default function About() {
         <div className="miniNavCont">
 
           <div className="trail-cont font-small">
-            <a href="./">Home</a>{'>'} 
-            <a href="#">Apps</a>
+            <a className="trail-text" href="./">Home</a>{'>'} 
+            <a className="trail-text" href="#">Apps</a>
           </div>
 
           <div className="themeCont">

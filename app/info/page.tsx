@@ -11,10 +11,9 @@ export default function About() {
       <div className="content-container">
 
         <div className="miniNavCont">
-
           <div className="trail-cont font-small">
-            <a href="./">Home</a>{'>'} 
-            <a href="#">Info</a>
+            <a className="trail-text" href="./">Home</a>{'>'} 
+            <a className="trail-text" href="#">Info</a>
           </div>
 
           <div className="themeCont">
@@ -29,19 +28,15 @@ export default function About() {
         </div>
 
 
-        <div>
-          
-          <h1 className="font-heading">Welcome to My Portfolio Site!</h1>
-
-
-
-        
+        <div className="section-cont">
+          <h1 className="font-heading">Information Page</h1>
 
         </div>
 
       </div>
 
     </div>
+
   );
 }
 

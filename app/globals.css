@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --background-accent: #eeeeee;
-  --text-offset: #f1f1f1;  
-  --content: #171717;   
-  --content-nav: #666666; 
-  --accent1: #7ca6ff; 
-  
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 225px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #222222; 
-    --background-accent: #444444; 
-    --text-offset: #333333;  
-    --content: #ffffff;
-    --content-nav: #d1d1d1;
-    --accent1: #88aeff;
+:root {
+  --background: #222222; 
+  --background-accent: #444444; 
+  --text-offset: #333333;  
+  --content: #ffffff;
+  --content-nav: #d1d1d1;
+  --accent1: #88aeff;
+  --theme-accent-col: #277ac2;
+  --theme-accent-col-light: #4488c4;
 
-  }
-}  
+  --text-col-light: #ffffff;
+  --text-col-dark: #000000;
+  --text-col-1: #666666;
+  --text-col-2: #202020;
+  --text-col-3: #000000;
+
+  --selection-text-col: #fffef7;
+  --selection-back-col: #707070b4;
+}
+
+/* @media (prefers-color-scheme: dark) { }   */
+
+::selection{
+  color: var(--selection-text-col);
+  background-color: var(--selection-back-col);
+}
+::-moz-selection{
+  color: var(--selection-text-col);
+  background-color: var(--selection-back-col);
+} 
+
+.divider{ 
+  height: 3px;
+  width: 100%;
+  background-color: #cccccc;
+  margin: 2rem 0rem 2rem 0rem; 
+}
+
+
 
 
 
@@ -30,21 +53,45 @@
   font-weight: 500;
   font-size: 1.25rem;
 }
-
 .font-heading {
   font-weight: 600;
   font-size: 1.75rem; 
 }
-
 .font-normal {
   font-weight: 400;
   font-size: 1rem; 
 }
-
 .font-small {
   font-weight: 300;
   font-size: 0.75rem;
 }
+.font-bold{
+  font-weight: bold;
+}
+.font-italic{
+  font-style: italic;
+}
+.font-merri{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+.font-roboto{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+.font-openSans{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+.font-oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
 
 
 
@@ -180,14 +227,19 @@ body{
   gap: 0.25rem;
 }
 
+.content-row{
+  flex-direction: row; 
+}
+
+.content-col{
+  flex-direction: column;
+}
+
 .section-cont{
   display: flex;
   margin-bottom: 1.25rem; 
 }
 
-.content-row{
-  flex-direction: row; 
-}
-.content-col{
-  flex-direction: column;
-}
+
+
+

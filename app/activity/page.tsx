@@ -13,8 +13,8 @@ export default function Activity() {
         <div className="miniNavCont">
 
           <div className="trail-cont font-small">
-            <a href="./">Home</a>{'>'} 
-            <a href="#">Activity</a>
+            <a className="trail-text" href="./">Home</a>{'>'} 
+            <a className="trail-text" href="#">Activity</a>
           </div>
 
           <div className="themeCont">
