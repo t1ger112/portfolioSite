@@ -22,7 +22,7 @@ export default function About() {
               <a className="font-small">Theme:</a>
             </div>
             <div className="themeSliderCont">
-              <a className="themeSlider">O/I</a>
+              <a className="font-small themeSlider">Light/Dark</a>
             </div>
           </div>
          

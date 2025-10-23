@@ -1,9 +1,13 @@
 
-// import type { Metadata } from "next";
+import type { Metadata } from "next";
+
 import "./globals.css";
 import Header from "@/utils/header";
 import Footer from "@/utils/footer";
 
+export const metadata: Metadata = {
+  description: "Freddie Robinson - Digital Portfolio",
+};
 
 export default function RootLayout({
   children,
@@ -20,9 +24,4 @@ export default function RootLayout({
     </html>
   );
 }
-
-// export const metadata: Metadata = {
-//   title: "Freddie Robinson - Apps",
-//   description: "Apps created by Freddie Robinson",
-// };
 

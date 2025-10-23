@@ -1,12 +1,12 @@
 //import Image from "next/image";
 
-export default function Activity() {
+export default function About() {
 
   return (
     
     <div className="app-container">
 
-      <title>Freddie Robinson - Activity</title>
+      <title>Freddie Robinson - Info</title>
       
       <div className="content-container">
 
@@ -14,7 +14,7 @@ export default function Activity() {
 
           <div className="trail-cont font-small">
             <a href="./">Home</a>{'>'} 
-            <a href="#">Activity</a>
+            <a href="#">Info</a>
           </div>
 
           <div className="themeCont">
@@ -28,10 +28,16 @@ export default function Activity() {
          
         </div>
 
-        <h1 className="font-heading">My Activity!</h1>
 
-        <p>Activity</p> 
+        <div>
+          
+          <h1 className="font-heading">Welcome to My Portfolio Site!</h1>
+
+
+
         
+
+        </div>
 
       </div>
 

@@ -3,17 +3,18 @@
 :root {
   --background: #ffffff;
   --background-accent: #eeeeee;
-  --content: #171717; 
-  --content-nav: #7a7a7a;
-  --accent1: #7c7c7c;
+  --text-offset: #f1f1f1;  
+  --content: #171717;   
+  --content-nav: #666666; 
+  --accent1: #7ca6ff; 
   
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #222222; 
-    --background-accent: #444444;
-    --text-offset: #ffffff;  
+    --background-accent: #444444; 
+    --text-offset: #333333;  
     --content: #ffffff;
     --content-nav: #d1d1d1;
     --accent1: #88aeff;
@@ -51,11 +52,12 @@
 
 .navbar-container{
   display: flex;
+  position: fixed;
   justify-content: space-between; 
   width: 100%;
   height: auto;
   margin: 0px;
-  padding: 0.5rem 10.3%; 
+  padding: 0.5rem 10%; 
   gap: 0rem; 
 
   background: var(--background-accent);
@@ -78,9 +80,9 @@
   position: relative;
   width: auto;
   height: auto;
-  padding: 0.2rem 0.6rem;   
-  border-radius: 0.9rem;  
-  transition: 0.2s;
+  padding: 0.2rem 0.6rem;    
+  border-radius: 0.99rem;  
+  transition: 0.2s;  
 }
 .nav-btn:hover{
   background-color: var(--accent1); 
@@ -98,13 +100,17 @@
 
 .footer-container{ 
   display: flex;
-  width: 100%;
+  width: 100%; 
   height: auto;
   margin: 0px;
-  padding: 1rem 11.2%;   
+  padding: 1rem 10%;   
 
   background: var(--background-accent);
   color: var(--content);
+}
+
+.footer-content{
+  padding-left: 0.75rem;
 }
 
 
@@ -132,7 +138,9 @@ body{
   max-width: 75rem; 
   height: auto; 
   margin: 0px;
-  padding: 1rem;
+  margin-bottom: 2.25rem;
+  margin-top: 3.25rem; 
+  padding: 0.675rem;   
 }
 
 .content-container{
@@ -147,7 +155,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 0.75rem; 
+  margin-bottom: 1.5rem; 
   align-items: center; 
   color: var(--content-nav);
 } 
@@ -159,9 +167,27 @@ body{
   cursor: default; 
 }
 
+.trail-text{
+  transition: 0.25s; 
+}
+.trail-text:hover{
+  color: var(--accent1); 
+} 
+
 .themeCont{
   display: flex;
   flex-direction: row;
   gap: 0.25rem;
 }
 
+.section-cont{
+  display: flex;
+  margin-bottom: 1.25rem; 
+}
+
+.content-row{
+  flex-direction: row; 
+}
+.content-col{
+  flex-direction: column;
+}

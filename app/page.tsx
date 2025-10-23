@@ -11,11 +11,9 @@ export default function Home() {
       <div className="content-container">
 
         <div className="miniNavCont">
-
           <div className="trail-cont font-small">
-            <a href="./">Home</a>{'>'}  
-            <a href="#">tempPage</a>{'>'}
-            <a href="#">tempPage</a>
+            <a className="trail-text" href="./">Home</a>{'>'}  
+            <a className="trail-text" href="#">tempPage</a>
           </div>
 
           <div className="themeCont">
@@ -26,14 +24,33 @@ export default function Home() {
               <a className="font-small themeSlider">Light/Dark</a>
             </div>
           </div>
-         
         </div>
 
-        <h1 className="font-heading">Welcome to My Portfolio Site!</h1>
-        
-        <p>This is the home page of my portfolio website.</p> 
 
+        <div className="section-cont content-col">  
+          <h1 className="font-heading">Welcome to my Portfolio!</h1>
+          <p>This is the homepage of my portfolio website.</p> 
+        </div>
+
+        <div className="section-cont content-col">
+          <h1 className="font-heading">Activity:</h1>
+          <p>temp</p> 
+        </div>
+
+        <div className="section-cont content-col">
+          <h1 className="font-heading">Certifications:</h1>
+          <p>temp</p> 
+        </div>
+
+        <div className="section-cont content-col">
+          <h1 className="font-heading">Digital CV:</h1>
+          <p>temp</p> 
+        </div>
         
+        <div className="section-cont content-col">
+          <h1 className="font-heading">My Apps:</h1>
+          <p>temp</p> 
+        </div>
 
       </div>
 

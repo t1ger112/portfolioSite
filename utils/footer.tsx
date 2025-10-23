@@ -6,7 +6,7 @@ export default function Footer() {
     
     <div className="footer-container">
 
-      <a className="font-small"> footer text - Freddie R portfolio</a>
+      <a className="font-small footer-content">Freddie Robinson - 2025 Portfolio </a>
 
     </div>
   );

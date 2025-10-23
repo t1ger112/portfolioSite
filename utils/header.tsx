@@ -16,12 +16,13 @@ export default function Header() {
         </div>
 
         <div className="nav-btn">
-          <a id="navGithub" className="font-navbar" target="_blank" href="https://github.com/t1ger112">GITHUB</a>
+          <a id="navInfo" className="font-navbar" href="./info">INFO</a>
         </div>
 
         <div className="nav-btn">
           <a id="navAbout" className="font-navbar" href="./apps">APPS</a>
         </div>
+
       </div>
 
       <div className="nav-right-group">
