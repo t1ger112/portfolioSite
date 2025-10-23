@@ -6,15 +6,15 @@ export default function About() {
     
     <div className="app-container">
 
-      <title>Freddie Robinson - About</title>
+      <title>Freddie Robinson - Apps</title>
       
       <div className="content-container">
 
         <div className="miniNavCont">
 
           <div className="trail-cont font-small">
-            <a href="#">Home</a>{'>'} 
-            <a href="#">About</a>
+            <a href="./">Home</a>{'>'} 
+            <a href="#">Apps</a>
           </div>
 
           <div className="themeCont">
@@ -28,9 +28,9 @@ export default function About() {
          
         </div>
 
-        <h1>Welcome to My About</h1>
-        
-        <p>aboutme</p> 
+        <h1 className="font-heading">Welcome to My Portfolio Site!</h1>
+
+        <p>Apps</p> 
         
 
       </div>

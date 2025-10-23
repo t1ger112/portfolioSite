@@ -1,21 +1,20 @@
 //import Image from "next/image";
 
-export default function Home() {
+export default function Activity() {
 
   return (
     
     <div className="app-container">
 
-      <title>Freddie Robinson - Home</title>
+      <title>Freddie Robinson - Activity</title>
       
       <div className="content-container">
 
         <div className="miniNavCont">
 
           <div className="trail-cont font-small">
-            <a href="./">Home</a>{'>'}  
-            <a href="#">tempPage</a>{'>'}
-            <a href="#">tempPage</a>
+            <a href="./">Home</a>{'>'} 
+            <a href="#">Activity</a>
           </div>
 
           <div className="themeCont">
@@ -23,16 +22,15 @@ export default function Home() {
               <a className="font-small">Theme:</a>
             </div>
             <div className="themeSliderCont">
-              <a className="font-small themeSlider">Light/Dark</a>
+              <a className="themeSlider">O/I</a>
             </div>
           </div>
          
         </div>
 
-        <h1 className="font-heading">Welcome to My Portfolio Site!</h1>
-        
-        <p>This is the home page of my portfolio website.</p> 
+        <h1 className="font-heading">My Activity!</h1>
 
+        <p>Activity</p> 
         
 
       </div>

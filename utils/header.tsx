@@ -20,7 +20,7 @@ export default function Header() {
         </div>
 
         <div className="nav-btn">
-          <a id="navAbout" className="font-navbar" href="./about">ABOUT</a>
+          <a id="navAbout" className="font-navbar" href="./apps">APPS</a>
         </div>
       </div>
 

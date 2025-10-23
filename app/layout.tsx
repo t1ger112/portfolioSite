@@ -20,3 +20,9 @@ export default function RootLayout({
     </html>
   );
 }
+
+// export const metadata: Metadata = {
+//   title: "Freddie Robinson - Apps",
+//   description: "Apps created by Freddie Robinson",
+// };
+
