@@ -13,7 +13,6 @@ export default function Home() {
         <div className="miniNavCont">
           <div className="trail-cont font-small">
             <a className="trail-text" href="./">Home</a>{'>'}  
-            <a className="trail-text" href="#">tempPage</a>
           </div>
 
           <div className="themeCont">

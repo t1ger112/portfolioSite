@@ -1,4 +1,5 @@
 //import Image from "next/image";
+import { Copy } from "@/utils/actions";
 
 export default function About() {
 
@@ -28,9 +29,111 @@ export default function About() {
         </div>
 
 
-        <div className="section-cont">
-          <h1 className="font-heading">Information Page</h1>
+        <div className="section-cont-col">
+          <h1 className="font-heading">My Digital CV:</h1>
+        </div>
 
+        <div className="section-cont-col">
+          <h1 className="font-heading">About Me:</h1>
+        </div>
+
+        <div className="section-cont-col">
+          <h1 className="font-heading">Education:</h1>
+
+          <a className="font-Normal font-merri flex pb-2.5 pt-1">                            
+              Currently studying degree-level Computer Science at Manchester Metropolitan University:
+          </a>
+
+          <div className="section-education-entry prefaceOride mb-2"> 
+              <div className="vert-preface prefaceBlue"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri">
+                      <a className="font-merri font-bold">Manchester Metropolitan University,</a> 
+                      <a className="pl-2">Manchester</a>
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2024 - <i>Current</i></a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Yr.2</a>
+                      <a className="font-merri pl-1.5">Computer Science</a>
+                      <a className="font-merri font-italic pl-1">BSC (hons)</a>
+                  </div>
+              </div>
+          </div>
+
+          <div className="section-education-entry prefaceOride mb-2.5">
+              <div className="vert-preface"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri">
+                      <a className="font-merri font-bold">Priestley College,</a> 
+                      <a className="pl-2">Warrington</a>
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2022 - July 2024</a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">[OCR]</a>
+                      <a className="font-merri pl-1.5">A-Level Computer Science -</a>
+                      <a className="font-merri font-italic pl-1">Grade:</a>
+                      <a className="font-merri font-italic font-bold pl-1">A</a>
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">[Pearson]</a>
+                      <a className="font-merri pl-1.5">BTEC Lvl3 National Diploma in IT -</a>
+                      <a className="font-merri font-italic pl-1">Grades:</a>
+                      <a className="font-merri font-italic font-bold pl-1">Dist* / Dist*</a>
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">[OCR]</a>
+                      <a className="font-merri pl-1.5">AS-Level Media Studies -</a>
+                      <a className="font-merri font-italic pl-1">Grade:</a>
+                      <a className="font-merri font-italic font-bold pl-1">A</a>
+                  </div>
+              </div>
+          </div>
+
+           <div className="section-education-entry prefaceOride mb-2.5"> 
+              <div className="vert-preface"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri">
+                      <a className="font-merri font-bold">Birchwood Community High School,</a> 
+                      <a className="pl-2">Warrington</a>
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2017 - July 2022</a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Grade [7] in:</a>
+                      <a className="font-merri pl-2">English Language,  English Literature,  Physics,  Chemistry, Biology, Computer Science, Art and Design, Geography</a>
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Grade [6] in:</a>
+                      <a className="font-merri pl-2">Mathematics, Religious Studies</a>
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Key Roles:</a>
+                      <a className="font-merri pl-2">Head Student, School Council Member, Eco-Committee (Communications Manager)</a>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+
+        <div className="section-cont-col">
+          <h1 className="font-heading">My Skills:</h1>
+        </div>
+
+        <div className="section-cont-col gap-2">
+          <h1 className="font-heading">Certifications:</h1>
+        </div>
+
+        <div className="section-cont-col gap-2">
+          <h1 className="font-heading">Additional Activities:</h1>
+        </div>
+
+        <div className="section-cont-col gap-2">
+          <h1 className="font-heading">Projects:</h1> 
         </div>
 
       </div>
