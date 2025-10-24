@@ -26,7 +26,7 @@ const font4 = Oswald({
   subsets: ['latin'],
   display: 'swap',
 })
-const font5 = Bitcount_Single({ 
+const font5 = Bitcount_Single({   
   subsets: ['latin'],
   display: 'swap',
   fallback: ['monospace'],
@@ -39,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${font1.className} ${font2.className} ${font3.className} ${font4.className} ${font5.className}`}>
-      <body>
+      <body className="font-roboto"> 
         <Header />
         {children}
         <Footer />

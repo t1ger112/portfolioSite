@@ -4,7 +4,7 @@
 export default function Header() {
   return (
 
-    <div className="width-container">
+    <div className="width-container font-bitcount">
 
       <div className="navbar-container">
 

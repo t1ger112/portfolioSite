@@ -47,7 +47,7 @@ html {
 .divider{ 
   height: 3px;
   width: 100%;
-  background-color: #cccccc;
+  background-color: var(--background-accent);
   margin: 2rem 0rem 2rem 0rem; 
 }
 
@@ -59,19 +59,19 @@ html {
 
 .font-navbar {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.25rem;  
 }
 .font-heading {
-  font-weight: 600;
+  font-weight: 450;  
   font-size: 1.75rem; 
 }
 .font-large {
-  font-weight: 500; 
+  font-weight: 500;  
   font-size: 1.25rem;   
 }
 .font-normal {
-  font-weight: 400;
-  font-size: 0.95rem;  
+  font-weight: light;
+  font-size: 0.925rem;  
 }
 .font-intersmall {
   font-weight: 400;
@@ -86,6 +86,9 @@ html {
 }
 .font-italic{
   font-style: italic;
+}
+.font-accent{
+  color: var(--accent1); 
 }
 .font-merri{
   font-family: "Merriweather", serif;
@@ -110,7 +113,7 @@ html {
 .font-bitcount{
   font-family: "Bitcount Single", system-ui;
   font-optical-sizing: auto;
-  font-style: normal;
+  font-style: normal;  
   font-variation-settings:
     "slnt" 0,
     "CRSV" 0.5,
@@ -125,6 +128,14 @@ html {
 }
 .fontcol3{
   opacity: 0.99;
+}
+.no-wrap{
+  text-wrap-mode: nowrap;
+  flex-wrap: nowrap;
+}
+.wrap{
+  text-wrap-mode: wrap;
+  flex-wrap: wrap;
 }
 
 
@@ -141,13 +152,14 @@ html {
   margin: 0px;
   gap: 0rem;  
   padding: 0px;
-  background: var(--background-accent);   
+  background: var(--background-accent);  
+  z-index: 100; 
 }
 
 .navbar-container{
   display: flex;
   justify-content: space-between; 
-  width: 80%; 
+  width: 80.25%;  
   max-width: 75rem; 
   height: auto;
   margin: 0px;
@@ -178,11 +190,11 @@ html {
 .nav-btn:hover{
   background-color: var(--accent1); 
   color: var(--text-offset);
-  border-radius: 0.5rem; 
+  border-radius: 0.5rem;  
   cursor: pointer;
 }
 .nav-btn-a{
-  padding: 0.2rem 0.6rem;    
+  padding: 0.2rem 0.6rem 0rem 0.75rem;  
 }
 
 #nav-home{
@@ -207,7 +219,7 @@ html {
   display: flex;
   width: 80%; 
   max-width: 75rem; 
-  height: 15rem;
+  height: auto;
   margin: 0px; 
   padding: 1rem 0px;   
   color: var(--content);
@@ -229,7 +241,6 @@ body{
   height: 100%;
   margin: 0px;
   padding: 0px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   background: var(--background);
   color: var(--content);
@@ -243,7 +254,7 @@ body{
   height: auto; 
   margin: 0px;
   margin-bottom: 2.25rem;
-  margin-top: 3.25rem; 
+  margin-top: 3.25rem;     
   padding: 0.675rem;   
 }
 
@@ -267,8 +278,8 @@ body{
 .trail-cont{
   display: flex;
   flex-direction: row;
-  gap: 0.25rem; 
-  cursor: default; 
+  gap: 0.325rem; 
+  cursor: default;  
 }
 
 .trail-text{
@@ -294,11 +305,11 @@ body{
 .section-cont-col{
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.25rem; 
+  margin-bottom: 1.5rem; 
 } 
 
-.section-education-entry{
-  padding: 0.5rem 0.75rem 0.5rem 0.1rem;  
+.section-entry{
+  padding: 0.5rem 0.875rem 0.5rem 0.1rem;  
   border-radius: 0.5rem;
   width: fit-content;
 }
@@ -338,6 +349,43 @@ body{
 .prefaceOride:is(:hover) > .vert-preface{
   background-color: var(--accent1);
 }
+.prefaceOride:is(:hover) > .prefaced-contents > .textOride{     
+  color: var(--accent1); 
+}
+
+.textOride{    
+  transition: 0.225s; 
+  transition-timing-function: ease-in-out;
+}
+.prefaceOrideStatic{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out; 
+  background: var(--background-grad1);  
+  padding-left: 0.55rem;
+}
+.prefaceOrideStatic:is(:hover){  
+  cursor: pointer;
+}
+.prefaceOrideStatic:is(:hover) > .vert-preface{
+  background-color: var(--accent1);
+}
+.prefaceOrideStatic:is(:hover) > .prefaced-contents > .textOride{    
+  color: var(--accent1); 
+}
+
+.section-entry-cert{
+  display: flex;
+  padding: 0.5rem 0.75rem 0.5rem 0.55rem;  
+  border-radius: 0.5rem; 
+  width: 100%;
+  max-width: 49%;
+  min-width: fit-content; 
+  margin-bottom: 1.25rem; 
+}
+
 
 
 

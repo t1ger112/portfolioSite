@@ -14,7 +14,8 @@ export default function About() {
         <div className="miniNavCont">
           <div className="trail-cont font-small">
             <a className="trail-text" href="./">Home</a>{'>'} 
-            <a className="trail-text" href="#">Info</a>
+            <a className="trail-text" href="#">Info</a>{'>'} 
+            <a className="trail-text" href="#">Digital CV</a>
           </div>
 
           <div className="themeCont">
@@ -30,24 +31,22 @@ export default function About() {
 
 
         <div className="section-cont-col">
-          <h1 className="font-heading">My Digital CV:</h1>
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">About Me:</h1>
+
+          <a className="font-normal font-merri">Temp boring about section</a>
         </div>
 
-        <div className="section-cont-col">
-          <h1 className="font-heading">About Me:</h1>
-        </div>
+        <div className="section-cont-col pb-2">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Education:</h1>
 
-        <div className="section-cont-col">
-          <h1 className="font-heading">Education:</h1>
-
-          <a className="font-Normal font-merri flex pb-2.5 pt-1">                            
+          <a className="font-normal font-merri flex pb-5">                            
               Currently studying degree-level Computer Science at Manchester Metropolitan University:
           </a>
 
-          <div className="section-education-entry prefaceOride mb-2"> 
+          <div className="section-entry prefaceOride mb-2"> 
               <div className="vert-preface prefaceBlue"></div>
               <div className="prefaced-contents">
-                  <div className="font-large font-merri">
+                  <div className="font-large font-merri textOride">
                       <a className="font-merri font-bold">Manchester Metropolitan University,</a> 
                       <a className="pl-2">Manchester</a>
                   </div>
@@ -57,15 +56,15 @@ export default function About() {
                   <div className="font-normal font-merri fontcol2">
                       <a className="font-merri font-bold ">Yr.2</a>
                       <a className="font-merri pl-1.5">Computer Science</a>
-                      <a className="font-merri font-italic pl-1">BSC (hons)</a>
+                      <a className="font-merri font-italic pl-1">BSc (Hons)</a>
                   </div>
               </div>
           </div>
 
-          <div className="section-education-entry prefaceOride mb-2.5">
+          <div className="section-entry prefaceOride mb-2.5">
               <div className="vert-preface"></div>
               <div className="prefaced-contents">
-                  <div className="font-large font-merri">
+                  <div className="font-large font-merri textOride">
                       <a className="font-merri font-bold">Priestley College,</a> 
                       <a className="pl-2">Warrington</a>
                   </div>
@@ -93,10 +92,10 @@ export default function About() {
               </div>
           </div>
 
-           <div className="section-education-entry prefaceOride mb-2.5"> 
+          <div className="section-entry prefaceOride mb-2.5"> 
               <div className="vert-preface"></div>
               <div className="prefaced-contents">
-                  <div className="font-large font-merri">
+                  <div className="font-large font-merri textOride">
                       <a className="font-merri font-bold">Birchwood Community High School,</a> 
                       <a className="pl-2">Warrington</a>
                   </div>
@@ -105,35 +104,117 @@ export default function About() {
                   </div>
                   <div className="font-normal font-merri fontcol2">
                       <a className="font-merri font-bold ">Grade [7] in:</a>
-                      <a className="font-merri pl-2">English Language,  English Literature,  Physics,  Chemistry, Biology, Computer Science, Art and Design, Geography</a>
+                      <a className="font-merri pl-1.5">x7 GCSE Subjects</a>
                   </div>
                   <div className="font-normal font-merri fontcol2">
                       <a className="font-merri font-bold ">Grade [6] in:</a>
-                      <a className="font-merri pl-2">Mathematics, Religious Studies</a>
+                      <a className="font-merri pl-1.5">x2 GCSE Subjects</a>
                   </div>
-                  <div className="font-normal font-merri fontcol2">
-                      <a className="font-merri font-bold ">Key Roles:</a>
-                      <a className="font-merri pl-2">Head Student, School Council Member, Eco-Committee (Communications Manager)</a>
+                  <div className="font-normal font-merri fontcol2 flex flex-row">
+                      <a className="font-merri font-bold no-wrap">Key Roles:</a>
+                      <a className="font-merri pl-1.5">Head Student, School Council Member, Eco-Committee (Communications Manager)</a>
                   </div>
-              </div>
+              </div> 
           </div>
 
         </div>
 
         <div className="section-cont-col">
-          <h1 className="font-heading">My Skills:</h1>
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Skills:</h1>
+
+          <a className="font-normal font-merri">Temp boring about section</a>
         </div>
 
-        <div className="section-cont-col gap-2">
-          <h1 className="font-heading">Certifications:</h1>
+        <div className="section-cont-col pt-5 gap-1">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Certifications:</h1>
+
+          <div className="section-cont-row gap-[2%] pt-1 wrap">
+
+            <div className="section-entry-cert prefaceOrideStatic"> 
+              <div className="vert-preface"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri textOride">
+                      <a className="font-merri font-bold">Manchester,</a> 
+                      <a className="pl-2">Manchester</a>
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2024 - <i>Current</i></a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Yr.2</a>
+                      <a className="font-merri pl-1.5">Computer Science</a>
+                      <a className="font-merri font-italic pl-1">BSc (Hons)</a>
+                  </div>
+              </div>
+            </div>
+
+            <div className="section-entry-cert prefaceOrideStatic"> 
+              <div className="vert-preface"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri textOride">
+                      <a className="font-merri font-bold">Manchester,</a> 
+                      <a className="pl-2">Manchester</a>
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2024 - <i>Current</i></a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Yr.2</a>
+                      <a className="font-merri pl-1.5">Computer Science</a>
+                      <a className="font-merri font-italic pl-1">BSc (Hons)</a>
+                  </div>
+              </div>
+            </div>
+
+            <div className="section-entry-cert prefaceOrideStatic"> 
+              <div className="vert-preface"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri textOride">
+                      <a className="font-merri font-bold ">Manchester,</a> 
+                      <a className="pl-2">Manchester</a>
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2024 - <i>Current</i></a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Yr.2</a>
+                      <a className="font-merri pl-1.5">Computer Science</a>
+                      <a className="font-merri font-italic pl-1">BSc (Hons)</a>
+                  </div>
+              </div>
+            </div>
+
+            <div className="section-entry-cert prefaceOrideStatic"> 
+              <div className="vert-preface"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri textOride">
+                      <a className="font-merri font-bold">Manchester,</a> 
+                      <a className="pl-2">Manchester</a>
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2024 - <i>Current</i></a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Yr.2</a>
+                      <a className="font-merri pl-1.5">Computer Science</a>
+                      <a className="font-merri font-italic pl-1">BSc (Hons)</a>
+                  </div>
+              </div>
+            </div>
+
+          </div>          
         </div>
 
-        <div className="section-cont-col gap-2">
-          <h1 className="font-heading">Additional Activities:</h1>
+        <div className="section-cont-col">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Additional Activities:</h1>
+
+          <a className="font-normal font-merri">Temp boring about section</a>
         </div>
 
-        <div className="section-cont-col gap-2">
-          <h1 className="font-heading">Projects:</h1> 
+        <div className="section-cont-col pt-2.5">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Projects:</h1> 
+
+          <a className="font-normal font-merri">Temp boring about section</a>
         </div>
 
       </div>
