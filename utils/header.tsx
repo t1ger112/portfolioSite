@@ -28,7 +28,7 @@ export default function Header() {
         </div>
 
         <div className="nav-right-group">
-          <div className="nav-btn">
+          <div className="nav-btn font-accent">
             <a id="navLinkedin" className="font-navbar nav-btn-a" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">CONTACT</a>
           </div>
         </div>

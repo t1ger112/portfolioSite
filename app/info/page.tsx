@@ -33,10 +33,12 @@ export default function About() {
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">About Me:</h1>
 
-          <a className="font-normal font-merri">Temp boring about section</a>
+          <a className="font-normal font-merri">Temp about section</a>
         </div>
 
-        <div className="section-cont-col pb-2">
+        <div className="divider"></div>
+
+        <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Education:</h1>
 
           <a className="font-normal font-merri flex pb-5">                            
@@ -116,17 +118,20 @@ export default function About() {
                   </div>
               </div> 
           </div>
-
         </div>
+
+        <div className="divider"></div>
 
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Skills:</h1>
 
-          <a className="font-normal font-merri">Temp boring about section</a>
+          <a className="font-normal font-merri">Temp section</a>
         </div>
 
-        <div className="section-cont-col pt-5 gap-1">
-          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Certifications:</h1>
+        <div className="divider"></div>
+
+        <div className="section-cont-col">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px] pb-2">Certifications:</h1>
 
           <div className="section-cont-row gap-[2%] pt-1 wrap">
 
@@ -205,16 +210,41 @@ export default function About() {
           </div>          
         </div>
 
+        <div className="divider"></div>
+
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Additional Activities:</h1>
 
-          <a className="font-normal font-merri">Temp boring about section</a>
+          <a className="font-normal font-merri">Temp section</a>
         </div>
 
-        <div className="section-cont-col pt-2.5">
+        <div className="divider"></div>
+
+        <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Projects:</h1> 
 
-          <a className="font-normal font-merri">Temp boring about section</a>
+          <div className="font-normal font-merri content-width-limit flex flex-col gap-2">
+            <div>
+               <a>Most notably, winner of Inversity challenge #3, with Faculty AI and the Royal Air Force, for my “Flight-Data App” designed for RAF aircrew. View my most recent projects here:</a>
+            </div>
+            <div className="p-2">
+              <a>#### Projects Section ####</a>
+            </div>
+            <div>
+              <a>Examples and information on all my activities, achievements, and project code repositories are available on the following resources:</a>
+            </div>
+            <div className="font-normal pt-1">
+              <div className="no-wrap section-cont-row">
+                <a className="pr-2">LinkedIn:</a>
+                <a className="font-link" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">https://linkedin.com/in/freddiemichaelrobinson</a>
+              </div>
+              <div className="no-wrap section-cont-row">
+                <a className="pr-2">GitHub:</a>
+                <a className="font-link" target="_blank" href="https://github.com/t1ger112">https://github.com/t1ger112</a>
+              </div>
+            </div>
+          </div>
+        
         </div>
 
       </div>

@@ -45,10 +45,10 @@ html {
 } 
 
 .divider{ 
-  height: 3px;
+  height: 1px; 
   width: 100%;
-  background-color: var(--background-accent);
-  margin: 2rem 0rem 2rem 0rem; 
+  background-color: var(--background-accent); 
+  margin: 2rem 0rem 1.75rem 0rem;
 }
 
 
@@ -63,7 +63,8 @@ html {
 }
 .font-heading {
   font-weight: 450;  
-  font-size: 1.75rem; 
+  font-size: 1.75rem;  
+  margin-bottom: 0.25rem;  
 }
 .font-large {
   font-weight: 500;  
@@ -89,6 +90,21 @@ html {
 }
 .font-accent{
   color: var(--accent1); 
+}
+.font-link{
+  text-decoration: dotted underline; 
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--accent1);
+  text-underline-offset: 2px;
+  transition: 0.5s; 
+}
+.font-link:hover{ 
+  text-decoration: solid underline;  
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--accent1);
+  text-underline-offset: 2px;
+  opacity: 0.8;
+  cursor: pointer; 
 }
 .font-merri{
   font-family: "Merriweather", serif;
@@ -136,6 +152,9 @@ html {
 .wrap{
   text-wrap-mode: wrap;
   flex-wrap: wrap;
+}
+.content-width-limit{ 
+  max-width: 65%;  
 }
 
 
@@ -197,13 +216,6 @@ html {
   padding: 0.2rem 0.6rem 0rem 0.75rem;  
 }
 
-#nav-home{
-  color: var(--accent1);
-}
-#nav-home:hover{
-  color: var(--content);
-}
-
 .footer-width-container{ 
   display: flex;
   width: 100%;
@@ -253,7 +265,7 @@ body{
   max-width: 75rem; 
   height: auto; 
   margin: 0px;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2.5rem;
   margin-top: 3.25rem;     
   padding: 0.675rem;   
 }
@@ -298,14 +310,11 @@ body{
 .section-cont-row{
   display: flex;
   flex-direction: row;
-  margin-bottom: 1.25rem; 
-
 }
 
 .section-cont-col{
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.5rem; 
 } 
 
 .section-entry{
@@ -383,7 +392,7 @@ body{
   width: 100%;
   max-width: 49%;
   min-width: fit-content; 
-  margin-bottom: 1.25rem; 
+  margin-bottom: 1.75%; 
 }
 
 
