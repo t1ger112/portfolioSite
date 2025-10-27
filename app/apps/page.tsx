@@ -28,9 +28,9 @@ export default function About() {
          
         </div>
 
-        <h1 className="font-heading">Welcome to My Portfolio Site!</h1>
+        <h1 className="font-heading font-bitcount font-accent pl-[1px]">Welcome to My Portfolio Site!</h1>
 
-        <p>Apps</p> 
+        <p className="font-normal font-merri flex">Apps</p> 
         
 
       </div>

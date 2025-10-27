@@ -12,7 +12,8 @@ export default function Home() {
 
         <div className="miniNavCont">
           <div className="trail-cont font-small">
-            <a className="trail-text" href="./">Home</a>{'>'}  
+            <a className="trail-text" href="./">Home</a>{'>'}
+            <a className="trail-text" href="./">Portfolio</a>  
           </div>
 
           <div className="themeCont">
@@ -27,32 +28,114 @@ export default function Home() {
 
 
         <div className="section-cont content-col">  
-          <h1 className="font-heading">Welcome to my Portfolio!</h1>
-          <p>This is the homepage of my portfolio website.</p> 
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Welcome to my Portfolio!</h1>
+          <a className="font-normal font-merri flex">This is the homepage of my portfolio website.</a>
         </div>
 
-        <div className="section-cont content-col">
-          <h1 className="font-heading">Activity:</h1>
-          <p>temp</p> 
-        </div>
+        <div className="divider"></div>
 
         <div className="section-cont content-col">
-          <h1 className="font-heading">Certifications:</h1>
-          <p>temp</p> 
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Activity:</h1>
+          <a className="font-normal font-merri flex">Temp</a> 
+
+          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+
+            <div className="section-entry-cert prefaceOrideStatic"> 
+              <div className="vert-preface"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri textOride">
+                      <a className="font-merri font-bold">Activity Title</a> 
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2024 - <i>Current</i></a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri">Description of Activity...</a>
+                  </div>
+              </div>
+            </div>
+
+          </div>  
         </div>
 
+        <div className="divider"></div>
+
         <div className="section-cont content-col">
-          <h1 className="font-heading">Digital CV:</h1>
-          <p>temp</p> 
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Digital CV:</h1>
+          <a className="font-normal font-merri flex">Temp</a> 
+
+          <div className="section-entry prefaceOride mt-2.5 mb-2"> 
+              <div className="vert-preface prefaceBlue"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri textOride">
+                      <a className="font-merri font-bold">Manchester Metropolitan University,</a> 
+                      <a className="pl-2">Manchester</a>
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2025 - <i>Current Edition</i></a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Yr.2</a>
+                      <a className="font-merri pl-1.5">Computer Science</a>
+                      <a className="font-merri font-italic pl-1">BSc (Hons)</a>
+                  </div>
+              </div>
+          </div>
         </div>
+
+        <div className="divider"></div>
+
+        <div className="section-cont content-col">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Certifications:</h1>
+          <a className="font-normal font-merri flex">Temp</a> 
+
+          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+
+            <div className="section-entry-cert prefaceOrideStatic"> 
+              <div className="vert-preface"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri textOride">
+                      <a className="font-merri font-bold">Certification Title</a> 
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2024 - <i>Current</i></a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri">Description of certification...</a>
+                  </div>
+              </div>
+            </div>
+
+          </div>      
+        </div>
+
+        <div className="divider"></div>
         
         <div className="section-cont content-col">
-          <h1 className="font-heading">My Apps:</h1>
-          <p>temp</p> 
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Apps:</h1>
+          <a className="font-normal font-merri flex">Temp</a> 
+
+          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+
+            <div className="section-entry-cert prefaceOrideStatic"> 
+              <div className="vert-preface"></div>
+              <div className="prefaced-contents">
+                  <div className="font-large font-merri textOride">
+                      <a className="font-merri font-bold">App Title</a> 
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <a>September 2024 - <i>Current</i></a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri">Description of app...</a>
+                  </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
-
     </div>
   );
 }

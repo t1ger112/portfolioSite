@@ -28,9 +28,9 @@ export default function Activity() {
          
         </div>
 
-        <h1 className="font-heading">My Activity!</h1>
+        <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Activity!</h1>
 
-        <p>Activity</p> 
+        <p className="font-normal font-merri flex">Activity</p> 
         
 
       </div>
