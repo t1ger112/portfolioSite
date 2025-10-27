@@ -1,6 +1,6 @@
 //import Image from "next/image";
 
-export default function About() {
+export default async function About() {
 
   return (
     
@@ -14,7 +14,7 @@ export default function About() {
 
           <div className="trail-cont font-small">
             <a className="trail-text" href="./">Home</a>{'>'} 
-            <a className="trail-text" href="#">Apps</a>
+            <a className="trail-text" href="#">Apps</a> 
           </div>
 
           <div className="themeCont">

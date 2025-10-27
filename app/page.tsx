@@ -1,6 +1,11 @@
 //import Image from "next/image";
 
-export default function Home() {
+import { Activity } from "@/utils/actions";
+
+export default async function Home() {
+
+  const activities = await Activity();
+  console.log(activities.a0.title); 
 
   return (
     
@@ -40,20 +45,22 @@ export default function Home() {
 
           <div className="section-cont-row gap-[2%] mt-5 wrap"> 
 
-            <div className="section-entry-cert prefaceOrideStatic"> 
-              <div className="vert-preface"></div>
-              <div className="prefaced-contents">
-                  <div className="font-large font-merri textOride">
-                      <a className="font-merri font-bold">Activity Title</a> 
-                  </div>
-                  <div className="font-open font-small fontcol1 flex pb-2">
-                      <a>September 2024 - <i>Current</i></a> 
-                  </div>
-                  <div className="font-normal font-merri fontcol2">
-                      <a className="font-merri">Description of Activity...</a>
-                  </div>
+            {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((activity: any, index: number) => ( 
+              <div key={index} className="section-entry-cert prefaceOrideStatic"> 
+                <div className="vert-preface"></div>
+                <div className="prefaced-contents">
+                    <div className="font-large font-merri textOride">
+                        <a className="font-merri font-bold">{activity.title}</a> 
+                    </div>
+                    <div className="font-open font-small fontcol1 flex pb-2">
+                        <a>{activity.date}</a> 
+                    </div>
+                    <div className="font-normal font-merri fontcol2">
+                        <a className="font-merri">{activity.body}</a>
+                    </div>
+                </div>
               </div>
-            </div>
+            ))}
 
           </div>  
         </div>
