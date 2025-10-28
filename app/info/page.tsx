@@ -1,7 +1,12 @@
 //import Image from "next/image";
-import { Copy } from "@/utils/actions";
+
+import { Activity, App, Certification} from "@/utils/actions";
 
 export default async function About() {
+
+    const activities = await Activity();
+    const certifications = await Certification();
+    const apps = await App();
 
   return (
     

@@ -1,11 +1,11 @@
-//import Image from "next/image";
-
-import { Activity } from "@/utils/actions";
+import Image from "next/image";
+import { Activity, App, Certification} from "@/utils/actions";
 
 export default async function Home() {
 
   const activities = await Activity();
-  console.log(activities.a0.title); 
+  const certifications = await Certification();
+  const apps = await App();
 
   return (
     
@@ -41,104 +41,127 @@ export default async function Home() {
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Activity:</h1>
-          <a className="font-normal font-merri flex">Temp</a> 
+          <p className="font-normal font-merri flex">My latest activities and events of which I have completed or attended:</p> 
 
           <div className="section-cont-row gap-[2%] mt-5 wrap"> 
-
-            {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((activity: any, index: number) => ( 
-              <div key={index} className="section-entry-cert prefaceOrideStatic"> 
+            {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 4 && ( 
+              <a id={val.link} key={index} href={val.link} className={val.type}> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
-                    <div className="font-large font-merri textOride">
-                        <a className="font-merri font-bold">{activity.title}</a> 
-                    </div>
-                    <div className="font-open font-small fontcol1 flex pb-2">
-                        <a>{activity.date}</a> 
-                    </div>
-                    <div className="font-normal font-merri fontcol2">
-                        <a className="font-merri">{activity.body}</a>
-                    </div>
-                </div>
-              </div>
-            ))}
-
-          </div>  
-        </div>
-
-        <div className="divider"></div>
-
-        <div className="section-cont content-col">
-          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Digital CV:</h1>
-          <a className="font-normal font-merri flex">Temp</a> 
-
-          <div className="section-entry prefaceOride mt-2.5 mb-2"> 
-              <div className="vert-preface prefaceBlue"></div>
-              <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
-                      <a className="font-merri font-bold">Manchester Metropolitan University,</a> 
-                      <a className="pl-2">Manchester</a>
+                      <p className="font-merri font-bold">{val.title}</p>
                   </div>
                   <div className="font-open font-small fontcol1 flex pb-2">
-                      <a>September 2025 - <i>Current Edition</i></a> 
+                      <p>{val.date}</p> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
-                      <a className="font-merri font-bold ">Yr.2</a>
-                      <a className="font-merri pl-1.5">Computer Science</a>
-                      <a className="font-merri font-italic pl-1">BSc (Hons)</a>
+                      <p className="font-merri">{val.body}</p>
                   </div>
-              </div>
+                </div>
+                <div className="section-thumbnail">
+                  <Image
+                    className="section-image"
+                    src={val.image}
+                    alt={val.title}
+                    width={100}
+                    height={100}
+                    quality={50}
+                  />
+                </div>
+              </a>
+            ))}
+          </div> 
+
+          <div className="nav-btn more-button mt-2.5 font-accent"> 
+            <a className="flex font-bitcount font-navbar nav-btn-a" href="/activity">VIEW MORE</a>
           </div>
         </div>
 
         <div className="divider"></div>
 
         <div className="section-cont content-col">
-          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Certifications:</h1>
-          <a className="font-normal font-merri flex">Temp</a> 
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Digital CV:</h1>
+          <a className="font-normal font-merri flex">View my latest Digital CV here:</a> 
 
-          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
-
-            <div className="section-entry-cert prefaceOrideStatic"> 
-              <div className="vert-preface"></div>
+          <a className="section-entry prefaceOride mt-2.5 mb-2" href="/info"> 
+              <div className="vert-preface prefaceBlue"></div>
               <div className="prefaced-contents">
-                  <div className="font-large font-merri textOride">
-                      <a className="font-merri font-bold">Certification Title</a> 
+                  <div className="flex font-large font-merri textOride">
+                      <p className="font-merri font-bold">Freddie Robinson,</p> 
+                      <p className="pl-2">Computer Science Student</p>
                   </div>
-                  <div className="font-open font-small fontcol1 flex pb-2">
-                      <a>September 2024 - <i>Current</i></a> 
+                  <div className="flex font-open font-small fontcol1 flex pb-2">
+                      <p>September 2025 - <i>Current Edition</i></p> 
                   </div>
-                  <div className="font-normal font-merri fontcol2">
-                      <a className="font-merri">Description of certification...</a>
+                  <div className="flex font-normal font-merri fontcol2"> 
+                      <p className="font-merri font-bold ">Yr.2</p>
+                      <p className="font-merri pl-1.5">Computer Science</p>
+                      <p className="font-merri font-italic pl-1">BSc (Hons)</p>
+                  </div>
+                   <div className="flex font-normal font-merri fontcol2"> 
+                      <p className="font-merri">At the Manchester Metropolitan University</p>
                   </div>
               </div>
-            </div>
+          </a>
+        </div>
 
-          </div>      
+        <div className="divider"></div>
+
+        <div className="section-cont content-col">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Certifications:</h1>
+          <a className="font-normal font-merri flex">All the certifications and courses that I have completed:</a> 
+
+          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
+              <a id={val.link} key={index} href={val.link} className={val.type}> 
+                <div className="vert-preface"></div>
+                <div className="prefaced-contents">
+                    <div className="font-large font-merri textOride">
+                        <p className="font-merri font-bold">{val.title}</p>
+                    </div>
+                    <div className="font-open font-small fontcol1 flex pb-2">
+                        <p>{val.date}</p> 
+                    </div>
+                    <div className="font-normal font-merri fontcol2">
+                        <p className="font-merri">{val.body}</p>
+                    </div>
+                </div>
+              </a>
+            ))}
+          </div> 
+
+          <div className="nav-btn more-button mt-2.5 font-accent"> 
+            <a className="flex font-bitcount font-navbar nav-btn-a" href="/certifications">VIEW MORE</a>
+          </div>    
         </div>
 
         <div className="divider"></div>
         
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Apps:</h1>
-          <a className="font-normal font-merri flex">Temp</a> 
+          <a className="font-normal font-merri flex">All the apps, programs and projects that I have created:</a> 
 
           <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+            {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 4 && ( 
+             <a id={val.link} key={index} href={val.link} className={val.type}> 
+                <div className="vert-preface"></div>
+                <div className="prefaced-contents">
+                    <div className="font-large font-merri textOride">
+                        <p className="font-merri font-bold">{val.title}</p>
+                    </div>
+                    <div className="font-open font-small fontcol1 flex pb-2">
+                        <p>{val.date}</p> 
+                    </div>
+                    <div className="font-normal font-merri fontcol2">
+                        <p className="font-merri">{val.body}</p>
+                    </div>
+                </div>
+              </a>
+            ))}
+          </div>
 
-            <div className="section-entry-cert prefaceOrideStatic"> 
-              <div className="vert-preface"></div>
-              <div className="prefaced-contents">
-                  <div className="font-large font-merri textOride">
-                      <a className="font-merri font-bold">App Title</a> 
-                  </div>
-                  <div className="font-open font-small fontcol1 flex pb-2">
-                      <a>September 2024 - <i>Current</i></a> 
-                  </div>
-                  <div className="font-normal font-merri fontcol2">
-                      <a className="font-merri">Description of app...</a>
-                  </div>
-              </div>
-            </div>
-
+          <div className="nav-btn more-button mt-2.5 font-accent"> 
+            <a className="flex font-bitcount font-navbar nav-btn-a" href="/apps">VIEW MORE</a>
           </div>
         </div>
 

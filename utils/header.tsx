@@ -9,6 +9,7 @@ export default function Header() {
       <div className="navbar-container">
 
         <div className="nav-left-group">
+          
           <div className="nav-btn">
             <a id="navHome" className="font-navbar nav-btn-a" href="./">HOME</a> 
           </div>

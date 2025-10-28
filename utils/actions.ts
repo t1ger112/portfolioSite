@@ -10,62 +10,80 @@ export async function Copy(link : string){
     navigator.clipboard.writeText(copyVal);
 }
 
+export async function Red(linker: string) {
+    window.location.href = "/" + linker;
+    console.log('ERR: REDIRECT FAILED');
+}
+
 export async function Activity() {
-
     const activities = {
-
-        a0:
-        {
-            title: "Activity Title 1",
-            date: "September 2024 - Current",
-            body: "Description of Activity arg1...",
-            image: "bob"
-        },
-
-        a1: 
-        {
-            title: "Activity Title 2",
-            date: "September 2024 - Current",
-            body: "Description of Activity arg2..."
-        },
 
         a2:
         {
+            type: "section-entry-pic prefaceOrideStatic",
             title: "Activity Title 3",
             date: "September 2024 - Current",
-            body: "Description of Activity arg1...",
-            image: "bob"
+            body: "Description of Activity arg1... kjfawkjbfakjawbf kabwfkawbfkbawk vhjebwhbweb jvh wjehfbhwebbewkfbw vjhwefbwebfk kjfawkjbfawkbf akjwfnkjawbfkawbfkba afkbwakfbawkjbf kawjbfkjawbfkjawbf kabwfkawbfkbawk vhjebwhbweb jvh wjehfbhwebbewkfbw vjhwefbwebfk",
+            link: "./activity/#a0",
+            image: "/i1.jpg",
+        },
+        
+        a6:
+        {
+            type: "section-entry prefaceOrideStatic",
+            title: "Activity Title 2",
+            date: "September 2024 - Current",
+            body: "Description of Activity arg1... kbqwkfbqiwfbiq vj qiwfbkqwbfiqb ibqwfkbqwifbqiwbf",
+            link: "/activity/#a0",
+            image: "/i1.jpg"
         },
 
-        a3:
+         a62:
         {
-            title: "Activity Title 4",
+            type: "section-entry prefaceOrideStatic",
+            title: "Activity Title 1",
             date: "September 2024 - Current",
             body: "Description of Activity arg1...",
-            image: "bob"
+            link: "/activity/#a0",
         },
 
-        a4:
-        {
-            title: "Activity Title 5",
-            date: "September 2024 - Current",
-            body: "Description of Activity arg1...",
-            image: "bob"
-        },
     }   
-
     return activities;
 }
 
-// export function Certification(this: any, title: any, date: any, body: any) {
-//   this.title = title;
-//   this.date = date;
-//   this.body = body;
-// }
 
-// export function App(this: any, title: any, date: any, body: any) {
-//   this.title = title;
-//   this.date = date;
-//   this.body = body;
-// }
+export async function Certification() {
+    const certifications = {
+
+        a0:
+        {   
+            type: "section-entry-cert prefaceOrideStatic",
+            title: "Certification Title 1",
+            date: "September 2024 - Current",
+            body: "Description of Cert...",
+            image: "/public/file.svg"
+        },
+
+    }   
+    return certifications;
+}
+
+
+export async function App() {
+    const apps = {
+
+        a0:
+        {
+            type: "section-entry-cert prefaceOrideStatic",
+            title: "App Title 1",
+            date: "September 2024 - Current",
+            body: "Description of App...",
+            image: "temp"
+        },
+
+    }   
+    return apps;
+}
+
+
 

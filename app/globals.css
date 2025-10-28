@@ -8,7 +8,7 @@ html {
 :root {
   --background: #ffffff;
   --background-accent: #eeeeee;
-  --background-grad1: #eeeeee;   
+  --background-grad1: #dddddd;   
   --background-grad2: #dddddd; 
   --text-offset: #f1f1f1;  
   --content: #171717; 
@@ -23,8 +23,8 @@ html {
   :root {
     --background: #222222; 
     --background-accent: #444444; 
-    --background-grad1: #3a3a3a;  
-    --background-grad2: #555555; 
+    --background-grad1: #333333;  
+    --background-grad2: #4e4e4e; 
     --text-offset: #333333;   
     --content: #ffffff;
     --content-nav: #d1d1d1;   
@@ -158,7 +158,12 @@ html {
 .content-width-limit{ 
   max-width: 65%;  
 }
-
+.more-button{
+  display: flex;
+  width: fit-content;
+  height: auto;
+  justify-self: center;
+}
 
 
 
@@ -323,6 +328,7 @@ body{
   padding: 0.5rem 0.875rem 0.5rem 0.1rem;  
   border-radius: 0.5rem;
   width: fit-content;
+  overflow: hidden;
 }
 
 .vert-preface{
@@ -377,8 +383,9 @@ body{
   background: var(--background-grad1);  
   padding-left: 0.55rem;
 }
-.prefaceOrideStatic:is(:hover){  
+.prefaceOrideStatic:is(:hover){    
   cursor: pointer;
+  background-color: var(--background-grad2);  
 }
 .prefaceOrideStatic:is(:hover) > .vert-preface{
   background-color: var(--accent1);
@@ -390,13 +397,46 @@ body{
 .section-entry-cert{
   display: flex;
   padding: 0.5rem 0.75rem 0.5rem 0.55rem;  
-  border-radius: 0.5rem; 
-  width: 100%;
-  max-width: 49%;
-  min-width: fit-content; 
+  border-radius: 0.5rem;  
+  width: 49%;
   margin-bottom: 1.75%; 
+  overflow: hidden;
 }
 
+.section-entry-{
+  display: flex;
+  padding: 0.5rem 0.75rem 0.5rem 0.55rem;  
+  border-radius: 0.5rem;  
+  width: 49%;
+  margin-bottom: 1.75%; 
+  overflow: hidden;
+}
 
+.section-entry-pic{
+  display: flex;
+  /* grid-template-columns: auto auto auto;
+  grid-template-rows: auto; */
+  padding: 0.5rem 0.55rem 0.5rem 0.55rem;  
+  border-radius: 0.5rem;  
+  width: 49%;
+  margin-bottom: 1.75%; 
+  overflow: hidden;
+}
+
+.section-thumbnail{ 
+  display: flex;
+  height: min-content;
+  width: auto;
+  min-width: 10rem;
+  border-radius: 0.25rem;
+  overflow: hidden;  
+}
+
+.section-image{
+  object-fit: cover; 
+  display: flex;
+  width: auto;
+  height: auto;
+}
 
 
