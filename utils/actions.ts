@@ -23,31 +23,13 @@ export default async function Action() {
 export async function Activity() {
     const activities = {
 
-        a2:
-        {
-            title: "Activity Title 3",
-            date: "September 2024 - Current",
-            body: "Description of Activity arg1... kjfawkjbewkfbw vjhwebfkawbfkbawwbfkbawk vhjebwhbweb jvh wjehfbhwebbewkfbw vjhwefbwebfk",
-            link: "./activity/#a0",
-            image: "/i1.jpg",
-        },
-        
          a62:
         {
             title: "Activity Title 1",
             date: "September 2024 - Current",
             body: "Description of Activity arg1.a..",
             link: "/activity/#a0", 
-            image: null,
-        },
-
-        a622:
-        {
-            title: "Activity Title 1",
-            date: "September 2024 - Current",
-            body: "Description of Activity arg1...",
-            link: "/activity/#a0", 
-            image: null,
+            image: null
         },
 
         a6252: 

@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { Activity, App, Certification} from "@/utils/actions";
 
 export default async function Home() {
@@ -59,14 +59,7 @@ export default async function Home() {
                   </div>
                 </div>
                 <div className={(val.image) ? "section-thumbnail" : "hidden"}>
-                  <Image
-                    className="section-image"
-                    src={val.image}
-                    alt={val.title}
-                    width={125}
-                    height={125}
-                    quality={75} 
-                  />
+                  <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
                 </div>
               </a>
             ))}
@@ -127,14 +120,7 @@ export default async function Home() {
                   </div>
                 </div>
                 <div className={val.image ? "section-thumbnail" : "hidden"}>
-                  <Image
-                    className="section-image"
-                    src={val.image}
-                    alt={val.title}
-                    width={125}
-                    height={125}
-                    quality={75} 
-                  />
+                  <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
                 </div>
               </a>
             ))}
@@ -167,14 +153,7 @@ export default async function Home() {
                   </div>
                 </div>
                 <div className={val.image ? "section-thumbnail" : "hidden"}>
-                  <Image
-                    className="section-image"
-                    src={val.image}
-                    alt={val.title}
-                    width={125}
-                    height={125}
-                    quality={75} 
-                  />
+                  <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
                 </div>
               </a>
             ))}
