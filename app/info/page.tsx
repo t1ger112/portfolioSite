@@ -1,10 +1,9 @@
-//import Image from "next/image";
-
-import { Activity, App, Certification} from "@/utils/actions";
+import Image from "next/image";
+import { FeaturedActivity, App, Certification} from "@/utils/actions";
 
 export default async function About() {
 
-    const activities = await Activity();
+    const featuredActivities = await FeaturedActivity();
     const certifications = await Certification();
     const apps = await App();
 
@@ -130,7 +129,7 @@ export default async function About() {
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Skills:</h1>
 
-          <a className="font-normal font-merri">Temp section</a>
+          <a className="font-normal font-merri">Temp skills section</a>
         </div>
 
         <div className="divider"></div>
@@ -138,24 +137,34 @@ export default async function About() {
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px] pb-2">Certifications:</h1>
 
-          <div className="section-cont-row gap-[2%] pt-1 wrap">
-
-            <div className="section-entry-cert prefaceOrideStatic"> 
-              <div className="vert-preface"></div>
-              <div className="prefaced-contents">
+          <div className="section-cont-row gap-[2%] mt-1 wrap"> 
+            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
+              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
+                <div className="vert-preface"></div>
+                <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
-                      <a className="font-merri font-bold">Certification Title</a> 
+                      <p className="font-merri font-bold">{val.title}</p>
                   </div>
                   <div className="font-open font-small fontcol1 flex pb-2">
-                      <a>September 2024 - <i>Current</i></a> 
+                      <p>{val.date}</p> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
-                      <a className="font-merri">Description of certification...</a>
+                      <p className="font-merri">{val.body}</p>
                   </div>
-              </div>
-            </div>
-
-          </div>          
+                </div>
+                <div className={val.image ? "section-thumbnail" : "hidden"}>
+                  <Image
+                    className="section-image"
+                    src={val.image}
+                    alt={val.title}
+                    width={125}
+                    height={125}
+                    quality={75} 
+                  />
+                </div>
+              </a>
+            ))}
+          </div>  
         </div>
 
         <div className="divider"></div>
@@ -163,26 +172,40 @@ export default async function About() {
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Featured Activities:</h1>
 
-          <a className="font-normal font-merri">Temp section</a>
+          <a className="font-normal font-merri">Title paragraph</a>
 
           <div className="section-cont-row gap-[2%] mt-5 wrap"> 
-
-            <div className="section-entry-cert prefaceOrideStatic"> 
-              <div className="vert-preface"></div>
-              <div className="prefaced-contents">
+            {featuredActivities && (Array.isArray(featuredActivities) ? featuredActivities : Object.values(featuredActivities)).map((val: any, index: number) => index < 4 && ( 
+              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
+                <div className="vert-preface"></div>
+                <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
-                      <a className="font-merri font-bold">Activity Title</a> 
+                      <p className="font-merri font-bold">{val.title}</p>
                   </div>
                   <div className="font-open font-small fontcol1 flex pb-2">
-                      <a>September 2024 - <i>Current</i></a> 
+                      <p>{val.date}</p> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
-                      <a className="font-merri">Description of Activity...</a>
+                      <p className="font-merri">{val.body}</p>
                   </div>
-              </div>
-            </div>
+                </div>
+                <div className={val.image ? "section-thumbnail" : "hidden"}>
+                  <Image
+                    className="section-image"
+                    src={val.image} 
+                    alt={val.title}
+                    width={125}
+                    height={125}
+                    quality={75} 
+                  />
+                </div>
+              </a>
+            ))}
+          </div>
 
-          </div>  
+          <div className="nav-btn more-button mt-2.5 font-accent flex"> 
+            <a className="flex font-bitcount nav-btn-a font-navbar " href="/activity">VIEW MORE</a>
+          </div>
         </div>
 
         <div className="divider"></div>
@@ -194,8 +217,33 @@ export default async function About() {
             <div>
                <a>Most notably, winner of Inversity challenge #3, with Faculty AI and the Royal Air Force, for my “Flight-Data App” designed for RAF aircrew. View my most recent projects here:</a>
             </div>
-            <div className="p-2">
-              <a>#### Projects Section ####</a>
+            <div className="section-cont-row gap-[2%] mt-4 mb-2.5 wrap"> 
+              {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 4 && ( 
+                <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
+                  <div className="vert-preface"></div>
+                  <div className="prefaced-contents">
+                    <div className="font-large font-merri textOride">
+                        <p className="font-merri font-bold">{val.title}</p>
+                    </div>
+                    <div className="font-open font-small fontcol1 flex pb-2">
+                        <p>{val.date}</p> 
+                    </div>
+                    <div className="font-normal font-merri fontcol2">
+                        <p className="font-merri">{val.body}</p>
+                    </div>
+                  </div>
+                  <div className={val.image ? "section-thumbnail" : "hidden"}>
+                    <Image
+                      className="section-image"
+                      src={val.image}
+                      alt={val.title}
+                      width={125}
+                      height={125}
+                      quality={75} 
+                    />
+                  </div>
+                </a>
+              ))}
             </div>
             <div>
               <a>Examples and information on all my activities, achievements, and project code repositories are available on the following resources:</a>

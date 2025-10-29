@@ -45,7 +45,7 @@ export default async function Home() {
 
           <div className="section-cont-row gap-[2%] mt-5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 4 && ( 
-              <a id={val.link} key={index} href={val.link} className={val.type}> 
+              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -58,14 +58,14 @@ export default async function Home() {
                       <p className="font-merri">{val.body}</p>
                   </div>
                 </div>
-                <div className="section-thumbnail">
+                <div className={(val.image) ? "section-thumbnail" : "hidden"}>
                   <Image
                     className="section-image"
                     src={val.image}
                     alt={val.title}
-                    width={100}
-                    height={100}
-                    quality={50}
+                    width={125}
+                    height={125}
+                    quality={75} 
                   />
                 </div>
               </a>
@@ -99,7 +99,7 @@ export default async function Home() {
                       <p className="font-merri font-italic pl-1">BSc (Hons)</p>
                   </div>
                    <div className="flex font-normal font-merri fontcol2"> 
-                      <p className="font-merri">At the Manchester Metropolitan University</p>
+                      <p className="font-merri">At Manchester Metropolitan University</p>
                   </div>
               </div>
           </a>
@@ -113,18 +113,28 @@ export default async function Home() {
 
           <div className="section-cont-row gap-[2%] mt-5 wrap"> 
             {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
-              <a id={val.link} key={index} href={val.link} className={val.type}> 
+              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
-                    <div className="font-large font-merri textOride">
-                        <p className="font-merri font-bold">{val.title}</p>
-                    </div>
-                    <div className="font-open font-small fontcol1 flex pb-2">
-                        <p>{val.date}</p> 
-                    </div>
-                    <div className="font-normal font-merri fontcol2">
-                        <p className="font-merri">{val.body}</p>
-                    </div>
+                  <div className="font-large font-merri textOride">
+                      <p className="font-merri font-bold">{val.title}</p>
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <p>{val.date}</p> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <p className="font-merri">{val.body}</p>
+                  </div>
+                </div>
+                <div className={val.image ? "section-thumbnail" : "hidden"}>
+                  <Image
+                    className="section-image"
+                    src={val.image}
+                    alt={val.title}
+                    width={125}
+                    height={125}
+                    quality={75} 
+                  />
                 </div>
               </a>
             ))}
@@ -143,18 +153,28 @@ export default async function Home() {
 
           <div className="section-cont-row gap-[2%] mt-5 wrap"> 
             {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 4 && ( 
-             <a id={val.link} key={index} href={val.link} className={val.type}> 
+              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
-                    <div className="font-large font-merri textOride">
-                        <p className="font-merri font-bold">{val.title}</p>
-                    </div>
-                    <div className="font-open font-small fontcol1 flex pb-2">
-                        <p>{val.date}</p> 
-                    </div>
-                    <div className="font-normal font-merri fontcol2">
-                        <p className="font-merri">{val.body}</p>
-                    </div>
+                  <div className="font-large font-merri textOride">
+                      <p className="font-merri font-bold">{val.title}</p>
+                  </div>
+                  <div className="font-open font-small fontcol1 flex pb-2">
+                      <p>{val.date}</p> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <p className="font-merri">{val.body}</p>
+                  </div>
+                </div>
+                <div className={val.image ? "section-thumbnail" : "hidden"}>
+                  <Image
+                    className="section-image"
+                    src={val.image}
+                    alt={val.title}
+                    width={125}
+                    height={125}
+                    quality={75} 
+                  />
                 </div>
               </a>
             ))}

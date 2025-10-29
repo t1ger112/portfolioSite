@@ -5,50 +5,78 @@ export default async function Action() {
     console.log("err: bad action call");
 }
 
-export async function Copy(link : string){
-    const copyVal = "https://" + window.location.host + "#" + link;
-    navigator.clipboard.writeText(copyVal);
-}
+// export async function Copy(link : string){
+//     const copyVal = "https://" + window.location.host + "#" + link;
+//     navigator.clipboard.writeText(copyVal);
+// }
 
-export async function Red(linker: string) {
-    window.location.href = "/" + linker;
-    console.log('ERR: REDIRECT FAILED');
-}
+// export async function Red(linker: string) {
+//     window.location.href = "/" + linker;
+//     console.log('ERR: REDIRECT FAILED');
+// }
+
+// function validateImagePath(path: string | null): string | null {
+//     if (!path) return null;
+//     return path.startsWith('/') ? path : `/${path}`;
+// }
 
 export async function Activity() {
     const activities = {
 
         a2:
         {
-            type: "section-entry-pic prefaceOrideStatic",
             title: "Activity Title 3",
             date: "September 2024 - Current",
-            body: "Description of Activity arg1... kjfawkjbfakjawbf kabwfkawbfkbawk vhjebwhbweb jvh wjehfbhwebbewkfbw vjhwefbwebfk kjfawkjbfawkbf akjwfnkjawbfkawbfkba afkbwakfbawkjbf kawjbfkjawbfkjawbf kabwfkawbfkbawk vhjebwhbweb jvh wjehfbhwebbewkfbw vjhwefbwebfk",
+            body: "Description of Activity arg1... kjfawkjbewkfbw vjhwebfkawbfkbawwbfkbawk vhjebwhbweb jvh wjehfbhwebbewkfbw vjhwefbwebfk",
             link: "./activity/#a0",
             image: "/i1.jpg",
         },
         
-        a6:
-        {
-            type: "section-entry prefaceOrideStatic",
-            title: "Activity Title 2",
-            date: "September 2024 - Current",
-            body: "Description of Activity arg1... kbqwkfbqiwfbiq vj qiwfbkqwbfiqb ibqwfkbqwifbqiwbf",
-            link: "/activity/#a0",
-            image: "/i1.jpg"
-        },
-
          a62:
         {
-            type: "section-entry prefaceOrideStatic",
+            title: "Activity Title 1",
+            date: "September 2024 - Current",
+            body: "Description of Activity arg1.a..",
+            link: "/activity/#a0", 
+            image: null,
+        },
+
+        a622:
+        {
             title: "Activity Title 1",
             date: "September 2024 - Current",
             body: "Description of Activity arg1...",
-            link: "/activity/#a0",
+            link: "/activity/#a0", 
+            image: null,
+        },
+
+        a6252: 
+        {
+            title: "Activity Title 1",
+            date: "September 2024 - Current",
+            body: "Description of Activity arg1..a.",
+            link: "/activity/#a0", 
+            image: "/i1.jpg",
         },
 
     }   
     return activities;
+}
+
+export async function FeaturedActivity() {
+    const featuredActivities = {
+
+         a62:
+        {
+            title: "FActivity Title 1",
+            date: "September 2024 - Current",
+            body: "Description of FActivity arg1.a..",
+            link: "/activity/#a0", 
+            image: null,
+        },
+
+    }   
+    return featuredActivities;
 }
 
 
@@ -57,11 +85,11 @@ export async function Certification() {
 
         a0:
         {   
-            type: "section-entry-cert prefaceOrideStatic",
-            title: "Certification Title 1",
+            title: "Certification Title 1b",
             date: "September 2024 - Current",
             body: "Description of Cert...",
-            image: "/public/file.svg"
+            link: "/activity/#a0",
+            image: null,
         },
 
     }   
@@ -74,11 +102,11 @@ export async function App() {
 
         a0:
         {
-            type: "section-entry-cert prefaceOrideStatic",
-            title: "App Title 1",
+            title: "App Title 1a",
             date: "September 2024 - Current",
             body: "Description of App...",
-            image: "temp"
+            link: "/activity/#a0",
+            image: null,
         },
 
     }   
