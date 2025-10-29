@@ -1,9 +1,9 @@
 // import Image from "next/image";
-import { Activity, App, Certification} from "@/utils/actions";
+import { RecentActivity, App, Certification} from "@/utils/actions";
 
 export default async function Home() {
 
-  const activities = await Activity();
+  const activities = await RecentActivity();
   const certifications = await Certification();
   const apps = await App();
 
@@ -41,7 +41,7 @@ export default async function Home() {
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Activity:</h1>
-          <p className="font-normal font-merri flex">My latest activities and events of which I have completed or attended:</p> 
+          <p className="font-normal font-merri flex">My latest activities and events I have attended:</p> 
 
           <div className="section-cont-row gap-[2%] mt-5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 4 && ( 
@@ -59,7 +59,7 @@ export default async function Home() {
                   </div>
                 </div>
                 <div className={(val.image) ? "section-thumbnail" : "hidden"}>
-                  <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
+                  <img className="section-image" src={val.image} alt={val.title} loading="eager" decoding="sync" fetchPriority="high"></img>
                 </div>
               </a>
             ))}

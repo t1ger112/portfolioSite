@@ -20,23 +20,41 @@ export default async function Action() {
 //     return path.startsWith('/') ? path : `/${path}`;
 // }
 
-export async function Activity() {
+export async function RecentActivity() {
     const activities = {
 
-         a62:
+        a3:
         {
-            title: "Activity Title 1",
+            title: "Activity Title 4",
             date: "September 2024 - Current",
-            body: "Description of Activity arg1.a..",
+            body: "Description of Activity...",
             link: "/activity/#a0", 
-            image: null
+            image: "/i2.jpg",
         },
 
-        a6252: 
+        a2: 
+        {
+            title: "Activity Title 3",
+            date: "September 2024 - Current",
+            body: "Description of Activity...",
+            link: "/activity/#a0", 
+            image: null,
+        },
+
+        a1:
+        {
+            title: "Activity Title 2",
+            date: "September 2024 - Current",
+            body: "Description of Activity...",
+            link: "/activity/#a0", 
+            image: "/i2.jpg",
+        },
+
+        a0: 
         {
             title: "Activity Title 1",
             date: "September 2024 - Current",
-            body: "Description of Activity arg1..a.",
+            body: "Description of Activity...",
             link: "/activity/#a0", 
             image: "/i1.jpg",
         },
@@ -48,11 +66,38 @@ export async function Activity() {
 export async function FeaturedActivity() {
     const featuredActivities = {
 
-         a62:
+        a3:
+        {
+            title: "FActivity Title 4",
+            date: "September 2024 - Current",
+            body: "Description of FActivity...",
+            link: "/activity/#a0", 
+            image: null,
+        },
+
+        a2:
+        {
+            title: "FActivity Title 3",
+            date: "September 2024 - Current",
+            body: "Description of FActivity...",
+            link: "/activity/#a0", 
+            image: null,
+        },
+
+        a1:
+        {
+            title: "FActivity Title 2",
+            date: "September 2024 - Current",
+            body: "Description of FActivity...",
+            link: "/activity/#a0", 
+            image: "/i2.jpg",
+        },
+
+        a0:
         {
             title: "FActivity Title 1",
             date: "September 2024 - Current",
-            body: "Description of FActivity arg1.a..",
+            body: "Description of FActivity...",
             link: "/activity/#a0", 
             image: null,
         },
@@ -65,9 +110,36 @@ export async function FeaturedActivity() {
 export async function Certification() {
     const certifications = {
 
+        a3:
+        {   
+            title: "Certification Title 4",
+            date: "September 2024 - Current",
+            body: "Description of Cert...",
+            link: "/activity/#a0",
+            image: null,
+        },
+
+        a2:
+        {   
+            title: "Certification Title 3",
+            date: "September 2024 - Current",
+            body: "Description of Cert...",
+            link: "/activity/#a0",
+            image: "/i2.jpg",
+        },
+
+        a1:
+        {   
+            title: "Certification Title 2",
+            date: "September 2024 - Current",
+            body: "Description of Cert...",
+            link: "/activity/#a0",
+            image: null,
+        },
+
         a0:
         {   
-            title: "Certification Title 1b",
+            title: "Certification Title 1",
             date: "September 2024 - Current",
             body: "Description of Cert...",
             link: "/activity/#a0",
@@ -82,9 +154,36 @@ export async function Certification() {
 export async function App() {
     const apps = {
 
+        a3:
+        {
+            title: "App Title 4",
+            date: "September 2024 - Current",
+            body: "Description of App...",
+            link: "/activity/#a0",
+            image: "/i2.jpg",
+        },
+
+        a2:
+        {
+            title: "App Title 3",
+            date: "September 2024 - Current",
+            body: "Description of App...",
+            link: "/activity/#a0",
+            image: null,
+        },
+
+        a1:
+        {
+            title: "App Title 2",
+            date: "September 2024 - Current",
+            body: "Description of App...",
+            link: "/activity/#a0",
+            image: null,
+        },
+
         a0:
         {
-            title: "App Title 1a",
+            title: "App Title 1",
             date: "September 2024 - Current",
             body: "Description of App...",
             link: "/activity/#a0",

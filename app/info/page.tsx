@@ -37,7 +37,24 @@ export default async function About() {
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">About Me:</h1>
 
-          <a className="font-normal font-merri">Temp about section</a>
+          <a className="font-normal content-width-limit font-merri mb-2.5">
+            I have been interested in technology and computing since early primary
+            school, as it required logical thinking and utilising problem solving skills. I
+            have further continued my studies into technology throughout high school,
+            college and into the present day at university, where I constantly strive to
+            learn and upgrade my skills.
+          </a>
+          <a className="font-normal content-width-limit font-merri mb-2.5">
+            I have undertaken many different leadership roles and activities within and
+            outside of an academic setting. For example, as a patrol leader at Scouts,
+            Head Student of my high school, and many more. These roles often
+            involved speaking in front of large amounts of people. As a result, this has
+            helped hone my communication and presentation skills, and also my
+            ability to work effectively alongside both peers and senior figures alike.
+          </a>
+          <a className="font-normal content-width-limit font-merri">
+            My many hobbies are mostly related to technology, media, and military aviation.
+          </a>
         </div>
 
         <div className="divider"></div>
@@ -46,7 +63,7 @@ export default async function About() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Education:</h1>
 
           <a className="font-normal font-merri flex pb-5">                            
-              Currently studying degree-level Computer Science at Manchester Metropolitan University:
+              Currently studying degree-level Computer Science at Manchester Metropolitan University, click for more details:
           </a>
 
           <div className="section-entry prefaceOride mb-2"> 
@@ -129,7 +146,31 @@ export default async function About() {
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Skills:</h1>
 
-          <a className="font-normal font-merri">Temp skills section</a>
+          <a className="font-normal content-width-limit font-merri mb-2.5">
+            Passionate about technology and computing, with a desire to constantly upskill in languages and programming knowledge.
+          </a>
+          <a className="font-normal content-width-limit font-merri mb-2.5">
+            The ability to either work as a part of, or lead teams, through utilising my skills and extensive experience in leadership roles.
+          </a>
+          <div className="section-cont-row gap-10 mt-2.5">
+            <a className="font-normal content-width-limit font-merri">
+              <b className="font-accent font-bitcount font-large">Proficient in:</b>
+              <ul className="ml-3 mt-1">
+                <li>Office 365 Apps Suite</li>
+                <li>Visual Basic (.NET)</li>
+                <li>Python</li>
+                <li>HTML, CSS, JS (Web)</li>
+              </ul>
+            </a>
+            <a className="font-normal content-width-limit font-merri">
+              <b className="font-accent font-bitcount font-large">Currently learning:</b>
+              <ul className="ml-3 mt-1">
+                <li>C# (.NET)</li>
+                <li>CISCO Packet Tracer</li>
+                <li>Java</li>
+              </ul>
+            </a>
+          </div>
         </div>
 
         <div className="divider"></div>
@@ -157,7 +198,11 @@ export default async function About() {
                 </div>
               </a>
             ))}
-          </div>  
+          </div> 
+
+          <div className="nav-btn more-button mt-2.5 font-accent flex"> 
+            <a className="flex font-bitcount nav-btn-a font-navbar " href="/certifications">VIEW MORE</a>
+          </div>
         </div>
 
         <div className="divider"></div>
@@ -165,9 +210,7 @@ export default async function About() {
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Featured Activities:</h1>
 
-          <a className="font-normal font-merri">Title paragraph</a>
-
-          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+          <div className="section-cont-row gap-[2%] mt-2.5 wrap"> 
             {featuredActivities && (Array.isArray(featuredActivities) ? featuredActivities : Object.values(featuredActivities)).map((val: any, index: number) => index < 4 && ( 
               <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
@@ -201,10 +244,11 @@ export default async function About() {
 
           <div className="font-normal font-merri content-width-limit flex flex-col gap-2">
             <div>
-               <a>Most notably, winner of Inversity challenge #3, with Faculty AI and the Royal Air Force, for my “Flight-Data App” designed for RAF aircrew. View my most recent projects here:</a>
+               <a>Most notably, winner of Inversity challenge #3, with Faculty AI and the Royal Air Force, for my “Flight-Data App” designed for RAF aircrew. View my most recent apps and projects here:</a>
             </div>
-            <div className="section-cont-row gap-[2%] mt-4 mb-2.5 wrap"> 
-              {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 4 && ( 
+
+            <div className="section-cont-row gap-[2%] mt-4 mb-0 wrap"> 
+              {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 2 && ( 
                 <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                   <div className="vert-preface"></div>
                   <div className="prefaced-contents">
