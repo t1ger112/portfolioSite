@@ -73,7 +73,7 @@ export default async function About() {
                       <a className="font-merri font-bold">Manchester Metropolitan University,</a> 
                       <a className="pl-2">Manchester</a>
                   </div>
-                  <div className="font-open font-small fontcol1 flex pb-2">
+                  <div className="font-roboto font-small fontcol1 flex pb-2">
                       <a>September 2024 - <i>Current</i></a> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
@@ -91,7 +91,7 @@ export default async function About() {
                       <a className="font-merri font-bold">Priestley College,</a> 
                       <a className="pl-2">Warrington</a>
                   </div>
-                  <div className="font-open font-small fontcol1 flex pb-2">
+                  <div className="font-roboto font-small fontcol1 flex pb-2">
                       <a>September 2022 - July 2024</a> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
@@ -122,7 +122,7 @@ export default async function About() {
                       <a className="font-merri font-bold">Birchwood Community High School,</a> 
                       <a className="pl-2">Warrington</a>
                   </div>
-                  <div className="font-open font-small fontcol1 flex pb-2">
+                  <div className="font-roboto font-small fontcol1 flex pb-2">
                       <a>September 2017 - July 2022</a> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
@@ -160,14 +160,16 @@ export default async function About() {
                 <li>Visual Basic (.NET)</li>
                 <li>Python</li>
                 <li>HTML, CSS, JS (Web)</li>
+                <li>MySQL, SQLite, Access</li>
               </ul>
             </a>
-            <a className="font-normal content-width-limit font-merri">
+            <a className="font-normal content-width-limit font-merri mb-2.5">
               <b className="font-accent font-bitcount font-large">Currently learning:</b>
               <ul className="ml-3 mt-1">
                 <li>C# (.NET)</li>
+                <li>Networking</li>
                 <li>CISCO Packet Tracer</li>
-                <li>Java</li>
+                <li>Java Apps</li>
               </ul>
             </a>
           </div>
@@ -186,7 +188,7 @@ export default async function About() {
                   <div className="font-large font-merri textOride">
                       <p className="font-merri font-bold">{val.title}</p>
                   </div>
-                  <div className="font-open font-small fontcol1 flex pb-2">
+                  <div className="font-roboto font-small fontcol1 flex pb-2">
                       <p>{val.date}</p> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
@@ -218,7 +220,7 @@ export default async function About() {
                   <div className="font-large font-merri textOride">
                       <p className="font-merri font-bold">{val.title}</p>
                   </div>
-                  <div className="font-open font-small fontcol1 flex pb-2">
+                  <div className="font-roboto font-small fontcol1 flex pb-1">
                       <p>{val.date}</p> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
@@ -255,8 +257,8 @@ export default async function About() {
                     <div className="font-large font-merri textOride">
                         <p className="font-merri font-bold">{val.title}</p>
                     </div>
-                    <div className="font-open font-small fontcol1 flex pb-2">
-                        <p>{val.date}</p> 
+                    <div className="font-small fontcol1 flex pb-2">
+                        <p className="font-roboto">{val.date}</p> 
                     </div>
                     <div className="font-normal font-merri fontcol2">
                         <p className="font-merri">{val.body}</p>

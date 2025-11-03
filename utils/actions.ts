@@ -25,38 +25,38 @@ export async function RecentActivity() {
 
         a3:
         {
-            title: "Activity Title 4",
-            date: "September 2024 - Current",
-            body: "Description of Activity...",
-            link: "/activity/#a0", 
-            image: "/i2.jpg",
+            title: "GCHQ Manchester, Cyber Analyst Work Experience Event",
+            date: "April 2023",
+            body: "Learning team working, Computing, Analysis and Cyber-Security skills from GCHQ Manchester's staff.",
+            link: null, 
+            image: null,
         },
 
-        a2: 
+        a2:
         {
-            title: "Activity Title 3",
-            date: "September 2024 - Current",
-            body: "Description of Activity...",
-            link: "/activity/#a0", 
-            image: null,
+            title: "STEM Residential",
+            date: "June 2023",
+            body: "Sunderland University Computer Science and Robotics STEM Residential creating and programming Mini-Mars Rovers.",
+            link: null, 
+            image: "/42a3ce0a7.jpg",
         },
 
         a1:
         {
-            title: "Activity Title 2",
-            date: "September 2024 - Current",
-            body: "Description of Activity...",
-            link: "/activity/#a0", 
-            image: "/i2.jpg",
+            title: "Barclays STEM Stars Events",
+            date: "February 2024",
+            body: "Learning cybersecurity, IT, team working and project management skills at their Radbroke Hall Technology Site.",
+            link: null, 
+            image: null,
         },
 
-        a0: 
+        a0:
         {
-            title: "Activity Title 1",
-            date: "September 2024 - Current",
-            body: "Description of Activity...",
-            link: "/activity/#a0", 
-            image: "/i1.jpg",
+            title: "Achieved Bronze DofE",
+            date: null,
+            body: "Duke Of Edinburgh Award, with weekly volunteering sessions teaching IT skills at a local primary school.",
+            link: null, 
+            image: "/05a7a5r56.jpg",
         },
 
     }   
@@ -68,38 +68,38 @@ export async function FeaturedActivity() {
 
         a3:
         {
-            title: "FActivity Title 4",
-            date: "September 2024 - Current",
-            body: "Description of FActivity...",
-            link: "/activity/#a0", 
+            title: "GCHQ Manchester, Cyber Analyst Work Experience Event",
+            date: "April 2023",
+            body: "Learning team working, Computing, Analysis and Cyber-Security skills from GCHQ Manchester's staff.",
+            link: null, 
             image: null,
         },
 
         a2:
         {
-            title: "FActivity Title 3",
-            date: "September 2024 - Current",
-            body: "Description of FActivity...",
-            link: "/activity/#a0", 
-            image: null,
+            title: "STEM Residential",
+            date: "June 2023",
+            body: "Sunderland University Computer Science and Robotics STEM Residential creating and programming Mini-Mars Rovers.",
+            link: null, 
+            image: "/42a3ce0a7.jpg",
         },
 
         a1:
         {
-            title: "FActivity Title 2",
-            date: "September 2024 - Current",
-            body: "Description of FActivity...",
-            link: "/activity/#a0", 
-            image: "/i2.jpg",
+            title: "Barclays STEM Stars Events",
+            date: "February 2024",
+            body: "Learning cybersecurity, IT, team working and project management skills at their Radbroke Hall Technology Site.",
+            link: null, 
+            image: null,
         },
 
         a0:
         {
-            title: "FActivity Title 1",
-            date: "September 2024 - Current",
-            body: "Description of FActivity...",
-            link: "/activity/#a0", 
-            image: null,
+            title: "Achieved Bronze DofE",
+            date: null,
+            body: "Duke Of Edinburgh Award, with weekly volunteering sessions teaching IT skills at a local primary school.",
+            link: null, 
+            image: "/05a7a5r56.jpg",
         },
 
     }   
@@ -112,7 +112,7 @@ export async function Certification() {
 
         a3:
         {   
-            title: "Certification Title 4",
+            title: "Certification 4",
             date: "September 2024 - Current",
             body: "Description of Cert...",
             link: "/activity/#a0",
@@ -121,25 +121,25 @@ export async function Certification() {
 
         a2:
         {   
-            title: "Certification Title 3",
-            date: "September 2024 - Current",
-            body: "Description of Cert...",
-            link: "/activity/#a0",
-            image: "/i2.jpg",
-        },
-
-        a1:
-        {   
-            title: "Certification Title 2",
+            title: "St John Ambulance, First Aid Training",
             date: "September 2024 - Current",
             body: "Description of Cert...",
             link: "/activity/#a0",
             image: null,
         },
 
+        a1:
+        {   
+            title: "St John Ambulance, Mental Wellbeing",
+            date: "September 2024 - Current",
+            body: "Description of Cert...",
+            link: "/activity/#a0",
+            image: "4a6c8eb8c.png",
+        },
+
         a0:
         {   
-            title: "Certification Title 1",
+            title: "Certification",
             date: "September 2024 - Current",
             body: "Description of Cert...",
             link: "/activity/#a0",
@@ -156,37 +156,37 @@ export async function App() {
 
         a3:
         {
-            title: "App Title 4",
-            date: "September 2024 - Current",
+            title: "RAF Flight-Data App",
+            date: "December 2023",
             body: "Description of App...",
-            link: "/activity/#a0",
-            image: "/i2.jpg",
+            link: "https://github.com/t1ger112/RAF-Flight-Data-App",
+            image: null,
         },
 
         a2:
         {
-            title: "App Title 3",
-            date: "September 2024 - Current",
+            title: "AirSpace Invaders",
+            date: "April 2025",
             body: "Description of App...",
-            link: "/activity/#a0",
+            link: "https://github.com/t1ger112/airspace_invaders",
             image: null,
         },
 
         a1:
         {
-            title: "App Title 2",
-            date: "September 2024 - Current",
+            title: "CHEEZ Regi Website",
+            date: "December 2024 - Current",
             body: "Description of App...",
-            link: "/activity/#a0",
+            link: "https://github.com/t1ger112/cheezWebLIVE",
             image: null,
         },
 
         a0:
         {
-            title: "App Title 1",
-            date: "September 2024 - Current",
+            title: "Portfolio Site",
+            date: "October 2025",
             body: "Description of App...",
-            link: "/activity/#a0",
+            link: "https://github.com/t1ger112/portfolioSite",
             image: null,
         },
 

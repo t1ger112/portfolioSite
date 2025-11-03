@@ -98,8 +98,8 @@ html {
   text-decoration-thickness: 2px;
   text-decoration-color: var(--accent1);
   text-underline-offset: 2px;
-  transition: 0.5s; 
-}
+  transition: 0.25s; 
+} 
 .font-link:hover{ 
   text-decoration: solid underline;  
   text-decoration-thickness: 2px;
@@ -118,7 +118,7 @@ html {
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
 }
-.font-openSans{
+.font-open{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
@@ -139,7 +139,8 @@ html {
     "ELXP" 0;
 }
 .fontcol1{
-  opacity: 0.75;
+  opacity: 0.5; 
+  padding-top: 1px;
 }
 .fontcol2{
   opacity: 0.95; 

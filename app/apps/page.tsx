@@ -43,7 +43,7 @@ export default async function About() {
                   <div className="font-large font-merri textOride">
                       <p className="font-merri font-bold">{val.title}</p>
                   </div>
-                  <div className="font-open font-small fontcol1 flex pb-2"> 
+                  <div className="font-roboto font-small fontcol1 flex pb-2"> 
                       <p>{val.date}</p> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
