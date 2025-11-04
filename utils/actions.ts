@@ -174,7 +174,7 @@ export async function App() {
 
         a1:
         {
-            title: "CHEEZ Regi Website",
+            title: "CHEEZ Regiment Website",
             date: "December 2024 - Current",
             body: "Description of App...",
             link: "https://github.com/t1ger112/cheezWebLIVE",
