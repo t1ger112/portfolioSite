@@ -34,7 +34,7 @@ export default async function Home() {
 
         <div className="section-cont content-col">  
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Welcome to my Portfolio!</h1>
-          <a className="font-normal font-merri flex">This is the homepage of my portfolio website.</a>
+          <a className="font-normal font-merri flex">Hi I'm Freddie, this is the homepage of my portfolio website.</a>
         </div>
 
         <div className="divider"></div>

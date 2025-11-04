@@ -178,38 +178,6 @@ export default async function About() {
         <div className="divider"></div>
 
         <div className="section-cont-col">
-          <h1 className="font-heading font-bitcount font-accent pl-[1px] pb-2">Certifications:</h1>
-
-          <div className="section-cont-row gap-[2%] mt-1 wrap"> 
-            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
-              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
-                <div className="vert-preface"></div>
-                <div className="prefaced-contents">
-                  <div className="font-large font-merri textOride">
-                      <p className="font-merri font-bold">{val.title}</p>
-                  </div>
-                  <div className="font-roboto font-small fontcol1 flex pb-2">
-                      <p>{val.date}</p> 
-                  </div>
-                  <div className="font-normal font-merri fontcol2">
-                      <p className="font-merri">{val.body}</p>
-                  </div>
-                </div>
-                <div className={val.image ? "section-thumbnail" : "hidden"}>
-                  <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
-                </div>
-              </a>
-            ))}
-          </div> 
-
-          <div className="nav-btn more-button mt-2.5 font-accent flex"> 
-            <a className="flex font-bitcount nav-btn-a font-navbar " href="/certifications">VIEW MORE</a>
-          </div>
-        </div>
-
-        <div className="divider"></div>
-
-        <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Featured Activities:</h1>
 
           <div className="section-cont-row gap-[2%] mt-2.5 wrap"> 
@@ -236,6 +204,38 @@ export default async function About() {
 
           <div className="nav-btn more-button mt-2.5 font-accent flex"> 
             <a className="flex font-bitcount nav-btn-a font-navbar " href="/activity">VIEW MORE</a>
+          </div>
+        </div>
+
+        <div className="divider"></div>
+
+        <div className="section-cont-col">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px] pb-2">Certifications:</h1>
+
+          <div className="section-cont-row gap-[2%] mt-1 wrap"> 
+            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
+              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
+                <div className="vert-preface"></div>
+                <div className="prefaced-contents">
+                  <div className="font-large font-merri textOride">
+                      <p className="font-merri font-bold">{val.title}</p>
+                  </div>
+                  <div className="font-roboto font-small fontcol1 flex pb-2">
+                      <p>{val.date}</p> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <p className="font-merri">{val.body}</p>
+                  </div>
+                </div>
+                <div className={val.image ? "section-thumbnail" : "hidden"}>
+                  <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
+                </div>
+              </a>
+            ))}
+          </div> 
+
+          <div className="nav-btn more-button mt-2.5 font-accent flex"> 
+            <a className="flex font-bitcount nav-btn-a font-navbar " href="/certifications">VIEW MORE</a>
           </div>
         </div>
 

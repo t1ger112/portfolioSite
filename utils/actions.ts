@@ -112,39 +112,39 @@ export async function Certification() {
 
         a3:
         {   
-            title: "Certification 4",
-            date: "September 2024 - Current",
-            body: "Description of Cert...",
-            link: "/activity/#a0",
+            title: "Practical Github Actions",
+            date: "October 2025",
+            body: "LinkedIn Learning Certification.",
+            link: null,
             image: null,
         },
 
         a2:
         {   
             title: "St John Ambulance, First Aid Training",
-            date: "September 2024 - Current",
-            body: "Description of Cert...",
-            link: "/activity/#a0",
+            date: "November 2025",
+            body: "In-person instructed course by SJA.",
+            link: null,
             image: null,
         },
 
         a1:
         {   
-            title: "St John Ambulance, Mental Wellbeing",
-            date: "September 2024 - Current",
-            body: "Description of Cert...",
-            link: "/activity/#a0",
+            title: "St John Ambulance, Mental Wellbeing Training",
+            date: "November 2025",
+            body: "In-person instructed course by SJA.",
+            link: null,
             image: "4a6c8eb8c.png",
         },
 
-        a0:
-        {   
-            title: "Certification",
-            date: "September 2024 - Current",
-            body: "Description of Cert...",
-            link: "/activity/#a0",
-            image: null,
-        },
+        // a0:
+        // {   
+        //     title: "Certification",
+        //     date: "September 2024 - Current",
+        //     body: "Description of Cert...",
+        //     link: null,
+        //     image: null,
+        // },
 
     }   
     return certifications;

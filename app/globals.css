@@ -247,6 +247,8 @@ ul {
 
 .footer-container{ 
   display: flex;
+  justify-content: space-between;  
+  align-items: center;
   width: 80%; 
   max-width: 75rem; 
   height: auto;
