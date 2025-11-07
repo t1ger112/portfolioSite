@@ -22,7 +22,7 @@ html {
 @media (prefers-color-scheme: dark) { 
   :root {
     --background: #222222; 
-    --background-accent: #444444; 
+    --background-accent: #444444;  
     --background-grad1: #333333;  
     --background-grad2: #4e4e4e; 
     --text-offset: #333333;   

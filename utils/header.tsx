@@ -11,19 +11,19 @@ export default function Header() {
         <div className="nav-left-group">
           
           <div className="nav-btn">
-            <a id="navHome" className="font-navbar nav-btn-a" href="./">HOME</a> 
+            <a id="navHome" className="font-navbar nav-btn-a" href="/">HOME</a> 
           </div>
 
           <div className="nav-btn">
-            <a id="navActivity" className="font-navbar nav-btn-a" href="./activity">ACTIVITY</a>
+            <a id="navActivity" className="font-navbar nav-btn-a" href="/activity">ACTIVITY</a>
           </div>
 
           <div className="nav-btn">
-            <a id="navInfo" className="font-navbar nav-btn-a" href="./info">INFO</a>
+            <a id="navInfo" className="font-navbar nav-btn-a" href="/info">INFO</a>
           </div>
 
           <div className="nav-btn">
-            <a id="navAbout" className="font-navbar nav-btn-a" href="./apps">APPS</a>
+            <a id="navAbout" className="font-navbar nav-btn-a" href="/apps">APPS</a>
           </div>
 
         </div>

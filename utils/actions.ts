@@ -20,6 +20,7 @@ export default async function Action() {
 //     return path.startsWith('/') ? path : `/${path}`;
 // }
 
+
 export async function RecentActivity() {
     const activities = {
 
@@ -110,15 +111,6 @@ export async function FeaturedActivity() {
 export async function Certification() {
     const certifications = {
 
-        a3:
-        {   
-            title: "Practical Github Actions",
-            date: "October 2025",
-            body: "LinkedIn Learning Certification.",
-            link: null,
-            image: null,
-        },
-
         a2:
         {   
             title: "St John Ambulance, First Aid Training",
@@ -137,14 +129,14 @@ export async function Certification() {
             image: "4a6c8eb8c.png",
         },
 
-        // a0:
-        // {   
-        //     title: "Certification",
-        //     date: "September 2024 - Current",
-        //     body: "Description of Cert...",
-        //     link: null,
-        //     image: null,
-        // },
+        a0:
+        {   
+            title: "Practical Github Actions",
+            date: "October 2025",
+            body: "LinkedIn Learning Certification.",
+            link: null,
+            image: null,
+        },
 
     }   
     return certifications;
@@ -156,10 +148,10 @@ export async function App() {
 
         a3:
         {
-            title: "RAF Flight-Data App",
-            date: "December 2023",
+            title: "Portfolio Site",
+            date: "October 2025",
             body: "Description of App...",
-            link: "https://github.com/t1ger112/RAF-Flight-Data-App",
+            link: "https://github.com/t1ger112/portfolioSite",
             image: null,
         },
 
@@ -183,10 +175,10 @@ export async function App() {
 
         a0:
         {
-            title: "Portfolio Site",
-            date: "October 2025",
+           title: "RAF Flight-Data App",
+            date: "December 2023",
             body: "Description of App...",
-            link: "https://github.com/t1ger112/portfolioSite",
+            link: "https://github.com/t1ger112/RAF-Flight-Data-App",
             image: null,
         },
 
