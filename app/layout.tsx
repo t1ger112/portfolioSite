@@ -8,8 +8,6 @@ import "./globals.css";
 import Header from "@/utils/header";
 import Footer from "@/utils/footer";
 
-export const runtime = 'edge';
-
 export const metadata: Metadata = {
   description: "Freddie Robinson - Digital Portfolio",
 };
