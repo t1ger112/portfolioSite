@@ -55,7 +55,7 @@ export default async function Activity({
             </div>
 
             <div className={(entry.image) ? "entry-thumbnail" : "hidden"}>
-              <img className="entry-image" src={entry.image || undefined} alt={entry.title} loading="eager" decoding="sync" fetchPriority="high"></img>
+              <img className="entry-image" src={entry.image || undefined} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></img>
             </div>
 
           </div>
@@ -80,7 +80,7 @@ export default async function Activity({
                   </div>
                 </div>
                 <div className={(val.image) ? "section-thumbnail" : "hidden"}>
-                  <img className="section-image" src={val.image} alt={val.title} loading="eager" decoding="sync" fetchPriority="high"></img>
+                  <img className="section-image" src={val.image} alt={val.title} loading="eager" decoding="async" fetchPriority="high"></img>
                 </div>
               </a>
             ))}

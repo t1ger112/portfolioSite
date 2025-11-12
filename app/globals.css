@@ -433,6 +433,7 @@ body{
   border-radius: 0.25rem; 
   overflow: hidden;  
   margin-left: auto; 
+  animation: skellyLoader 1s linear infinite alternate;
 }
 
 .section-image{
@@ -456,7 +457,8 @@ body{
   width: 100%;  
   max-width: 49%; 
   border-radius: 0.25rem; 
-  overflow: hidden;  
+  overflow: hidden;
+  animation: skellyLoader 1s linear infinite alternate;  
 }
 
 .entry-image{
@@ -467,4 +469,20 @@ body{
   border-radius: 0.25rem; 
   transition: 0.25s;
   transition-timing-function: ease-out;
+}
+
+
+
+
+/*   Media queries    */
+
+@keyframes skellyLoader {
+
+  0% {
+    background-color: #ffffff25;
+  }
+  100% {
+    background-color: #00000025;
+  }
+  
 }

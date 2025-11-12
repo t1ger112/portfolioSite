@@ -59,7 +59,7 @@ export default async function Home() {
                   </div>
                 </div>
                 <div className={(val.image) ? "section-thumbnail" : "hidden"}>
-                  <img className="section-image" src={val.image} alt={val.title} loading="eager" decoding="sync" fetchPriority="high"></img>
+                  <img className="section-image" src={val.image} alt={val.title} loading="eager" decoding="async" fetchPriority="high"></img>
                 </div>
               </a>
             ))}
