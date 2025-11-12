@@ -2,6 +2,8 @@
 import { Certification } from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
 
+export const runtime = 'edge';
+
 export default async function About() {
 
   const certifications = await Certification();

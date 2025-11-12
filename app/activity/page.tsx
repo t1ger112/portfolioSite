@@ -2,6 +2,8 @@
 import { RecentActivity } from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
 
+export const runtime = 'edge';
+
 export default async function Activity() {
 
   const activities = await RecentActivity();
