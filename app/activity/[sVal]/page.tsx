@@ -1,5 +1,6 @@
 
 import { RecentActivity } from "@/utils/actions";
+import ThemeSlider from "@/utils/themeSlider";
 import { notFound } from 'next/navigation'
 
 export default async function Activity({
@@ -23,30 +24,20 @@ export default async function Activity({
       <div className="content-container">
 
         <div className="miniNavCont">
-
           <div className="trail-cont font-small">
             <a className="trail-text" href="/">Home</a>{'>'} 
             <a className="trail-text" href="/activity">Activity</a>{'>'} 
             <a className="trail-text" href="#">{entry.title}</a>
           </div>
-
-          <div className="themeCont">
-             <div className="themeSlideLabel">
-              <a className="font-small">Theme:</a>
-            </div>
-            <div className="themeSliderCont">
-              <a className="font-small themeSlider">Light/Dark</a>
-            </div>
-          </div>
-         
+         <ThemeSlider />
         </div>
 
-        <div className="section-cont-col"> 
+        <div className="section-cont-col mb-[1rem]"> 
           <div className="entry-content mb-2.5">
 
             <div className="section-cont-col pr-[2.5rem]">
               <h1 className="font-heading font-bitcount font-accent pl-[1px]">{entry.title}</h1>
-              <div className="font-roboto font-small fontcol1 flex pb-4"> 
+              <div className="font-roboto font-small fontcol1 flex pb-[2rem]"> 
                   <p>{entry.date}</p> 
               </div>
               <div className="font-normal font-merri fontcol2">
@@ -61,10 +52,12 @@ export default async function Activity({
           </div>
         </div>
 
-        <div className="section-cont content-col mt-10">
+        <div className="divider"></div>
+
+        <div className="section-cont content-col mt-[1rem]">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">More Activities:</h1>
 
-          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+          <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 2 && ( 
               <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>

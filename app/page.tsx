@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import { RecentActivity, App, Certification} from "@/utils/actions";
+import ThemeSlider from "@/utils/themeSlider";
 
 export default async function Home() {
 
@@ -20,15 +21,7 @@ export default async function Home() {
             <a className="trail-text" href="./">Home</a>{'>'}
             <a className="trail-text" href="./">Portfolio</a>  
           </div>
-
-          <div className="themeCont">
-             <div className="themeSlideLabel">
-              <a className="font-small">Theme:</a>
-            </div>
-            <div className="themeSliderCont">
-              <a className="font-small themeSlider">Light/Dark</a>
-            </div>
-          </div>
+          <ThemeSlider />
         </div>
 
 
@@ -43,7 +36,7 @@ export default async function Home() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Activity:</h1>
           <p className="font-normal font-merri flex">My latest activities and events I have attended:</p> 
 
-          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+          <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 4 && ( 
               <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
@@ -79,9 +72,9 @@ export default async function Home() {
           <a className="section-entry prefaceOride mt-2.5 mb-2" href="/info"> 
               <div className="vert-preface prefaceBlue"></div>
               <div className="prefaced-contents">
-                  <div className="flex font-large font-merri textOride">
+                  <div className="flex font-large font-merri textOride education-oRide">
                       <p className="font-merri font-bold">Freddie Robinson,</p> 
-                      <p className="pl-2">Computer Science Student</p>
+                      <p className="education-padding-oRide">Computer Science Student</p>
                   </div>
                   <div className="flex font-open font-small fontcol1 flex pb-2">
                       <p>September 2025 - <i>Current Edition</i></p> 
@@ -104,7 +97,7 @@ export default async function Home() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Certifications:</h1>
           <a className="font-normal font-merri flex">All the certifications and courses that I have completed:</a> 
 
-          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+          <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
               <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
@@ -137,7 +130,7 @@ export default async function Home() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Apps:</h1>
           <a className="font-normal font-merri flex">All the apps, programs and projects that I have created:</a> 
 
-          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+          <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 4 && ( 
               <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>

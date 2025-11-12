@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Roboto, Merriweather, Open_Sans, Oswald, Bitcount_Single} from 'next/font/google'
 import { ReactLenis } from "@/utils/lenis";
+import { ThemeProvider } from "next-themes";
 
 import "./globals.css";
 import Header from "@/utils/header";
@@ -39,12 +40,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${font1.className} ${font2.className} ${font3.className} ${font4.className} ${font5.className}`}>
+    <html suppressHydrationWarning lang="en" className={`${font1.className} ${font2.className} ${font3.className} ${font4.className} ${font5.className}`}>
       <ReactLenis root>
          <body className="font-roboto"> 
-          <Header />
-          {children}
-          <Footer />
+          <ThemeProvider defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
         </body>
       </ReactLenis>
     </html>

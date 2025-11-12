@@ -22,8 +22,12 @@ export default function Header() {
             <a id="navInfo" className="font-navbar nav-btn-a" href="/info">INFO</a>
           </div>
 
+          {/* <div className="nav-btn">
+            <a id="navAbout" className="font-navbar nav-btn-a width-hide-Oride" href="/apps">GALLERY</a>
+          </div> */}
+
           <div className="nav-btn">
-            <a id="navAbout" className="font-navbar nav-btn-a" href="/apps">APPS</a>
+            <a id="navAbout" className="font-navbar nav-btn-a width-hide-Oride" href="/apps">APPS</a>
           </div>
 
         </div>

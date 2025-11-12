@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import { FeaturedActivity, App, Certification} from "@/utils/actions";
+import ThemeSlider from "@/utils/themeSlider";
 
 export default async function About() {
 
@@ -17,20 +18,11 @@ export default async function About() {
 
         <div className="miniNavCont">
           <div className="trail-cont font-small">
-            <a className="trail-text" href="./">Home</a>{'>'} 
-            <a className="trail-text" href="#">Info</a>{'>'} 
+            <a className="trail-text" href="/">Home</a>{'>'} 
+            <a className="trail-text" href="/info">Info</a>{'>'} 
             <a className="trail-text" href="#">Digital CV</a>
           </div>
-
-          <div className="themeCont">
-             <div className="themeSlideLabel">
-              <a className="font-small">Theme:</a>
-            </div>
-            <div className="themeSliderCont">
-              <a className="font-small themeSlider">Light/Dark</a>
-            </div>
-          </div>
-         
+          <ThemeSlider />
         </div>
 
 
@@ -69,9 +61,9 @@ export default async function About() {
           <div className="section-entry prefaceOride mb-2"> 
               <div className="vert-preface prefaceBlue"></div>
               <div className="prefaced-contents">
-                  <div className="font-large font-merri textOride">
+                  <div className="font-large font-merri textOride education-oRide">
                       <a className="font-merri font-bold">Manchester Metropolitan University,</a> 
-                      <a className="pl-2">Manchester</a>
+                      <a className="education-padding-oRide">Manchester</a>
                   </div>
                   <div className="font-roboto font-small fontcol1 flex pb-2">
                       <a>September 2024 - <i>Current</i></a> 
@@ -87,9 +79,9 @@ export default async function About() {
           <div className="section-entry prefaceOride mb-2.5">
               <div className="vert-preface"></div>
               <div className="prefaced-contents">
-                  <div className="font-large font-merri textOride">
+                  <div className="font-large font-merri textOride education-oRide">
                       <a className="font-merri font-bold">Priestley College,</a> 
-                      <a className="pl-2">Warrington</a>
+                      <a className="education-padding-oRide">Warrington</a>
                   </div>
                   <div className="font-roboto font-small fontcol1 flex pb-2">
                       <a>September 2022 - July 2024</a> 
@@ -118,9 +110,9 @@ export default async function About() {
           <div className="section-entry prefaceOride mb-2.5"> 
               <div className="vert-preface"></div>
               <div className="prefaced-contents">
-                  <div className="font-large font-merri textOride">
+                  <div className="font-large font-merri textOride education-oRide">
                       <a className="font-merri font-bold">Birchwood Community High School,</a> 
-                      <a className="pl-2">Warrington</a>
+                      <a className="education-padding-oRide">Warrington</a>
                   </div>
                   <div className="font-roboto font-small fontcol1 flex pb-2">
                       <a>September 2017 - July 2022</a> 
@@ -152,7 +144,7 @@ export default async function About() {
           <a className="font-normal content-width-limit font-merri mb-2.5">
             The ability to either work as a part of, or lead teams, through utilising my skills and extensive experience in leadership roles.
           </a>
-          <div className="section-cont-row gap-10 mt-2.5">
+          <div className="section-cont-row gap-10 mt-2.5 list-Oride">
             <a className="font-normal content-width-limit font-merri">
               <b className="font-accent font-bitcount font-large">Proficient in:</b>
               <ul className="ml-3 mt-1">
@@ -180,7 +172,7 @@ export default async function About() {
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Featured Activities:</h1>
 
-          <div className="section-cont-row gap-[2%] mt-2.5 wrap"> 
+          <div className="section-cont-row gap-Oride mt-2.5 wrap"> 
             {featuredActivities && (Array.isArray(featuredActivities) ? featuredActivities : Object.values(featuredActivities)).map((val: any, index: number) => index < 4 && ( 
               <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
@@ -212,7 +204,7 @@ export default async function About() {
         <div className="section-cont-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px] pb-2">Certifications:</h1>
 
-          <div className="section-cont-row gap-[2%] mt-1 wrap"> 
+          <div className="section-cont-row gap-Oride mt-1 wrap"> 
             {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
               <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
@@ -249,7 +241,7 @@ export default async function About() {
                <p>Most notably, winner of Inversity challenge #3, with Faculty AI and the Royal Air Force, for my “Flight-Data App” designed for RAF aircrew. View my most <a className="font-link" href="/apps">recent apps and projects</a> here:</p>
             </div>
 
-            <div className="section-cont-row gap-[2%] mt-4 mb-0 wrap"> 
+            <div className="section-cont-row gap-Oride mt-4 mb-0 wrap"> 
               {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 2 && ( 
                 <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                   <div className="vert-preface"></div>

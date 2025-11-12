@@ -6,35 +6,32 @@ html {
 }
 
 :root {
-  --background: #ffffff;
-  --background-accent: #eeeeee;
-  --background-grad1: #dddddd;   
-  --background-grad2: #dddddd; 
-  --text-offset: #f1f1f1;  
-  --content: #171717; 
-  --content-nav: #666666;
-  --accent1: #64b5fd; 
+  --background: #222222; 
+  --background-accent: #444444;  
+  --background-grad1: #333333;  
+  --background-grad2: #4e4e4e;  
+  --text-offset: #333333;   
+  --content: #ffffff;
+  --content-nav: #d1d1d1;   
+  --accent1: #64b5fd;  
 
-  --selection-text-col: #c6e5ff; 
-  --selection-back-col: #707070b4;
+  --selection-text-col: #cde9ff; 
+  --selection-back-col: #707070b4; 
 }
 
-@media (prefers-color-scheme: dark) { 
-  :root {
-    --background: #222222; 
-    --background-accent: #444444;  
-    --background-grad1: #333333;  
-    --background-grad2: #4e4e4e; 
-    --text-offset: #333333;   
-    --content: #ffffff;
-    --content-nav: #d1d1d1;   
-    --accent1: #64b5fd;  
-    /* --accent1: #ff6666;     */
+[data-theme='light'] {
+  --background: #f5f5f5;
+  --background-accent: #e4e4e4;
+  --background-grad1: #e4e4e4;   
+  --background-grad2: #d4d4d4;   
+  --text-offset: #f5f5f5;  
+  --content: #333333; 
+  --content-nav: #444444;
+  --accent1: #54afff;  
 
-    --selection-text-col: #cde9ff; 
-    --selection-back-col: #707070b4;
-  }
-}  
+  --selection-text-col: #d3edff; 
+  --selection-back-col: #636363a8;
+}
 
 ::selection{
   color: var(--selection-text-col);
@@ -264,6 +261,10 @@ ul {
 .footer-content{
   padding-left: 0.75rem;
 }
+.gap-Oride{
+  gap: 2%;
+}
+
 
 
 
@@ -273,9 +274,10 @@ ul {
 body{
   display: flex;
   flex-direction: column; 
+  justify-content: space-between;
   width: 100%;
-  height: 100%;
-  margin: 0px;
+  height: 100vh; 
+  margin: 0px; 
   padding: 0px;
 
   background: var(--background);
@@ -310,6 +312,7 @@ body{
   margin-bottom: 1.5rem; 
   align-items: center; 
   color: var(--content-nav);
+  height: 25px;
 } 
 
 .trail-cont{
@@ -326,20 +329,44 @@ body{
   color: var(--accent1); 
 } 
 
-.themeCont{
+.themeCont{ 
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 0.25rem;
+  transition: 0.25s;
 }
+.themeCont:hover{ 
+  cursor: pointer;
+  color: var(--accent1);
+}
+
+.themeSlideLabel{
+  display: flex;
+  flex-direction: row;  
+}
+.themeSliderCont{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  position: relative;
+}
+.theme-btn-load{
+  animation: themeLoader 0.75s linear infinite;
+}
+
+
 
 .section-cont-row{
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
+  overflow: hidden;
 }
 
 .section-cont-col{
   display: flex;
   flex-direction: column;
+  overflow: hidden; 
 } 
 
 .section-entry{
@@ -450,7 +477,7 @@ body{
   flex-direction: row;
 }
 
-.entry-thumbnail{  
+.entry-thumbnail{   
   grid-column: 2;
   display: flex;
   height: auto; 
@@ -466,15 +493,70 @@ body{
   display: flex;
   width: auto;
   height: 100%;
-  border-radius: 0.25rem; 
+  border-radius: 0.5rem; 
   transition: 0.25s;
   transition-timing-function: ease-out;
 }
 
+.education-oRide{
+  display: flex;
+  flex-direction: row;
+}
 
+.education-padding-oRide{
+  padding-left: 0.5rem;
+}
 
 
 /*   Media queries    */
+
+
+@media (max-width: 60rem) {
+  .app-container {
+    width: 90%; 
+    margin-top: 4rem;     
+  } 
+
+  .content-width-limit{ 
+    max-width: 100%;   
+  }
+
+  .navbar-container{
+    width: 90%
+  }
+
+  .footer-container{
+    width: 90%
+  }
+
+  .section-entry-half{
+    width: 100%; 
+    margin-bottom: 1.5rem; 
+  }  
+
+  .education-oRide{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education-padding-oRide{
+    padding-left: 0rem;
+  }
+
+  .gap-Oride{
+    gap: 0%;
+  }
+
+  .list-Oride{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+  }
+
+  .width-hide-Oride{
+    display: none;
+  }
+}
 
 @keyframes skellyLoader {
 
@@ -483,6 +565,17 @@ body{
   }
   100% {
     background-color: #00000025;
+  }
+  
+}
+
+@keyframes themeLoader {
+
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
   
 }

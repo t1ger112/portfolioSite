@@ -1,5 +1,6 @@
 
 import { RecentActivity } from "@/utils/actions";
+import ThemeSlider from "@/utils/themeSlider";
 
 export default async function Activity() {
 
@@ -14,28 +15,18 @@ export default async function Activity() {
       <div className="content-container">
 
         <div className="miniNavCont">
-
           <div className="trail-cont font-small">
             <a className="trail-text" href="./">Home</a>{'>'} 
             <a className="trail-text" href="#">Activity</a>
           </div>
-
-          <div className="themeCont">
-             <div className="themeSlideLabel">
-              <a className="font-small">Theme:</a>
-            </div>
-            <div className="themeSliderCont">
-              <a className="font-small themeSlider">Light/Dark</a>
-            </div>
-          </div>
-         
+          <ThemeSlider />
         </div>
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Activity!</h1>
           <p className="font-normal font-merri flex">My latest activities and events of which I have completed or attended:</p> 
 
-          <div className="section-cont-row gap-[2%] mt-5 wrap"> 
+          <div className="section-cont-row gap-Oride mt-7.5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 10 && ( 
               <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>

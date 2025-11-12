@@ -72,7 +72,7 @@ export async function FeaturedActivity() {
             title: "GCHQ Manchester, Cyber Analyst Work Experience Event",
             date: "April 2023",
             body: "Learning team working, Computing, Analysis and Cyber-Security skills from GCHQ Manchester's staff.",
-            link: null, 
+            link: "/activity/a3", 
             image: null,
         },
 
@@ -81,7 +81,7 @@ export async function FeaturedActivity() {
             title: "STEM Residential",
             date: "June 2023",
             body: "Sunderland University Computer Science and Robotics STEM Residential creating and programming Mini-Mars Rovers.",
-            link: null, 
+            link: "/activity/a2", 
             image: "/42a3ce0a7.jpg",
         },
 
@@ -90,7 +90,7 @@ export async function FeaturedActivity() {
             title: "Barclays STEM Stars Events",
             date: "February 2024",
             body: "Learning cybersecurity, IT, team working and project management skills at their Radbroke Hall Technology Site.",
-            link: null, 
+            link: "/activity/a1", 
             image: null,
         },
 
@@ -99,7 +99,7 @@ export async function FeaturedActivity() {
             title: "Achieved Bronze DofE",
             date: null,
             body: "Duke Of Edinburgh Award, with weekly volunteering sessions teaching IT skills at a local primary school.",
-            link: null, 
+            link: "/activity/a0", 
             image: "/05a7a5r56.jpg",
         },
 
