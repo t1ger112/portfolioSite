@@ -148,7 +148,7 @@ export async function App() {
 
         a3:
         {
-            title: "Portfolio Site",
+            title: "Portfolio Website",
             date: "October 2025",
             body: "Description of App...",
             link: "https://github.com/t1ger112/portfolioSite",
