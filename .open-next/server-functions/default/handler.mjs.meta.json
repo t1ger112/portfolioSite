@@ -3526,48 +3526,13 @@
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/page_client-reference-manifest.js": {
-      "bytes": 8955,
-      "imports": [],
-      "format": "cjs"
-    },
     ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js": {
       "bytes": 5224,
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js": {
-      "bytes": 8136,
-      "imports": [],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/info/page_client-reference-manifest.js": {
-      "bytes": 8970,
-      "imports": [],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/certifications/page_client-reference-manifest.js": {
-      "bytes": 9000,
-      "imports": [],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/apps/page_client-reference-manifest.js": {
-      "bytes": 8970,
-      "imports": [],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/activity/page_client-reference-manifest.js": {
-      "bytes": 8982,
-      "imports": [],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/activity/[sVal]/page_client-reference-manifest.js": {
-      "bytes": 9857,
-      "imports": [],
-      "format": "cjs"
-    },
     ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-      "bytes": 34332,
+      "bytes": 43362,
       "imports": [
         {
           "path": "path",
@@ -3590,44 +3555,9 @@
           "original": "../shared/lib/deep-freeze"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\page_client-reference-manifest.js"
-        },
-        {
           "path": ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js",
           "kind": "require-call",
           "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\_global-error\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\_not-found\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/info/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\info\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/certifications/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\certifications\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/apps/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\apps\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/activity/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\activity\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/activity/[sVal]/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\activity\\[sVal]\\page_client-reference-manifest.js"
         }
       ],
       "format": "cjs"
@@ -3685,62 +3615,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/_global-error/page.js": {
-      "bytes": 616,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/.next/server/chunks/ssr/[turbopack]_runtime.js",
-          "kind": "require-call",
-          "original": "../../chunks/ssr/[turbopack]_runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/_not-found/page.js": {
-      "bytes": 931,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/.next/server/chunks/ssr/[turbopack]_runtime.js",
-          "kind": "require-call",
-          "original": "../../chunks/ssr/[turbopack]_runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/activity/[sVal]/page.js": {
-      "bytes": 1152,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/.next/server/chunks/ssr/[turbopack]_runtime.js",
-          "kind": "require-call",
-          "original": "../../../chunks/ssr/[turbopack]_runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/activity/page.js": {
-      "bytes": 1031,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/.next/server/chunks/ssr/[turbopack]_runtime.js",
-          "kind": "require-call",
-          "original": "../../chunks/ssr/[turbopack]_runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/apps/page.js": {
-      "bytes": 1027,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/.next/server/chunks/ssr/[turbopack]_runtime.js",
-          "kind": "require-call",
-          "original": "../../chunks/ssr/[turbopack]_runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/certifications/page.js": {
-      "bytes": 1037,
+      "bytes": 554,
       "imports": [
         {
           "path": ".open-next/server-functions/default/.next/server/chunks/ssr/[turbopack]_runtime.js",
@@ -3797,30 +3672,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/info/page.js": {
-      "bytes": 1025,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/.next/server/chunks/ssr/[turbopack]_runtime.js",
-          "kind": "require-call",
-          "original": "../../chunks/ssr/[turbopack]_runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/page.js": {
-      "bytes": 1019,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/.next/server/chunks/ssr/[turbopack]_runtime.js",
-          "kind": "require-call",
-          "original": "../chunks/ssr/[turbopack]_runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
     ".open-next/server-functions/default/node_modules/next/dist/server/require.js": {
-      "bytes": 6076,
+      "bytes": 4610,
       "imports": [
         {
           "path": "path",
@@ -3873,44 +3726,9 @@
           "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\_global-error\\page.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/_not-found/page.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\_not-found\\page.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/activity/[sVal]/page.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\activity\\[sVal]\\page.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/activity/page.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\activity\\page.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/apps/page.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\apps\\page.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/certifications/page.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\certifications\\page.js"
-        },
-        {
           "path": ".open-next/server-functions/default/.next/server/app/favicon.ico/route.js",
           "kind": "require-call",
           "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\favicon.ico\\route.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/info/page.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\info\\page.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/page.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\page.js"
         }
       ],
       "format": "cjs"
@@ -4588,7 +4406,7 @@
       "format": "cjs"
     },
     "node_modules/next/dist/server/load-manifest.external.js": {
-      "bytes": 34332,
+      "bytes": 43362,
       "imports": [
         {
           "path": "path",
@@ -4611,44 +4429,9 @@
           "original": "../shared/lib/deep-freeze"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\_not-found\\page_client-reference-manifest.js"
-        },
-        {
           "path": ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js",
           "kind": "require-call",
           "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\_global-error\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/info/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\info\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/certifications/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\certifications\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/apps/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\apps\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/activity/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\activity\\page_client-reference-manifest.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/activity/[sVal]/page_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "D:\\stuff\\portfolioSite\\.open-next\\server-functions\\default\\.next\\server\\app\\activity\\[sVal]\\page_client-reference-manifest.js"
         }
       ],
       "format": "cjs"
@@ -6863,7 +6646,7 @@
       "format": "esm"
     },
     ".open-next/server-functions/default/index.mjs": {
-      "bytes": 94650,
+      "bytes": 108069,
       "imports": [
         {
           "path": "node:process",
@@ -8228,32 +8011,11 @@
         ".open-next/server-functions/default/node_modules/next/dist/shared/lib/deep-freeze.js": {
           "bytesInOutput": 589
         },
-        ".open-next/server-functions/default/.next/server/app/page_client-reference-manifest.js": {
-          "bytesInOutput": 8397
-        },
         ".open-next/server-functions/default/.next/server/app/_global-error/page_client-reference-manifest.js": {
-          "bytesInOutput": 4990
-        },
-        ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js": {
-          "bytesInOutput": 7645
-        },
-        ".open-next/server-functions/default/.next/server/app/info/page_client-reference-manifest.js": {
-          "bytesInOutput": 8418
-        },
-        ".open-next/server-functions/default/.next/server/app/certifications/page_client-reference-manifest.js": {
-          "bytesInOutput": 8458
-        },
-        ".open-next/server-functions/default/.next/server/app/apps/page_client-reference-manifest.js": {
-          "bytesInOutput": 8418
-        },
-        ".open-next/server-functions/default/.next/server/app/activity/page_client-reference-manifest.js": {
-          "bytesInOutput": 8434
-        },
-        ".open-next/server-functions/default/.next/server/app/activity/[sVal]/page_client-reference-manifest.js": {
-          "bytesInOutput": 9261
+          "bytesInOutput": 4989
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-          "bytesInOutput": 23125
+          "bytesInOutput": 31644
         },
         "node_modules/next/dist/compiled/@vercel/og/index.edge.js": {
           "bytesInOutput": 534577
@@ -8262,22 +8024,7 @@
           "bytesInOutput": 15149
         },
         ".open-next/server-functions/default/.next/server/app/_global-error/page.js": {
-          "bytesInOutput": 743
-        },
-        ".open-next/server-functions/default/.next/server/app/_not-found/page.js": {
-          "bytesInOutput": 1060
-        },
-        ".open-next/server-functions/default/.next/server/app/activity/[sVal]/page.js": {
-          "bytesInOutput": 1287
-        },
-        ".open-next/server-functions/default/.next/server/app/activity/page.js": {
-          "bytesInOutput": 1160
-        },
-        ".open-next/server-functions/default/.next/server/app/apps/page.js": {
-          "bytesInOutput": 1152
-        },
-        ".open-next/server-functions/default/.next/server/app/certifications/page.js": {
-          "bytesInOutput": 1172
+          "bytesInOutput": 680
         },
         ".open-next/server-functions/default/.next/server/chunks/[turbopack]_runtime.js": {
           "bytesInOutput": 15136
@@ -8285,14 +8032,8 @@
         ".open-next/server-functions/default/.next/server/app/favicon.ico/route.js": {
           "bytesInOutput": 459
         },
-        ".open-next/server-functions/default/.next/server/app/info/page.js": {
-          "bytesInOutput": 1150
-        },
-        ".open-next/server-functions/default/.next/server/app/page.js": {
-          "bytesInOutput": 1142
-        },
         ".open-next/server-functions/default/node_modules/next/dist/server/require.js": {
-          "bytesInOutput": 3598
+          "bytesInOutput": 2977
         },
         ".open-next/server-functions/default/node_modules/next/dist/lib/interop-default.js": {
           "bytesInOutput": 366
@@ -8430,7 +8171,7 @@
           "bytesInOutput": 554
         },
         "node_modules/next/dist/server/load-manifest.external.js": {
-          "bytesInOutput": 23091
+          "bytesInOutput": 31610
         },
         "node_modules/next/dist/lib/picocolors.js": {
           "bytesInOutput": 2866
@@ -8763,10 +8504,10 @@
           "bytesInOutput": 4979
         },
         ".open-next/server-functions/default/index.mjs": {
-          "bytesInOutput": 65096
+          "bytesInOutput": 77917
         }
       },
-      "bytes": 3426331
+      "bytes": 3388351
     }
   }
 }

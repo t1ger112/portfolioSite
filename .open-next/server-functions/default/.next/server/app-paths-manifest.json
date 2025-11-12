@@ -1,11 +1,11 @@
 {
   "/_global-error/page": "app/_global-error/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/activity/[sVal]/page": "app/activity/[sVal]/page.js",
-  "/activity/page": "app/activity/page.js",
-  "/apps/page": "app/apps/page.js",
-  "/certifications/page": "app/certifications/page.js",
+  "/_not-found/page": "app-edge-has-no-entrypoint",
+  "/activity/[sVal]/page": "app-edge-has-no-entrypoint",
+  "/activity/page": "app-edge-has-no-entrypoint",
+  "/apps/page": "app-edge-has-no-entrypoint",
+  "/certifications/page": "app-edge-has-no-entrypoint",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/info/page": "app/info/page.js",
-  "/page": "app/page.js"
+  "/info/page": "app-edge-has-no-entrypoint",
+  "/page": "app-edge-has-no-entrypoint"
 }
