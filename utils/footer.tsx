@@ -17,15 +17,15 @@ export default function Footer() {
         <div className="nav-right-group font-bitcount">
 
           <div className="nav-btn">
-            <a id="navLinkedin" className="font-navbar nav-btn-a" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">IN</a>
+            <a id="navLinkedin" className="font-navbar nav-btn-a" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">CONTACT</a>
+          </div>
+
+          <div className="nav-btn"> 
+            <a id="navLinkedin" className="font-navbar nav-btn-a hidden" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">GH</a>
           </div>
 
           <div className="nav-btn">
-            <a id="navLinkedin" className="font-navbar nav-btn-a" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">GH</a>
-          </div>
-
-          <div className="nav-btn">
-            <a id="navLinkedin" className="font-navbar nav-btn-a" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">YT</a>
+            <a id="navLinkedin" className="font-navbar nav-btn-a hidden" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">YT</a>
           </div>
 
         </div>

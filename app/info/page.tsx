@@ -63,7 +63,7 @@ export default async function About() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Education:</h1>
 
           <a className="font-normal font-merri flex pb-5">                            
-              Currently studying degree-level Computer Science at Manchester Metropolitan University, click for more details:
+              Currently studying degree-level Computer Science at Manchester Metropolitan University:
           </a>
 
           <div className="section-entry prefaceOride mb-2"> 
@@ -246,7 +246,7 @@ export default async function About() {
 
           <div className="font-normal font-merri content-width-limit flex flex-col gap-2">
             <div>
-               <a>Most notably, winner of Inversity challenge #3, with Faculty AI and the Royal Air Force, for my “Flight-Data App” designed for RAF aircrew. View my most recent apps and projects here:</a>
+               <p>Most notably, winner of Inversity challenge #3, with Faculty AI and the Royal Air Force, for my “Flight-Data App” designed for RAF aircrew. View my most <a className="font-link" href="/apps">recent apps and projects</a> here:</p>
             </div>
 
             <div className="section-cont-row gap-[2%] mt-4 mb-0 wrap"> 
@@ -271,7 +271,7 @@ export default async function About() {
               ))}
             </div>
             <div>
-              <a>Examples and information on all my activities, achievements, and project code repositories are available on the following resources:</a>
+              <p>Examples and information on all my activities, achievements, and project code repositories are available on the following resources:</p>
             </div>
             <div className="font-normal pt-1">
               <div className="no-wrap section-cont-row">

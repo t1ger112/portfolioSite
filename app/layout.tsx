@@ -1,6 +1,7 @@
 
 import type { Metadata } from "next";
 import { Roboto, Merriweather, Open_Sans, Oswald, Bitcount_Single} from 'next/font/google'
+import { ReactLenis } from "@/utils/lenis";
 
 import "./globals.css";
 import Header from "@/utils/header";
@@ -39,11 +40,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${font1.className} ${font2.className} ${font3.className} ${font4.className} ${font5.className}`}>
-      <body className="font-roboto"> 
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <ReactLenis root>
+         <body className="font-roboto"> 
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </ReactLenis>
     </html>
   );
 }

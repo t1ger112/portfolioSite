@@ -168,12 +168,15 @@ html {
 }
 li {
   display: list-item; 
-  unicode-bidi: isolate;
+  unicode-bidi: isolate; 
   /* color: var(--accent1); */ 
 }
 ul {
   list-style: inside;
   /* color: var(--accent1); */
+}
+.hidden{
+  display: none;
 }
 
 
@@ -441,4 +444,27 @@ body{
   transition-timing-function: ease-out;
 }
 
+.entry-content{ 
+  display: flex;
+  flex-direction: row;
+}
 
+.entry-thumbnail{  
+  grid-column: 2;
+  display: flex;
+  height: auto; 
+  width: 100%;  
+  max-width: 49%; 
+  border-radius: 0.25rem; 
+  overflow: hidden;  
+}
+
+.entry-image{
+  object-fit: cover;
+  display: flex;
+  width: auto;
+  height: 100%;
+  border-radius: 0.25rem; 
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+}

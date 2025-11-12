@@ -33,7 +33,7 @@ export default async function About() {
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Certifications:</h1>
-          <p className="font-normal font-merri flex">My latest: </p> 
+          <p className="font-normal font-merri flex">My latest official training certifications and awards: </p> 
 
           <div className="section-cont-row gap-[2%] mt-5 wrap"> 
             {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 10 && ( 
