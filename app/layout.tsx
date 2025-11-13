@@ -46,9 +46,9 @@ export default function RootLayout({
          <body className="font-roboto"> 
           <ThemeProvider defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
             <Header />
-            {children}
+              {children}
+              <SpeedInsights/>
             <Footer />
-            <SpeedInsights/>
           </ThemeProvider>
         </body>
       </ReactLenis>
