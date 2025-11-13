@@ -39,11 +39,11 @@ export default async function Activity({
 
             <div className="section-cont-col pr-[2.5rem]">
               <h1 className="font-heading font-bitcount font-accent pl-[1px]">{entry.title}</h1>
-              <div className="font-roboto font-small fontcol1 flex pb-[2rem]"> 
-                  <p>{entry.date}</p> 
-              </div>
               <div className="font-normal font-merri fontcol2">
-                  <p className="font-merri">{entry.body}</p>
+                <p className="font-merri">{entry.body}</p>
+              </div>
+              <div className="font-roboto font-small fontcol1 flex mt-[0.75rem]"> 
+                <p>{entry.date}</p> 
               </div>
             </div>
 

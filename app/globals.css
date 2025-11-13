@@ -235,6 +235,23 @@ ul {
   padding: 0.2rem 0.6rem 0rem 0.75rem;  
 }
 
+.alt-nav-btn{
+  display: flex;
+  position: relative;
+  width: fit-content; 
+  height: auto;
+  border-radius: 0.99rem;  
+  transition: 0.2s;  
+}
+.alt-nav-btn:hover{
+  background-color: var(--background-grad2); 
+  border-radius: 0.5rem;  
+  cursor: pointer;
+}
+.githublogoOride{ 
+  scale: 0.23; 
+}
+
 .footer-width-container{ 
   display: flex;
   width: 100%;
@@ -315,15 +332,18 @@ body{
   height: 25px;
 } 
 
-.trail-cont{
+.trail-cont{ 
   display: flex;
   flex-direction: row;
   gap: 0.325rem; 
   cursor: default;  
+  overflow: hidden; 
+  margin-right: 1rem;
 }
 
 .trail-text{
   transition: 0.25s; 
+  white-space: nowrap;
 }
 .trail-text:hover{
   color: var(--accent1); 
@@ -356,6 +376,11 @@ body{
 }
 
 
+.section-cont{ 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+}
 
 .section-cont-row{
   display: flex;
@@ -389,9 +414,10 @@ body{
   transition: 0.275s;  
   transition-timing-function: ease-in-out;
 }
-.prefaced-contents{
+.prefaced-contents{ 
   display: flex;
   flex-direction: column;
+  padding-right: 0.5rem;
 }
 .prefaceBlue{
   background-color: var(--accent1); 
@@ -533,6 +559,15 @@ body{
     width: 100%; 
     margin-bottom: 1.5rem; 
   }  
+
+  .entry-content{ 
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .entry-thumbnail{
+    max-width: 100%; 
+  }
 
   .education-oRide{
     display: flex;
