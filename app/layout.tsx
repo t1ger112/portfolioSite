@@ -49,8 +49,8 @@ export default function RootLayout({
           <ThemeProvider defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
             <Header />
               {children}
-              <Analytics/>
-              <SpeedInsights/>
+              <SpeedInsights />
+              <Analytics />
             <Footer />
           </ThemeProvider>
         </body>
