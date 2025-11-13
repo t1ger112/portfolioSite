@@ -2,6 +2,8 @@
 import { FeaturedActivity, App, Certification} from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
 
+export const runtime = 'edge';
+
 export default async function About() {
 
     const featuredActivities = await FeaturedActivity();
