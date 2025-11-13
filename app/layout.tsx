@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import { Roboto, Merriweather, Open_Sans, Oswald, Bitcount_Single} from 'next/font/google'
 import { ReactLenis } from "@/utils/lenis";
 import { ThemeProvider } from "next-themes";
+
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 import "./globals.css";
 import Header from "@/utils/header";
@@ -47,6 +49,7 @@ export default function RootLayout({
           <ThemeProvider defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
             <Header />
               {children}
+              <Analytics/>
               <SpeedInsights/>
             <Footer />
           </ThemeProvider>
