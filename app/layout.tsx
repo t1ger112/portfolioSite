@@ -1,6 +1,6 @@
 
 import type { Metadata } from "next";
-import { Roboto, Merriweather, Open_Sans, Oswald, Bitcount_Single} from 'next/font/google'
+import { Roboto, Merriweather, Bitcount_Single} from 'next/font/google'
 import { ReactLenis } from "@/utils/lenis";
 import { ThemeProvider } from "next-themes";
 
@@ -18,20 +18,14 @@ export const metadata: Metadata = {
 const font1 = Roboto({
   subsets: ['latin'],
   display: 'swap',
+  preload: true,
 })
 const font2 = Merriweather({ 
   subsets: ['latin'],
   display: 'swap',
+  preload: true,
 })
-const font3 = Open_Sans({ 
-  subsets: ['latin'],
-  display: 'swap',
-})
-const font4 = Oswald({ 
-  subsets: ['latin'],
-  display: 'swap',
-})
-const font5 = Bitcount_Single({   
+const font3 = Bitcount_Single({   
   subsets: ['latin'],
   display: 'swap',
   fallback: ['monospace'],
@@ -43,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning lang="en" className={`${font1.className} ${font2.className} ${font3.className} ${font4.className} ${font5.className}`}>
+    <html suppressHydrationWarning lang="en" className={`${font1.className} ${font2.className} ${font3.className}`}>
       <ReactLenis root>
          <body className="font-roboto"> 
           <ThemeProvider defaultTheme="dark" enableSystem={false} disableTransitionOnChange>

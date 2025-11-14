@@ -3,8 +3,6 @@ import { RecentActivity } from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
 import { notFound } from 'next/navigation'
 
-export const runtime = 'edge';
-
 export default async function Activity({
   params
 }: {

@@ -2,8 +2,6 @@
 import { App } from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
 
-export const runtime = 'edge';
-
 export default async function About() {
 
   const apps = await App();
