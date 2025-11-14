@@ -26,7 +26,7 @@ export default async function Activity() {
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Activity!</h1>
-          <p className="font-normal font-merri flex">My latest activities and events of which I have completed or attended:</p> 
+          <p className="font-normal font-merri flex">My latest activities and events that I have completed or attended:</p> 
 
           <div className="section-cont-row gap-Oride mt-7.5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 10 && ( 

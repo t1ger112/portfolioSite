@@ -265,7 +265,7 @@ export default async function About() {
               ))}
             </div>
             <div>
-              <p>Examples and information on all my activities, achievements, and project code repositories are available on the following resources:</p>
+              <p>Examples and information on all my activities, achievements, and project code repositories are available via the following resources:</p>
             </div>
             <div className="font-normal pt-1">
               <div className="no-wrap section-cont-row">

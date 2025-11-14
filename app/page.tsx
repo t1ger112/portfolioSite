@@ -29,14 +29,14 @@ export default async function Home() {
 
         <div className="section-cont content-col">  
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Welcome to my Portfolio!</h1>
-          <a className="font-normal font-merri flex content-width-limit">I'm Freddie, currently studying degree-level Computer Science at Manchester Metropolitan Univerity, and this is the homepage of my portfolio website. My many hobbies are mostly related to technology, media, and military aviation.</a>
+          <a className="font-normal font-merri flex content-width-limit">Hi I'm Freddie, currently studying undergraduate Computer Science at Manchester Metropolitan Univerity. This is my portfolio site for showcasing all my activities, certifications,  projects, apps, digital CV, and more. My many hobbies are mostly related to technology, media, and aviation.</a>
         </div>
 
         <div className="divider"></div>
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Activity:</h1>
-          <p className="font-normal font-merri flex">My latest activities and events I have attended:</p> 
+          <p className="font-normal font-merri flex">My latest activities and events that I have completed or attended:</p> 
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 4 && ( 
@@ -69,7 +69,7 @@ export default async function Home() {
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Digital CV:</h1>
-          <a className="font-normal font-merri flex">View my latest Digital CV here:</a> 
+          <a className="font-normal font-merri flex">Click here to view the latest copy of my digital CV:</a> 
 
           <a className="section-entry prefaceOride mt-2.5 mb-2" href="/info"> 
               <div className="vert-preface prefaceBlue"></div>
@@ -97,7 +97,7 @@ export default async function Home() {
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Certifications:</h1>
-          <a className="font-normal font-merri flex">All the certifications and courses that I have completed:</a> 
+          <a className="font-normal font-merri flex">My latest official certifications from courses I have completed:</a> 
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
@@ -130,7 +130,7 @@ export default async function Home() {
         
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Apps:</h1>
-          <a className="font-normal font-merri flex">All the apps, programs and projects that I have created:</a> 
+          <a className="font-normal font-merri flex">My most recent apps, programs and projects:</a> 
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 4 && ( 
