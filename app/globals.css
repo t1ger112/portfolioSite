@@ -162,6 +162,7 @@ html {
   height: auto;
   justify-self: center;
   align-self: center; 
+  z-index: 5;
 }
 li {
   display: list-item; 
@@ -218,8 +219,7 @@ ul {
 }
 
 .nav-btn{
-  display: flex;
-  position: relative;
+  display: flex; 
   width: fit-content; 
   height: auto;
   border-radius: 0.99rem;  
@@ -296,7 +296,7 @@ ul {
   padding-left: 0.75rem;
 }
 .gap-Oride{
-  gap: 2%;
+  column-gap: 2%;
 }
 
 
@@ -401,8 +401,8 @@ body{
 
 .section-cont-row{
   display: flex;
-  flex-direction: row; 
-  overflow: hidden;
+  flex-direction: row;  
+  overflow: hidden; 
 }
 
 .section-cont-col{
@@ -490,7 +490,7 @@ body{
   padding: 0.5rem 0.5rem 0.5rem 0.55rem;     
   border-radius: 0.5rem;  
   width: 49%;
-  margin-bottom: 1.95%; 
+  margin-bottom: 2.5%;  
   overflow: hidden;
 }
 
@@ -527,7 +527,7 @@ body{
   height: auto; 
   width: 100%;  
   max-width: 49%; 
-  border-radius: 0.25rem; 
+  border-radius: 0.5rem; 
   overflow: hidden;
   animation: skellyLoader 1s linear infinite alternate;  
 }

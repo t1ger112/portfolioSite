@@ -9,6 +9,28 @@ export default async function Action() {
 
 export async function RecentActivity() {
     const activities = {
+        
+        weee_charity:
+        {
+            title: "Weee Charity Volunteering",
+            date: "November 2025 | Weee Charity Warrington",
+            body: "Volunteering weekly at Weee Charity in Warrington, a tech charity who specialize in the formal disposal, recycling and reselling of used or waste electronics. I am currently assigned to the recycling, disposal and certifying formal data-removal on client laptops.",
+            link: "/activity/weee_charity", 
+            site: null,
+            image: "/15e184ace7.jpg",
+            image2: "/43e7ca9d8f.jpg",
+        },
+
+        didsbury_park_leaf_cleanup:
+        {
+            title: "Didsbury Park Leaf-Cleanup",
+            date: "November 2025 | Greater Manchester",
+            body: "Volunteering on a leaf cleanup at the local park in Didsbury, Manchester. Specifically aimed at removing the large quantity of leaves covering the ground and footpaths around the park.",
+            link: "/activity/didsbury_park_leaf_cleanup", 
+            site: null,
+            image: "/328e181c84.jpg",
+            image2: null,
+        },
 
         gchq_mancester_cyber_analyst_event:
         {
@@ -16,7 +38,9 @@ export async function RecentActivity() {
             date: "April 2023 | GCHQ Manchester",
             body: "Learning team working, Computing, Analysis and Cyber-Security skills at GCHQ's Manchester site.",
             link: "/activity/gchq_mancester_cyber_analyst_event", 
+            site: null,
             image: null,
+            image2: null,
         },
 
         stem_residential:
@@ -25,7 +49,9 @@ export async function RecentActivity() {
             date: "June 2023 | Sunderland University",
             body: "Sunderland University Computer Science and Robotics STEM Residential creating and programming Mini-Mars Rovers.",
             link: "/activity/stem_residential", 
+            site: null,
             image: "/42a3ce0a7.jpg",
+            image2: null,
         },
 
         barclays_stem_stars_events:
@@ -33,8 +59,10 @@ export async function RecentActivity() {
             title: "Barclays STEM Stars Events",
             date: "February 2024 | Barclays Radbroke Hall",
             body: "Learning cybersecurity, IT, team working and project management skills at their Radbroke Hall Technology Site.",
-            link: "/activity/barclays_stem_stars_events", 
+            link: "/activity/barclays_stem_stars_events",
+            site: null, 
             image: null,
+            image2: null,
         },
 
         achieved_bronze_dofe:
@@ -43,7 +71,9 @@ export async function RecentActivity() {
             date: "2020-2022 | Duke of Edinburgh Award",
             body: "Duke Of Edinburgh Award, with weekly volunteering sessions teaching IT skills at a local primary school.",
             link: "/activity/achieved_bronze_dofe", 
+            site: null,
             image: "/05a7a5r56.jpg",
+            image2: null,
         },
 
     }   
@@ -63,6 +93,7 @@ export async function FeaturedActivity() {
             date: "April 2023 | GCHQ Manchester",
             body: "Learning team working, Computing, Analysis and Cyber-Security skills at GCHQ's Manchester site.",
             link: "/activity/gchq_mancester_cyber_analyst_event", 
+            site: null,
             image: null,
         },
 
@@ -71,7 +102,8 @@ export async function FeaturedActivity() {
             title: "STEM Residential",
             date: "June 2023 | Sunderland University",
             body: "Sunderland University Computer Science and Robotics STEM Residential creating and programming Mini-Mars Rovers.",
-            link: "/activity/stem_residential", 
+            link: "/activity/stem_residential",
+            site: null, 
             image: "/42a3ce0a7.jpg",
         },
 
@@ -81,6 +113,7 @@ export async function FeaturedActivity() {
             date: "February 2024 | Barclays Radbroke Hall",
             body: "Learning cybersecurity, IT, team working and project management skills at their Radbroke Hall Technology Site.",
             link: "/activity/barclays_stem_stars_events", 
+            site: null,
             image: null,
         },
 
@@ -89,7 +122,8 @@ export async function FeaturedActivity() {
             title: "Achieved Bronze DofE",
             date: "2020-2022 | Duke of Edinburgh Award",
             body: "Duke Of Edinburgh Award, with weekly volunteering sessions teaching IT skills at a local primary school.",
-            link: "/activity/achieved_bronze_dofe", 
+            link: "/activity/achieved_bronze_dofe",
+            site: null, 
             image: "/05a7a5r56.jpg",
         },
 
@@ -108,8 +142,9 @@ export async function Certification() {
         {   
             title: "First Aid Training",
             date: "November 2025 | St John Ambulance",
-            body: "In-person course delivered by SJA.",
+            body: "In-person complete first-aid course with additional training on carbon monoxide poisoning aimed at students, delivered by SJA staff.",
             link: "/certifications/a20efe123", 
+            site: null,
             image: null,
         },
 
@@ -117,8 +152,9 @@ export async function Certification() {
         {   
             title: "Mental Wellbeing Training",
             date: "November 2025 | St John Ambulance",
-            body: "In-person course delivered by SJA.",
+            body: "In-person mental health and wellbeing course, delivered by SJA staff.",
             link: "/certifications/a1efe2d53", 
+            site: null,
             image: "/4a6c8eb8c.png",
         },
 
@@ -128,6 +164,7 @@ export async function Certification() {
             date: "October 2025 | LinkedIn Learning",
             body: "LinkedIn Learning Certification in using GitHub actions, primarily using 'yaml' and 'docker' files to automate website deployments using GitHub.",
             link: "/certifications/a0efecf23", 
+            site: null,
             image: null,
         },
 

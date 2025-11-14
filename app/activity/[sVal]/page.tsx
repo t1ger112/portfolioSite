@@ -34,9 +34,9 @@ export default async function Activity({
         </div>
 
         <div className="section-cont-col mb-[1rem]"> 
-          <div className="entry-content mb-2.5">
+          <div className="entry-content mb-2.5 gap-[1rem]">
 
-            <div className="section-cont-col pr-[2.5rem]">
+            <div className="section-cont-col pr-[2rem]">
               <h1 className="font-heading font-bitcount font-accent pl-[1px]">{entry.title}</h1>
               <div className="font-normal font-merri fontcol2">
                 <p className="font-merri">{entry.body}</p>
@@ -45,10 +45,15 @@ export default async function Activity({
                 <p>{entry.date}</p> 
               </div>
             </div>
-            
+
             {entry.image && (
               <div className="entry-thumbnail">
                 <Image className="entry-image" src={entry.image} width={500} height={500} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></Image>
+              </div>
+            )}
+            {entry.image2 && (
+              <div className="entry-thumbnail">
+                <Image className="entry-image" src={entry.image2} width={500} height={500} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></Image>
               </div>
             )}
           </div>
@@ -76,7 +81,7 @@ export default async function Activity({
                 </div>
                 {val.image && (
                   <div className="section-thumbnail">
-                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="lazy" decoding="async" />
+                    <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="eager" decoding="async" />
                   </div>
                 )}
               </a>

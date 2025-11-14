@@ -44,14 +44,14 @@ export default async function Activity() {
                 </div>
                 {val.image && (
                   <div className="section-thumbnail">
-                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="eager" decoding="async" />
+                    <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="eager" decoding="async" />
                   </div>
                 )}
               </a>
             ))}
           </div> 
 
-          <div className="nav-btn more-button mt-2.5 font-accent"> 
+          <div className="nav-btn more-button mt-3.5 font-accent"> 
             <a className="flex font-bitcount font-navbar nav-btn-a" href="#">LOAD MORE</a>
           </div>
         </div>

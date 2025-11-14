@@ -76,7 +76,7 @@ export default async function Activity({
                 </div>
                 {val.image && (
                   <div className="section-thumbnail">
-                    <Image className="section-image" src={val.image} width={250} height={200} alt={val.title} loading="lazy" decoding="async" />
+                    <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="eager" decoding="async" />
                   </div>
                 )}
               </a>

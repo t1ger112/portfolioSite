@@ -45,7 +45,7 @@ export default async function About() {
                 </div>
                {val.image && (
                   <div className="section-thumbnail">
-                    <Image className="section-image" src={val.image} width={150} height={150} alt={val.title} loading="eager" decoding="async" />
+                    <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="eager" decoding="async" />
                   </div>
                 )}
               </a>

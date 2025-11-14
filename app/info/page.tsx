@@ -46,7 +46,7 @@ export default async function About() {
             ability to work effectively alongside both peers and senior figures alike.
           </a>
           <a className="font-normal content-width-limit font-merri">
-            My many hobbies are mostly related to technology, media, and military aviation.
+            My many hobbies are mostly related to technology, media, and aviation.
           </a>
         </div>
 
@@ -190,7 +190,7 @@ export default async function About() {
                 </div>
                 {val.image && (
                   <div className="section-thumbnail">
-                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="lazy" decoding="async" />
+                    <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="lazy" decoding="async" />
                   </div>
                 )}
               </a>
@@ -224,7 +224,7 @@ export default async function About() {
                 </div>
                 {val.image && (
                   <div className="section-thumbnail">
-                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="lazy" decoding="async" />
+                    <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="lazy" decoding="async" />
                   </div>
                 )}
               </a>
@@ -263,7 +263,7 @@ export default async function About() {
                   </div>
                   {val.image && (
                     <div className="section-thumbnail">
-                      <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="lazy" decoding="async" />
+                      <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="lazy" decoding="async" />
                     </div>
                   )}
                 </a>
