@@ -1,5 +1,5 @@
 
-import { RecentActivity } from "@/utils/actions";
+import { Certification } from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
 import { notFound } from 'next/navigation'
@@ -10,9 +10,9 @@ export default async function Activity({
   params: Promise<{sVal: string}>;
 }) {
 
-  const activities = await RecentActivity();
+  const certifications = await Certification();
   const pageIdent = (await params).sVal;
-  const entry = activities[pageIdent as keyof typeof activities];
+  const entry = certifications[pageIdent as keyof typeof certifications];
   if (!entry) return notFound();
   const pageTitle : String = "Freddie Robinson - " + entry.title;
 
@@ -27,7 +27,7 @@ export default async function Activity({
         <div className="miniNavCont">
           <div className="trail-cont font-small">
             <a className="trail-text" href="/">Home</a>{'>'} 
-            <a className="trail-text" href="/activity">Activity</a>{'>'} 
+            <a className="trail-text" href="/certifications">Certifications</a>{'>'} 
             <a className="trail-text" href="#">{entry.title}</a>
           </div>
          <ThemeSlider />
@@ -48,7 +48,7 @@ export default async function Activity({
             
             {entry.image && (
               <div className="entry-thumbnail">
-                <Image className="entry-image" src={entry.image} width={500} height={500} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></Image>
+                <Image className="entry-image" src={entry.image} width={750} height={750} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></Image>
               </div>
             )}
           </div>
@@ -57,11 +57,11 @@ export default async function Activity({
         <div className="divider"></div>
 
         <div className="section-cont content-col mt-[1rem]">
-          <h1 className="font-heading font-bitcount font-accent pl-[1px]">More Activities:</h1>
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Latest Certifications:</h1>
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
-            {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 2 && ( 
-              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " activity..."} className="section-entry-half prefaceOrideStatic"> 
+            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 2 && ( 
+              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -76,7 +76,7 @@ export default async function Activity({
                 </div>
                 {val.image && (
                   <div className="section-thumbnail">
-                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="lazy" decoding="async" />
+                    <Image className="section-image" src={val.image} width={250} height={200} alt={val.title} loading="lazy" decoding="async" />
                   </div>
                 )}
               </a>

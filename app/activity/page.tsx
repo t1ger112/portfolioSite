@@ -1,6 +1,7 @@
 
 import { RecentActivity } from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
+import Image from "next/image";
 
 export default async function Activity() {
 
@@ -28,7 +29,7 @@ export default async function Activity() {
 
           <div className="section-cont-row gap-Oride mt-7.5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 10 && ( 
-              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
+              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " activity..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -41,9 +42,11 @@ export default async function Activity() {
                       <p className="font-merri">{val.body}</p>
                   </div>
                 </div>
-                <div className={(val.image) ? "section-thumbnail" : "hidden"}>
-                  <img className="section-image" src={val.image} alt={val.title} loading="eager" decoding="async" fetchPriority="high"></img>
-                </div>
+                {val.image && (
+                  <div className="section-thumbnail">
+                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="eager" decoding="async" />
+                  </div>
+                )}
               </a>
             ))}
           </div> 

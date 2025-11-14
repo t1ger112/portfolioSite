@@ -1,6 +1,7 @@
-// import Image from "next/image";
+
 import { FeaturedActivity, App, Certification} from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
+import Image from "next/image";
 
 export default async function About() {
 
@@ -174,7 +175,7 @@ export default async function About() {
 
           <div className="section-cont-row gap-Oride mt-2.5 wrap"> 
             {featuredActivities && (Array.isArray(featuredActivities) ? featuredActivities : Object.values(featuredActivities)).map((val: any, index: number) => index < 4 && ( 
-              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
+              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " featured activity..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -187,9 +188,11 @@ export default async function About() {
                       <p className="font-merri">{val.body}</p>
                   </div>
                 </div>
-                <div className={val.image ? "section-thumbnail" : "hidden"}>
-                  <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
-                </div>
+                {val.image && (
+                  <div className="section-thumbnail">
+                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="lazy" decoding="async" />
+                  </div>
+                )}
               </a>
             ))}
           </div>
@@ -206,7 +209,7 @@ export default async function About() {
 
           <div className="section-cont-row gap-Oride mt-1 wrap"> 
             {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
-              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
+              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -219,9 +222,11 @@ export default async function About() {
                       <p className="font-merri">{val.body}</p>
                   </div>
                 </div>
-                <div className={val.image ? "section-thumbnail" : "hidden"}>
-                  <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
-                </div>
+                {val.image && (
+                  <div className="section-thumbnail">
+                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="lazy" decoding="async" />
+                  </div>
+                )}
               </a>
             ))}
           </div> 
@@ -243,7 +248,7 @@ export default async function About() {
 
             <div className="section-cont-row gap-Oride mt-4 mb-0 wrap"> 
               {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 2 && ( 
-                <a id={val.link} key={index} href={val.link} target="_blank" className="section-entry-half prefaceOrideStatic"> 
+                <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " app..."} target="_blank" className="section-entry-half prefaceOrideStatic"> 
                   <div className="vert-preface"></div>
                   <div className="prefaced-contents">
                     <div className="font-large font-merri textOride">
@@ -256,9 +261,11 @@ export default async function About() {
                         <p className="font-merri">{val.body}</p>
                     </div>
                   </div>
-                  <div className={val.image ? "section-thumbnail" : "hidden"}>
-                    <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
-                  </div>
+                  {val.image && (
+                    <div className="section-thumbnail">
+                      <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="lazy" decoding="async" />
+                    </div>
+                  )}
                 </a>
               ))}
             </div>

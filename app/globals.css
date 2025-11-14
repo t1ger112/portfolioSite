@@ -235,6 +235,23 @@ ul {
   padding: 0.2rem 0.6rem 0rem 0.75rem;  
 }
 
+.nav-btn-highlight{
+  display: flex;
+  position: relative;
+  width: fit-content; 
+  height: auto;
+  border-radius: 0.99rem;  
+  transition: 0.2s;
+  background-color: var(--background-accent);   
+  color: var(--content);
+}
+.nav-btn-highlight:hover{
+  border-radius: 0.5rem;
+  background-color: var(--accent1);  
+  color: var(--text-offset);
+  cursor: pointer;
+}
+
 .alt-nav-btn{
   display: flex;
   position: relative;
@@ -501,6 +518,7 @@ body{
 .entry-content{ 
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .entry-thumbnail{   
@@ -517,8 +535,8 @@ body{
 .entry-image{
   object-fit: cover;
   display: flex;
-  width: auto;
-  height: 100%;
+  width: 100%; 
+  height: auto;
   border-radius: 0.5rem; 
   transition: 0.25s;
   transition-timing-function: ease-out;

@@ -1,13 +1,14 @@
-// import Image from "next/image";
+
 import { RecentActivity, App, Certification} from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
+import Image from "next/image";
 
 export default async function Home() {
 
   const activities = await RecentActivity();
   const certifications = await Certification();
   const apps = await App();
-
+  
   return (
     
     <div className="app-container">
@@ -38,7 +39,7 @@ export default async function Home() {
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 4 && ( 
-              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
+              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " activity..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -51,9 +52,11 @@ export default async function Home() {
                       <p className="font-merri">{val.body}</p>
                   </div>
                 </div>
-                <div className={(val.image) ? "section-thumbnail" : "hidden"}>
-                  <img className="section-image" src={val.image} alt={val.title} loading="eager" decoding="async" fetchPriority="high"></img>
-                </div>
+                {val.image && (
+                  <div className="section-thumbnail">
+                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="eager" decoding="async" />
+                  </div>
+                )}
               </a>
             ))}
           </div> 
@@ -99,22 +102,24 @@ export default async function Home() {
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
-              <a id={val.link} key={index} href={val.link} className="section-entry-half prefaceOrideStatic"> 
+              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
-                      <p className="font-merri font-bold">{val.title}</p>
+                    <p className="font-merri font-bold">{val.title}</p>
                   </div>
                   <div className="font-roboto font-small fontcol1 flex pb-2">
                       <p>{val.date}</p> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
-                      <p className="font-merri">{val.body}</p>
+                    <p className="font-merri">{val.body}</p>
                   </div>
                 </div>
-                <div className={val.image ? "section-thumbnail" : "hidden"}>
-                  <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
-                </div>
+                {val.image && (
+                  <div className="section-thumbnail">
+                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="lazy" decoding="async" />
+                  </div>
+                )}
               </a>
             ))}
           </div> 
@@ -132,7 +137,7 @@ export default async function Home() {
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 4 && ( 
-              <a id={val.link} key={index} href={val.link} target="_blank" className="section-entry-half prefaceOrideStatic"> 
+              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " project..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -145,9 +150,11 @@ export default async function Home() {
                       <p className="font-merri">{val.body}</p>
                   </div>
                 </div>
-                <div className={val.image ? "section-thumbnail" : "hidden"}>
-                  <img className="section-image" src={val.image} alt={val.title} loading="lazy" decoding="async"></img>
-                </div>
+                {val.image && (
+                  <div className="section-thumbnail">
+                    <Image className="section-image" src={val.image} width={200} height={200} alt={val.title} loading="lazy" decoding="async" />
+                  </div>
+                )}
               </a>
             ))}
           </div>
