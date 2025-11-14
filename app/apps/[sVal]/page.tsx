@@ -27,7 +27,7 @@ export default async function Activity({
         <div className="miniNavCont">
           <div className="trail-cont font-small">
             <a className="trail-text" href="/">Home</a>{'>'} 
-            <a className="trail-text" href="/certifications">Apps</a>{'>'} 
+            <a className="trail-text" href="/apps">Apps</a>{'>'} 
             <a className="trail-text" href="#">{entry.title}</a>
           </div>
          <ThemeSlider />

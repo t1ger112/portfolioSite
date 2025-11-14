@@ -69,7 +69,7 @@ export default async function Activity({
         <div className="divider"></div>
 
         <div className="section-cont content-col mt-[1rem]">
-          <h1 className="font-heading font-bitcount font-accent pl-[1px]">More Activities:</h1>
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Latest Activities:</h1>
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 2 && ( 
