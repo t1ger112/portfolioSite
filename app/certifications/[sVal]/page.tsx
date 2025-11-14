@@ -44,6 +44,13 @@ export default async function Activity({
               <div className="font-roboto font-small fontcol1 flex mt-[0.75rem]"> 
                 <p>{entry.date}</p> 
               </div>
+              <div className="flex flex-row w-full gap-[0.5rem] mt-[0.5rem]">
+                {entry.site && (
+                  <div className="nav-btn-highlight more-button mt-2.5 font-accent"> 
+                    <a className="flex font-bitcount font-navbar nav-btn-a" target="_blank" href={entry.site}>VISIT</a>
+                  </div>
+                )}
+              </div>
             </div>
             
             {entry.image && (

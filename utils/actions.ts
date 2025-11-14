@@ -12,13 +12,24 @@ export async function RecentActivity() {
         
         weee_charity:
         {
-            title: "Weee Charity Volunteering",
+            title: "Weee-Charity Volunteering",
             date: "November 2025 | Weee Charity Warrington",
-            body: "Volunteering weekly at Weee Charity in Warrington, a tech charity who specialize in the formal disposal, recycling and reselling of used or waste electronics. I am currently assigned to the recycling, disposal and certifying formal data-removal on client laptops.",
+            body: "Volunteering weekly at Weee Charity in Warrington, a tech charity who specialize in the formal disposal, recycling and reselling of used or waste electronics. I am currently assigned to recycling, disposal and certifying formal data-removal on client laptops.",
             link: "/activity/weee_charity", 
-            site: null,
+            site: "https://weeecharity.com/",
             image: "/15e184ace7.jpg",
             image2: "/43e7ca9d8f.jpg",
+        },
+
+        poppy_appeal_2025:
+        {
+            title: "Poppy appeal",
+            date: "November 2025 | Manchester City Centre",
+            body: "Selling poppies on behalf of the Royal British Legion's poppy appeal as MASUAS students, where we were present throughout the day at St.Peters Square and Market Street in the Manchester city centre. The total donation amount we managed to raise was: TBC",
+            link: "/activity/poppy_appeal_2025", 
+            site: "https://www.britishlegion.org.uk/",
+            image: "/651ce869af.jpg",
+            image2: null,
         },
 
         didsbury_park_leaf_cleanup:
@@ -34,7 +45,7 @@ export async function RecentActivity() {
 
         gchq_mancester_cyber_analyst_event:
         {
-            title: "Cyber Analyst Work Experience Event, GCHQ Mcr.",
+            title: "GCHQ Manchester, Cyber Analyst Work Experience Event",
             date: "April 2023 | GCHQ Manchester",
             body: "Learning team working, Computing, Analysis and Cyber-Security skills at GCHQ's Manchester site.",
             link: "/activity/gchq_mancester_cyber_analyst_event", 
@@ -181,8 +192,8 @@ export async function App() {
         portfolio:
         {
             title: "Portfolio Website",
-            date: "October 2025 | Next.Js App, Node.js Typescript",
-            body: "This exact website! Created using Vercel's Next.js app router, the website automatically updates upon new github commits, and utilizes both server and client components to deliver a dynamically streamed interface...",
+            date: "October 2025 | Vercel Next.js App, Node.js",
+            body: "This exact website! Created from scratch using Vercel's Next.js app router, it automatically updates upon new github commits, and utilizes both server and client components to deliver a dynamically streamed web interface.",
             link: "/apps/portfolio", 
             github: "https://github.com/t1ger112/portfolioSite",
             site: "https://freddierobinson.com",
