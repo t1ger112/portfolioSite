@@ -30,7 +30,7 @@ export default async function Activity({
             <a className="trail-text" href="/activity">Activity</a>{'>'} 
             <a className="trail-text" href="#">{entry.title}</a>
           </div>
-         <ThemeSlider />
+          <ThemeSlider />
         </div>
 
         <div className="section-cont-col mb-[1rem]"> 

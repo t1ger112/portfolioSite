@@ -18,14 +18,14 @@ export async function RecentActivity() {
             link: "/activity/weee_charity", 
             site: "https://weeecharity.com/",
             image: "/15e184ace7.jpg",
-            image2: "/43e7ca9d8f.jpg",
+            image2: null,
         },
 
         poppy_appeal_2025:
         {
-            title: "Poppy appeal",
+            title: "Poppy Appeal",
             date: "November 2025 | Manchester City Centre",
-            body: "Selling poppies on behalf of the Royal British Legion's poppy appeal as MASUAS students, where we were present throughout the day at St.Peters Square and Market Street in the Manchester city centre. The total donation amount we managed to raise was: TBC",
+            body: "Selling poppies on behalf of the Royal British Legion's poppy appeal as MASUAS students, where we were present throughout the day at St.Peters Square and Market Street in the Manchester city centre. The total donation amount we managed to raise is TBC!",
             link: "/activity/poppy_appeal_2025", 
             site: "https://www.britishlegion.org.uk/",
             image: "/651ce869af.jpg",
