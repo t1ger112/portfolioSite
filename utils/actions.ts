@@ -25,7 +25,7 @@ export async function RecentActivity() {
         {
             title: "Poppy Appeal",
             date: "November 2025 | Manchester City Centre",
-            body: "Selling poppies on behalf of the Royal British Legion's poppy appeal as MASUAS students, where we were present throughout the day at St.Peters Square and Market Street in the Manchester city centre. The total donation amount we managed to raise is TBC!",
+            body: "Selling poppies on behalf of the Royal British Legion's poppy appeal, where we were present throughout the day at St.Peters Square and Market Street in the Manchester city centre. The total donation amount we managed to raise was £243.85 in cash!",
             link: "/activity/poppy_appeal_2025", 
             site: "https://www.britishlegion.org.uk/",
             image: "/651ce869af.jpg",

@@ -10,7 +10,7 @@ export default function Footer() {
 
         <div className="nav-left-group">
           
-          <a className="font-small footer-content">&copy; Freddie Robinson - 2025 Portfolio [BETA]</a>
+          <a className="font-small footer-content">&copy; Freddie Robinson - 2025 Portfolio</a>
 
         </div>
 
