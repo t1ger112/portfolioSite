@@ -27,8 +27,8 @@ export default async function Home() {
 
 
         <div className="section-cont content-col">  
-          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Welcome to my Portfolio!</h1>
-          <a className="font-normal font-merri flex content-width-limit">Hi I'm Freddie, currently studying undergraduate Computer Science at Manchester Metropolitan Univerity. This is my portfolio site for showcasing all my activities, certifications,  projects, apps, digital CV, and more. My many hobbies are mostly related to technology, media, and aviation.</a>
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Hello World, I'm Freddie!</h1>
+          <a className="font-normal font-merri flex content-width-limit">Currently studying undergraduate Computer Science at Manchester Metropolitan University. This is my portfolio site for showcasing all my activities, certifications, projects and apps, my digital CV, and more:</a>
         </div>
 
         <div className="divider"></div>
@@ -54,7 +54,7 @@ export default async function Home() {
                 </div>
                 {val.image && (
                   <div className="section-thumbnail">
-                    <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="eager" decoding="async" />
+                    <Image className="section-image" src={val.image} width={250} height={250} quality={75} alt={val.title} loading="eager" decoding="async" />
                   </div>
                 )}
               </a>

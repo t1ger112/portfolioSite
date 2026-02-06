@@ -149,6 +149,26 @@ export async function FeaturedActivity() {
 export async function Certification() {
     const certifications = {
 
+        a33d5e891:
+        {   
+            title: "GDPR Compliance: Essential Training",
+            date: "December 2025 | LinkedIn Learning",
+            body: "LinkedIn Learning Certification on Essential Training for GDPR Compliance, completed as part of a university legal and ethical unit.",
+            link: "/certifications/a33d5e891", 
+            site: null,
+            image: "/36a84c8f4.png",
+        },
+        
+        a33425ef1:
+        {   
+            title: "Devops Best Practices for Sustainability in the Cloud",
+            date: "December 2025 | LinkedIn Learning",
+            body: "LinkedIn Learning Certification on Devops Best Practices for Sustainability in the Cloud, for university sustainability unit.",
+            link: "/certifications/a33425ef1", 
+            site: null,
+            image: "/36a84c8f4.png",
+        },
+
         a20efe123:
         {   
             title: "First Aid Training",
@@ -156,7 +176,7 @@ export async function Certification() {
             body: "In-person complete first-aid course with additional training on carbon monoxide poisoning aimed at students, delivered by SJA staff.",
             link: "/certifications/a20efe123", 
             site: null,
-            image: null,
+            image: "/646d84e8a.png",
         },
 
         a1efe2d53:
@@ -176,7 +196,7 @@ export async function Certification() {
             body: "LinkedIn Learning Certification in using GitHub actions, primarily using 'yaml' and 'docker' files to automate website deployments using GitHub.",
             link: "/certifications/a0efecf23", 
             site: null,
-            image: null,
+            image: "/56a4e8fe6c.png",
         },
 
     }   
@@ -191,9 +211,9 @@ export async function App() {
 
         portfolio:
         {
-            title: "Portfolio Website",
-            date: "October 2025 | Vercel Next.js App, Node.js",
-            body: "This exact website! Created from scratch using Vercel's Next.js app router, it automatically updates upon new github commits, and utilizes both server and client components to deliver a dynamically streamed web interface.",
+            title: "This Portfolio Website",
+            date: "October 2025 | Vercel Next.js App, React, TS, CSS",
+            body: "Created from scratch using Vercel's Next.js app router, it automatically updates upon new github commits, and utilizes both server and client components to deliver a dynamically streamed web interface.",
             link: "/apps/portfolio", 
             github: "https://github.com/t1ger112/portfolioSite",
             site: "https://freddierobinson.com",

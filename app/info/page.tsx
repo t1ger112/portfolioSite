@@ -59,9 +59,9 @@ export default async function About() {
               Currently studying degree-level Computer Science at Manchester Metropolitan University:
           </a>
 
-          <div className="section-entry prefaceOride mb-2"> 
+          <div className="section-entry prefaceOride mb-2 webkitMask-Oride"> 
               <div className="vert-preface prefaceBlue"></div>
-              <div className="prefaced-contents">
+              <div className="prefaced-contents" style={{ maskImage: "none", WebkitMaskImage: "none" }}>
                   <div className="font-large font-merri textOride education-oRide">
                       <a className="font-merri font-bold">Manchester Metropolitan University,</a> 
                       <a className="education-padding-oRide">Manchester</a>
@@ -79,7 +79,7 @@ export default async function About() {
 
           <div className="section-entry prefaceOride mb-2.5">
               <div className="vert-preface"></div>
-              <div className="prefaced-contents">
+              <div className="prefaced-contents" style={{ maskImage: "none", WebkitMaskImage: "none" }}>
                   <div className="font-large font-merri textOride education-oRide">
                       <a className="font-merri font-bold">Priestley College,</a> 
                       <a className="education-padding-oRide">Warrington</a>
@@ -110,7 +110,7 @@ export default async function About() {
 
           <div className="section-entry prefaceOride mb-2.5"> 
               <div className="vert-preface"></div>
-              <div className="prefaced-contents">
+              <div className="prefaced-contents" style={{ maskImage: "none", WebkitMaskImage: "none" }}>
                   <div className="font-large font-merri textOride education-oRide">
                       <a className="font-merri font-bold">Birchwood Community High School,</a> 
                       <a className="education-padding-oRide">Warrington</a>
@@ -147,12 +147,13 @@ export default async function About() {
           </a>
           <div className="section-cont-row gap-10 mt-2.5 list-Oride">
             <a className="font-normal content-width-limit font-merri">
-              <b className="font-accent font-bitcount font-large">Proficient in:</b>
+              <b className="font-accent font-bitcount font-large">Experience in:</b>
               <ul className="ml-3 mt-1">
                 <li>Office 365 Apps Suite</li>
                 <li>Visual Basic (.NET)</li>
                 <li>Python</li>
-                <li>HTML, CSS, JS (Web)</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>TypeScript (React, Next)</li>
                 <li>MySQL, SQLite, Access</li>
               </ul>
             </a>
@@ -160,9 +161,10 @@ export default async function About() {
               <b className="font-accent font-bitcount font-large">Currently learning:</b>
               <ul className="ml-3 mt-1">
                 <li>C# (.NET)</li>
-                <li>Networking</li>
-                <li>CISCO Packet Tracer</li>
+                <li>Networking (CISCO)</li>
                 <li>Java Apps</li>
+                <li>Cloudflare (Workers, D1)</li>
+                <li>Drizzle ORM (w/D1, SQLite)</li>
               </ul>
             </a>
           </div>

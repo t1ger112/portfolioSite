@@ -51,9 +51,9 @@ export default async function Activity() {
             ))}
           </div> 
 
-          <div className="nav-btn more-button mt-3.5 font-accent"> 
+          {/* <div className="nav-btn more-button mt-3.5 font-accent"> 
             <a className="flex font-bitcount font-navbar nav-btn-a" href="#">LOAD MORE</a>
-          </div>
+          </div> */}
         </div>
 
       </div>

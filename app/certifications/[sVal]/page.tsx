@@ -15,6 +15,9 @@ export default async function Activity({
   const entry = certifications[pageIdent as keyof typeof certifications];
   if (!entry) return notFound();
   const pageTitle : String = "Freddie Robinson - " + entry.title;
+  const certificationList = (Array.isArray(certifications) ? certifications : Object.values(certifications))
+    .filter((val: any) => val.title !== entry.title)
+    .sort(() => Math.random() - 0.5);
 
   return (
     
@@ -55,7 +58,7 @@ export default async function Activity({
             
             {entry.image && (
               <div className="entry-thumbnail">
-                <Image className="entry-image" src={entry.image} width={750} height={750} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></Image>
+                <Image className="entry-image" src={entry.image} width={400} height={400} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></Image>
               </div>
             )}
           </div>
@@ -64,10 +67,10 @@ export default async function Activity({
         <div className="divider"></div>
 
         <div className="section-cont content-col mt-[1rem]">
-          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Latest Certifications:</h1>
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Other Certifications:</h1>
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
-            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 2 && ( 
+            {certificationList.map((val: any, index: number) => index < 4 && ( 
               <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
