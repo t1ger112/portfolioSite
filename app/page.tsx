@@ -28,7 +28,7 @@ export default async function Home() {
 
         <div className="section-cont content-col">  
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Hello World, I'm Freddie!</h1>
-          <a className="font-normal font-merri flex content-width-limit">Currently studying undergraduate Computer Science at Manchester Metropolitan University. This is my portfolio site for showcasing all my activities, certifications, projects and apps, my digital CV, and more:</a>
+          <a className="font-normal font-merri flex content-width-limit">Currently studying undergraduate Computer Science at Manchester Metropolitan University. This is my portfolio site showcasing all of my activities, certifications, apps and projects, my digital CV, and more:</a>
         </div>
 
         <div className="divider"></div>

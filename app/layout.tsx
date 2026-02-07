@@ -13,22 +13,54 @@ import Footer from "@/utils/footer";
 
 export const metadata: Metadata = {
   description: "Freddie Robinson - Digital Portfolio",
+  keywords: ["Freddie Robinson", "Portfolio", "Computer Science", "Developer", "Projects", "Apps", "Certifications", "Activities"],
+  authors: [{ name: "Freddie Robinson", url: "https://freddierobinson.com" }],
+  creator: "Freddie Robinson",
+  publisher: "Freddie Robinson",
+  openGraph: {
+    title: "Freddie Robinson - Digital Portfolio",
+    description: "Freddie Robinson - Digital Portfolio showcasing activities, certifications, projects, apps, and more.",
+    url: "https://freddierobinson.com",
+    siteName: "Freddie Robinson - Digital Portfolio",
+    images: [ 
+      {
+        url: "https://freddierobinson.com/328e181c84.jpg",
+        width: 466,
+        height: 644,
+        alt: "Freddie Robinson - Digital Portfolio Image",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
 };
 
 const font1 = Roboto({
   subsets: ['latin'],
   display: 'swap',
+  weight: "variable",
+  style: "normal",
+  fallback: ['sans-serif'],
+  adjustFontFallback: true,
   preload: true,
 })
 const font2 = Merriweather({ 
   subsets: ['latin'],
   display: 'swap',
+  weight: "variable",
+  style: "normal",
+  fallback: ['serif'],
+  adjustFontFallback: true,
   preload: true,
 })
 const font3 = Bitcount_Single({   
   subsets: ['latin'],
   display: 'swap',
+  weight: "variable",
+  style: "normal",
   fallback: ['monospace'],
+  adjustFontFallback: true,
+  preload: true,
 })
 
 export default function RootLayout({

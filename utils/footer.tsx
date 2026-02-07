@@ -2,6 +2,7 @@
 'use client';
 
 export default function Footer() {
+  
   return (
 
     <div className="footer-width-container font-roboto">
@@ -10,7 +11,7 @@ export default function Footer() {
 
         <div className="nav-left-group">
           
-          <a className="font-small footer-content">&copy; Freddie Robinson - 2025 Portfolio</a>
+          <a className="font-small footer-content">&copy; Freddie Robinson - {new Date().getFullYear()} Portfolio</a>
 
         </div>
 
