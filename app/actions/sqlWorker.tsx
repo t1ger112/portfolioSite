@@ -11,8 +11,8 @@ export default async function qryWorker(ident: string) {
             return { resultOut: null };
 
         } else {
-            const SQL = await initSqlJs({locateFile: (file: string) => `./${file}`});// Init sql.js and db
-            const buf = await fs.readFile("./db1_X.sqlite");
+            const SQL = await initSqlJs({locateFile: (file: string) => `/${file}`});// Init sql.js and db
+            const buf = await fs.readFile("/db1_X.sqlite");
             const db = new SQL.Database(new Uint8Array(buf));
 
             let sIdent = true; 

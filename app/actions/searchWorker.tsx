@@ -11,8 +11,8 @@ export default async function execLookup(searchTerm: string) {
             return { resultOut: null };
             
         } else {
-            const SQL = await initSqlJs({locateFile: (file: string) => `./${file}`});
-            const buf = await fs.readFile("./db1_X.sqlite");
+            const SQL = await initSqlJs({locateFile: (file: string) => `/${file}`});
+            const buf = await fs.readFile("/db1_X.sqlite");
             const db = new SQL.Database(new Uint8Array(buf));
 
             const escapeLike = (value: string) => value.replace(/[%_\\]/g, "\\$&");
