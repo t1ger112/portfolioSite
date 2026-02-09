@@ -11,8 +11,8 @@ export default async function execLookup(searchTerm: string) {
             return { resultOut: null };
             
         } else {
-            const SQL = await initSqlJs({locateFile: (file: string) => `./public/${file}`});
-            const buf = await fs.readFile("./public/db1_X.sqlite");
+            const SQL = await initSqlJs({locateFile: (file: string) => `./${file}`});
+            const buf = await fs.readFile("./db1_X.sqlite");
             const db = new SQL.Database(new Uint8Array(buf));
 
             const escapeLike = (value: string) => value.replace(/[%_\\]/g, "\\$&");
@@ -36,7 +36,7 @@ export default async function execLookup(searchTerm: string) {
                 stmt.bind({ ":ident": identValue, ":like": likeValue });
                 const columns = stmt.getColumnNames();
                 const values: Array<Array<string | number | null>> = [];
-                
+
                 while (stmt.step()) {
                     values.push(stmt.get());
                 }
