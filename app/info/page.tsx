@@ -155,16 +155,17 @@ export default async function About() {
                 <li>HTML, CSS, JavaScript</li>
                 <li>TypeScript (React, Next)</li>
                 <li>MySQL, SQLite, Access</li>
+                <li>Video Editing (Resolve)</li>
               </ul>
             </a>
             <a className="font-normal content-width-limit font-merri mb-2.5">
               <b className="font-accent font-bitcount font-large">Currently learning:</b>
               <ul className="ml-3 mt-1">
-                <li>C# (.NET)</li>
+                <li>C# (.NET, WinForms, CLI)</li>
                 <li>Networking (CISCO)</li>
-                <li>Java Apps</li>
+                <li>Java (Applications)</li>
                 <li>Cloudflare (Workers, D1)</li>
-                <li>Drizzle ORM (w/D1, SQLite)</li>
+                <li>Drizzle ORM (D1 Integ.)</li>
               </ul>
             </a>
           </div>

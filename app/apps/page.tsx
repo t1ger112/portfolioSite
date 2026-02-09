@@ -1,5 +1,6 @@
 
 import { App } from "@/utils/actions";
+import { SearchBar } from "@/utils/lookupCont";
 import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
 
@@ -25,7 +26,24 @@ export default async function About() {
         </div>
 
         <div className="section-cont content-col">
-          <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Apps And Projects:</h1>
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Project Showcase:</h1>
+          <a className="font-normal font-merri flex">My AirLookup prototype uses simple SQL queries integrated via SQL.js to search through a SQLite database of related airfield data, try it out below:</a> 
+
+          <div className="section-cont-row mt-6 mb-2">
+            <div className="lumob-box-oride overflow-hidden flex bg-gradient-to-br from-[#163d7d] via-[#242424] to-[#381515] rounded-lg p-[3.25rem] pt-[2.25rem] w-full min-h-[32.5rem] hover:saturate-130 duration-300 ease-in">  
+                <div className="flex w-full flex-col gap-0 align-left">
+                  <a className="lumob-title-oride no-wrap flex pl-[1.75rem] text-[7.25rem] cursor-default bg-linear-to-r from-blue-500 to-red-600 bg-clip-text text-transparent font-bebas">AirLookup Search:</a> 
+                  <SearchBar />
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="divider"></div>
+
+        <div className="section-cont content-col">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Latest Apps:</h1>
           <p className="font-normal font-merri flex">My most recent apps, programs and projects:</p> 
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
