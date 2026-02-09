@@ -2,6 +2,7 @@
 
 import initSqlJs from "sql.js";
 import fs from "fs/promises";
+import path from "path";
 
 export default async function execLookup(searchTerm: string) {
 
@@ -11,8 +12,12 @@ export default async function execLookup(searchTerm: string) {
             return { resultOut: null };
             
         } else {
-            const SQL = await initSqlJs({locateFile: (file: string) => `/${file}`});
-            const buf = await fs.readFile("/db1_X.sqlite");
+            const SQL = await initSqlJs({
+                locateFile: (file: string) =>
+                    path.join(process.cwd(), "node_modules", "sql.js", "dist", file)
+            });
+            const dbPath = path.join(process.cwd(), "public", "db1_X.sqlite");
+            const buf = await fs.readFile(dbPath);
             const db = new SQL.Database(new Uint8Array(buf));
 
             const escapeLike = (value: string) => value.replace(/[%_\\]/g, "\\$&");
