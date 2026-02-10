@@ -170,8 +170,8 @@ export function SearchBar() {
       </div>
       
       <div id="messageWindow" className="mt-[1.75rem] flex flex-col cursor-default">
-        <a className="flex pl-[1.75rem] text-[2rem] font-bebas"> Lookup the details of 80,000+ airfields using this database search tool!</a>
-        <a className="flex pl-[1.75rem] text-[2rem] font-bebas"> Use any unique identifier such as: ident codes, names, nicknames, etc...</a>
+        <a className="flex pl-[1.75rem] text-[2rem] text-[#f0ffff] font-bebas"> Lookup the details of 80,000+ airfields using this database search tool!</a>
+        <a className="flex pl-[1.75rem] text-[2rem] text-[#f0ffff] font-bebas"> Use any unique identifier such as: ident codes, names, nicknames, etc...</a>
         <div className="inline-flex flex-row">
           <a className="flex pl-[1.75rem] pt-[1rem] text-[1.5rem] font-bebas text-blue-300 hover:opacity-75 duration-200" target="_blank" href="https://ourairports.com">PROTOTYPE - EXPECT INACCURACIES - DATA FROM OURAIRPORTS.COM</a>
         </div>
@@ -179,7 +179,7 @@ export function SearchBar() {
 
       <div id="noResultsWindow" className="mt-[1.75rem] hidden flex flex-col cursor-default"> 
         <a id="noResTitle" className="flex pl-[1.75rem] text-[2.5rem] font-bebas text-red-300"> No Results Found!</a>
-        <a id="noResText" className="flex pl-[1.75rem] text-[1.5rem] font-bebas"> Please check the input is spelt correctly, or try some other search criteria...</a>
+        <a id="noResText" className="flex pl-[1.75rem] text-[1.5rem] font-bebas text-[#f0ffff]"> Please check the input is spelt correctly, or try some other search criteria...</a>
       </div>
 
     </div>
