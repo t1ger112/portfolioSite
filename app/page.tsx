@@ -142,7 +142,7 @@ export default async function Home() {
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">App Showcase:</h1>
-          <a className="font-normal font-merri flex">My AirLookup prototype uses simple SQL queries integrated via SQL.js to search through a SQLite database of related airfield data, try it out below:</a> 
+          <a className="font-normal font-merri flex">My AirLookup prototype uses queries integrated via SQL.js to search through a SQLite database of related airfield data, try it here:</a> 
 
           <div className="section-cont-row mt-6 mb-2">
             <div className="lumob-box-oride overflow-hidden flex bg-gradient-to-br from-[#163d7d] via-[#242424] to-[#381515] rounded-lg p-[3.25rem] pt-[2.25rem] w-full min-h-[32.5rem] hover:saturate-142 duration-300 ease-in">  
