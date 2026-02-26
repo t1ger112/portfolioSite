@@ -30,7 +30,7 @@ export default async function Home() {
 
         <div className="section-cont content-col">  
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Hello World, I'm Freddie!</h1>
-          <a className="font-normal font-merri flex content-width-limit">Currently studying undergraduate Computer Science at Manchester Metropolitan University. This is my portfolio site showcasing all of my activities, certifications, projects, digital CV info, and more:</a>
+          <a className="font-normal font-merri flex content-width-limit">Currently studying undergraduate Computer Science at Manchester Metropolitan University. This is my portfolio site showcasing all my activities, certifications, projects, digital CV info, and more:</a>
         </div>
 
 
@@ -86,7 +86,7 @@ export default async function Home() {
                       <p className="education-padding-oRide">Computer Science Student</p>
                   </div>
                   <div className="flex font-open font-small fontcol1 flex pb-2">
-                      <p>September 2025 - <i>Current Edition</i></p> 
+                      <p>{new Intl.DateTimeFormat("en-GB", { month: "long", year: "numeric" }).format(new Date())} - <i>Current Edition</i></p> 
                   </div>
                   <div className="flex font-normal font-merri fontcol2"> 
                       <p className="font-merri font-bold ">Yr.2</p>
@@ -143,10 +143,10 @@ export default async function Home() {
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">App Showcase:</h1>
-          <a className="font-normal font-merri flex">My AirLookup prototype uses queries integrated via SQL.js to search through a SQLite database of related airfield data, try it here:</a> 
+          <a className="font-normal font-merri flex">My AirLookup prototype uses SQL queries integrated via SQL.js to search through a SQLite database of related airfield data, try it below:</a> 
 
           <div className="section-cont-row mt-6 mb-2">
-            <div className="lumob-box-oride overflow-hidden flex bg-gradient-to-br from-[#163d7d] via-[#242424] to-[#381515] rounded-lg p-[3.25rem] pt-[2.25rem] w-full min-h-[32.5rem] saturate-124 hover:saturate-142 duration-300 ease-in" style={{boxShadow:"inset 0px 0px 24px #00000032"}}>  
+            <div className="lumob-box-oride overflow-hidden flex bg-gradient-to-br from-[#163d7d] via-[#242424] to-[#381515] rounded-lg p-[3.25rem] pt-[2.25rem] w-full min-h-[32.5rem] saturate-124 hover:saturate-142 duration-300 ease-in" style={{boxShadow:"inset 0px 0px 24px #00000032"}}>   
                 <div className="flex w-full flex-col gap-0 align-left">
                   <a className="lumob-title-oride no-wrap flex pl-[1.75rem] text-[7.25rem] cursor-default bg-linear-to-r from-blue-500 to-red-600 bg-clip-text text-transparent font-bebas">AirLookup Search:</a> 
                   <SearchBar />

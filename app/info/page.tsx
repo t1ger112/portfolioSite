@@ -22,7 +22,7 @@ export default async function About() {
           <div className="trail-cont font-small">
             <Link className="trail-text" href="/">Home</Link>{'>'} 
             <Link className="trail-text" href="/info">Info</Link>{'>'} 
-            <Link className="trail-text" href="/info">Digital CV</Link>
+            <Link className="trail-text" href="#">Digital CV</Link>
           </div>
           <ThemeSlider />
         </div>
@@ -32,23 +32,14 @@ export default async function About() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">About Me:</h1>
 
           <a className="font-normal content-width-limit font-merri mb-2.5">
-            I have been interested in technology and computing since early primary
-            school, as it required logical thinking and utilising problem solving skills. I
-            have further continued my studies into technology throughout high school,
-            college and into the present day at university, where I constantly strive to
-            learn and upgrade my skills.
+            I have been interested in technology and computing since early primary school, as it required logical thinking and utilising problem solving skills. I further continued my studies into technology throughout high school, college, and into the present day whilst studying at university.
           </a>
           <a className="font-normal content-width-limit font-merri mb-2.5">
-            I have undertaken many different leadership roles and activities within and
-            outside of an academic setting. For example, as a patrol leader at Scouts,
-            Head Student of my high school, and many more. These roles often
-            involved speaking in front of large amounts of people. As a result, this has
-            helped hone my communication and presentation skills, and also my
-            ability to work effectively alongside both peers and senior figures alike.
+            During which timeframes, I have undertaken many different leadership roles and activities within and outside of an academic setting, such as Head Student at my high school, Patrol Leader at Scouts, and much more. These roles often involved speaking in front of large amounts of people, and have helped hone my communication and presentation skills, along with my ability to work effectively alongside both peers and senior figures alike.
           </a>
-          <a className="font-normal content-width-limit font-merri">
-            My many hobbies are mostly related to technology, media, and aviation.
-          </a>
+          {/* <a className="font-normal content-width-limit font-merri">
+            My hobbies are mostly related to technology, media, and aviation.
+          </a> */}
         </div>
 
         <div className="divider"></div>
@@ -141,7 +132,7 @@ export default async function About() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Skills:</h1>
 
           <a className="font-normal content-width-limit font-merri mb-2.5">
-            My prominent skills mostly reside within technology and computing, with a constant desire to learn and upskill in programming workflows, languages, and knowledge.
+            My most prominent skills reside within technology and computing, with a constant desire to learn and upskill in programming workflows, languages, and knowledge.
           </a>
           <a className="font-normal content-width-limit font-merri mb-2.5">
             I have the ability to work both as a part of, or lead teams, through utilising my skills and extensive experience within leadership roles.

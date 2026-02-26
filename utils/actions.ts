@@ -234,7 +234,7 @@ export async function App() {
         the_cheezboard:
         {
             title: "The Cheezboard Website",
-            date: "December 2024 - Current | HTML, CSS, Javascript",
+            date: "December 2024 | HTML, CSS, Javascript",
             body: "Eatcheez.com noticeboard and news website created and managed on behalf of CHEEZ regiment, part of the wider Foxhole game community. Created entirely with just basic HTML, CSS and Javascript for simplicity.",
             link: "/apps/the_cheezboard", 
             github: "https://github.com/t1ger112/cheezWebLIVE",
