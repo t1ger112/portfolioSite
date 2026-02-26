@@ -20,7 +20,7 @@ export default async function qryWorker(ident: string) {
             const buf = await fs.readFile(dbPath);
             const db = new SQL.Database(new Uint8Array(buf));
 
-            let sIdent = true; 
+            const sIdent = true; 
             let sRunways = true;
             let sFreqs = true;
             let sNavaids = true;
@@ -79,32 +79,32 @@ export default async function qryWorker(ident: string) {
     }
 }
 
-export async function identQry(lookIdent: String) {
+export async function identQry(lookIdent: string) {
     const qryWorker = "SELECT ident, continent, name, type, icao_code, iata_code, gps_code, local_code, iso_country, iso_region, elevation_ft, latitude_deg, longitude_deg FROM Airports WHERE ident ='" + lookIdent.toUpperCase() + "';";
     return { resp: qryWorker };
 }
 
-export async function runwaysQry(lookIdent: String) {
+export async function runwaysQry(lookIdent: string) {
     const qryWorker = "SELECT surface, lighted, closed, length_ft, width_ft, le_ident, le_latitude_deg, le_longitude_deg, le_elevation_ft, le_heading_degT, le_displaced_threshold_ft, he_ident, he_latitude_deg, he_longitude_deg, he_elevation_ft, he_heading_degT, he_displaced_threshold_ft FROM Runways WHERE airport_ident ='" + lookIdent.toUpperCase() + "';";
     return { resp: qryWorker };
 }
 
-export async function freqsQry(lookIdent: String) {
+export async function freqsQry(lookIdent: string) {
     const qryWorker = "SELECT airport_ident, type, description, frequency_mhz FROM AirportFrequencies WHERE airport_ident ='" + lookIdent.toUpperCase() + "';";
     return { resp: qryWorker };
 }
 
-export async function navaidsQry(lookIdent: String) {
+export async function navaidsQry(lookIdent: string) {
     const qryWorker = "SELECT name, type, latitude_deg, longitude_deg, elevation_ft, dme_frequency_khz, dme_channel, slaved_variation_deg, magnetic_variation_deg, usageType, power, filename, ident FROM Navaids WHERE associated_airport ='" + lookIdent.toUpperCase() + "';";
     return { resp: qryWorker };
 }
 
-export async function contactsQry(lookIdent: String) {
+export async function contactsQry(lookIdent: string) {
     const qryWorker = "SELECT home_link, wikipedia_link, keywords FROM Airports WHERE ident ='" + lookIdent.toUpperCase() + "';";
     return { resp: qryWorker };
 }
 
-export async function alertsQry(lookIdent: String) {
+export async function alertsQry(lookIdent: string) {
     const qryWorker = "SELECT ident, name, elevation_ft FROM Airports WHERE ident ='" + lookIdent.toUpperCase() + "'";
     return { resp: qryWorker };
 }

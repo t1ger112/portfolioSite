@@ -2,6 +2,7 @@
 import { FeaturedActivity, App, Certification} from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function About() {
 
@@ -19,9 +20,9 @@ export default async function About() {
 
         <div className="miniNavCont">
           <div className="trail-cont font-small">
-            <a className="trail-text" href="/">Home</a>{'>'} 
-            <a className="trail-text" href="/info">Info</a>{'>'} 
-            <a className="trail-text" href="#">Digital CV</a>
+            <Link className="trail-text" href="/">Home</Link>{'>'} 
+            <Link className="trail-text" href="/info">Info</Link>{'>'} 
+            <Link className="trail-text" href="/info">Digital CV</Link>
           </div>
           <ThemeSlider />
         </div>
@@ -140,10 +141,10 @@ export default async function About() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">My Skills:</h1>
 
           <a className="font-normal content-width-limit font-merri mb-2.5">
-            Passionate about technology and computing, with a desire to constantly upskill in languages and programming knowledge.
+            My prominent skills mostly reside within technology and computing, with a constant desire to learn and upskill in programming workflows, languages, and knowledge.
           </a>
           <a className="font-normal content-width-limit font-merri mb-2.5">
-            The ability to either work as a part of, or lead teams, through utilising my skills and extensive experience in leadership roles.
+            I have the ability to work both as a part of, or lead teams, through utilising my skills and extensive experience within leadership roles.
           </a>
           <div className="section-cont-row gap-10 mt-2.5 list-Oride">
             <a className="font-normal content-width-limit font-merri">
@@ -153,7 +154,7 @@ export default async function About() {
                 <li>Visual Basic (.NET)</li>
                 <li>Python</li>
                 <li>HTML, CSS, JavaScript</li>
-                <li>TypeScript (React, Next)</li>
+                <li>TypeScript (React)</li>
                 <li>MySQL, SQLite, Access</li>
                 <li>Video Editing (Resolve)</li>
               </ul>
@@ -177,8 +178,8 @@ export default async function About() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Featured Activities:</h1>
 
           <div className="section-cont-row gap-Oride mt-2.5 wrap"> 
-            {featuredActivities && (Array.isArray(featuredActivities) ? featuredActivities : Object.values(featuredActivities)).map((val: any, index: number) => index < 4 && ( 
-              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " featured activity..."} className="section-entry-half prefaceOrideStatic"> 
+            {featuredActivities && (Array.isArray(featuredActivities) ? featuredActivities : Object.values(featuredActivities)).map((val, index: number) => index < 4 && ( 
+              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " featured activity..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -196,12 +197,12 @@ export default async function About() {
                     <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="lazy" decoding="async" />
                   </div>
                 )}
-              </a>
+              </Link>
             ))}
           </div>
 
           <div className="nav-btn more-button mt-2.5 font-accent flex"> 
-            <a className="flex font-bitcount nav-btn-a font-navbar " href="/activity">VIEW MORE</a>
+            <Link className="flex font-bitcount nav-btn-a font-navbar " href="/activity">VIEW MORE</Link>
           </div>
         </div>
 
@@ -211,8 +212,8 @@ export default async function About() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px] pb-2">Certifications:</h1>
 
           <div className="section-cont-row gap-Oride mt-1 wrap"> 
-            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 4 && ( 
-              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
+            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val, index: number) => index < 4 && ( 
+              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -230,12 +231,12 @@ export default async function About() {
                     <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="lazy" decoding="async" />
                   </div>
                 )}
-              </a>
+              </Link>
             ))}
           </div> 
 
           <div className="nav-btn more-button mt-2.5 font-accent flex"> 
-            <a className="flex font-bitcount nav-btn-a font-navbar " href="/certifications">VIEW MORE</a>
+            <Link className="flex font-bitcount nav-btn-a font-navbar " href="/certifications">VIEW MORE</Link>
           </div>
         </div>
 
@@ -246,12 +247,12 @@ export default async function About() {
 
           <div className="font-normal font-merri content-width-limit flex flex-col gap-2">
             <div>
-               <p>Most notably, winner of Inversity challenge #3, with Faculty AI and the Royal Air Force, for my “Flight-Data App” designed for RAF aircrew. View my most <a className="font-link" href="/apps">recent apps and projects</a> here:</p>
+               <p>Most notably, winner of Inversity challenge #3, with Faculty AI and the Royal Air Force, for my “Flight-Data App” designed for RAF aircrew. View my most <Link className="font-link" href="/apps">recent apps and projects</Link> here:</p>
             </div>
 
             <div className="section-cont-row gap-Oride mt-4 mb-0 wrap"> 
-              {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val: any, index: number) => index < 2 && ( 
-                <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " app..."} target="_blank" className="section-entry-half prefaceOrideStatic"> 
+              {apps && (Array.isArray(apps) ? apps : Object.values(apps)).map((val, index: number) => index < 2 && ( 
+                <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " app..."} className="section-entry-half prefaceOrideStatic"> 
                   <div className="vert-preface"></div>
                   <div className="prefaced-contents">
                     <div className="font-large font-merri textOride">
@@ -269,7 +270,7 @@ export default async function About() {
                       <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="lazy" decoding="async" />
                     </div>
                   )}
-                </a>
+                </Link>
               ))}
             </div>
             <div>
@@ -278,11 +279,11 @@ export default async function About() {
             <div className="font-normal pt-1">
               <div className="no-wrap section-cont-row">
                 <a className="pr-2">LinkedIn:</a>
-                <a className="font-link" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">https://linkedin.com/in/freddiemichaelrobinson</a>
+                <Link className="font-link" target="_blank" href="https://linkedin.com/in/freddiemichaelrobinson">https://linkedin.com/in/freddiemichaelrobinson</Link>
               </div>
               <div className="no-wrap section-cont-row">
                 <a className="pr-2">GitHub:</a>
-                <a className="font-link" target="_blank" href="https://github.com/t1ger112">https://github.com/t1ger112</a>
+                <Link className="font-link" target="_blank" href="https://github.com/t1ger112">https://github.com/t1ger112</Link>
               </div>
             </div>
           </div>

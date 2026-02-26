@@ -14,7 +14,7 @@ export async function RecentActivity() {
         {
             title: "Weee-Charity Volunteering",
             date: "November 2025 | Weee Charity Warrington",
-            body: "Volunteering weekly at Weee Charity in Warrington, a tech charity who specialize in the formal disposal, recycling and reselling of used or waste electronics. I am currently assigned to recycling, disposal and certifying formal data-removal on client laptops.",
+            body: "Volunteering weekly at Weee Charity in Warrington, a tech charity who specialize in the formal disposal, recycling and reselling of used or waste electronics. \n\nI am currently assigned to recycling, disposal and certifying formal data-removal on client laptops.",
             link: "/activity/weee_charity", 
             site: "https://weeecharity.com/",
             image: "/15e184ace7.jpg",
@@ -25,7 +25,7 @@ export async function RecentActivity() {
         {
             title: "Poppy Appeal",
             date: "November 2025 | Manchester City Centre",
-            body: "Selling poppies on behalf of the Royal British Legion's poppy appeal, where we were present throughout the day at St.Peters Square and Market Street in the Manchester city centre. The total donation amount we managed to raise was £243.85 in cash!",
+            body: "Selling poppies on behalf of the Royal British Legion's poppy appeal, where we were present throughout the day at St.Peters Square and Market Street in the Manchester city centre. \n\nThe total donation amount we managed to raise was £243.85 in cash!",
             link: "/activity/poppy_appeal_2025", 
             site: "https://www.britishlegion.org.uk/",
             image: "/651ce869af.jpg",
@@ -36,7 +36,7 @@ export async function RecentActivity() {
         {
             title: "Didsbury Park Leaf-Cleanup",
             date: "November 2025 | Greater Manchester",
-            body: "Volunteering on a leaf cleanup at the local park in Didsbury, Manchester. Specifically aimed at removing the large quantity of leaves covering the ground and footpaths around the park.",
+            body: "Volunteering on a leaf cleanup at the local park in Didsbury, Manchester. \n\nSpecifically aimed at removing the large quantity of leaves covering the ground and footpaths around the park.",
             link: "/activity/didsbury_park_leaf_cleanup", 
             site: null,
             image: "/328e181c84.jpg",
@@ -216,7 +216,7 @@ export async function App() {
             body: "Created from scratch using Vercel's Next.js app router, it automatically updates upon new github commits, and utilizes both server and client components to deliver a dynamically streamed web interface.",
             link: "/apps/portfolio", 
             github: "https://github.com/t1ger112/portfolioSite",
-            site: "https://freddierobinson.com",
+            site: null,
             image: null,
         },
 

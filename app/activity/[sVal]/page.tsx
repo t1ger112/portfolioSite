@@ -2,6 +2,7 @@
 import { RecentActivity } from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from 'next/navigation'
 
 export default async function Activity({
@@ -9,14 +10,14 @@ export default async function Activity({
 }: {
   params: Promise<{sVal: string}>;
 }) {
-
+  
   const activities = await RecentActivity();
   const pageIdent = (await params).sVal;
   const entry = activities[pageIdent as keyof typeof activities];
   if (!entry) return notFound();
-  const pageTitle : String = "Freddie Robinson - " + entry.title;
+  const pageTitle : string = "Freddie Robinson - " + entry.title;
   const activityList = (Array.isArray(activities) ? activities : Object.values(activities))
-    .filter((val: any) => val.title !== entry.title)
+    .filter((val) => val.title !== entry.title)
     .sort(() => Math.random() - 0.5);
 
   return (
@@ -29,9 +30,9 @@ export default async function Activity({
 
         <div className="miniNavCont">
           <div className="trail-cont font-small">
-            <a className="trail-text" href="/">Home</a>{'>'} 
-            <a className="trail-text" href="/activity">Activity</a>{'>'} 
-            <a className="trail-text" href="#">{entry.title}</a>
+            <Link className="trail-text" href="/">Home</Link>{'>'} 
+            <Link className="trail-text" href="/activity">Activity</Link>{'>'} 
+            <Link className="trail-text" href="#">{entry.title}</Link>
           </div>
           <ThemeSlider />
         </div>
@@ -50,7 +51,7 @@ export default async function Activity({
               <div className="flex flex-row w-full gap-[0.5rem] mt-[0.5rem]">
                 {entry.site && (
                   <div className="nav-btn-highlight more-button mt-2.5 font-accent"> 
-                    <a className="flex font-bitcount font-navbar nav-btn-a" target="_blank" href={entry.site}>VISIT</a>
+                    <Link className="flex font-bitcount font-navbar nav-btn-a" target="_blank" href={entry.site}>VISIT</Link>
                   </div>
                 )}
               </div>
@@ -75,8 +76,8 @@ export default async function Activity({
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Other Activities:</h1>
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
-            {activityList.map((val: any, index: number) => index < 4 && (
-              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " activity..."} className="section-entry-half prefaceOrideStatic"> 
+            {activityList.map((val, index: number) => index < 4 && (
+              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " activity..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -94,7 +95,7 @@ export default async function Activity({
                     <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="eager" decoding="async" />
                   </div>
                 )}
-              </a>
+              </Link>
             ))}
           </div> 
 

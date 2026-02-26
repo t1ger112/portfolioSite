@@ -2,6 +2,7 @@
 import { Certification } from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function About() {
 
@@ -18,8 +19,8 @@ export default async function About() {
         <div className="miniNavCont">
 
           <div className="trail-cont font-small">
-            <a className="trail-text" href="./">Home</a>{'>'} 
-            <a className="trail-text" href="#">Certifications</a> 
+            <Link className="trail-text" href="/">Home</Link>{'>'}
+            <Link className="trail-text" href="/certifications">Certifications</Link> 
           </div>
           <ThemeSlider />
         </div>
@@ -29,8 +30,8 @@ export default async function About() {
           <p className="font-normal font-merri flex">My latest official certifications from courses I have completed:</p> 
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
-            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val: any, index: number) => index < 10 && ( 
-              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
+            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val, index: number) => index < 10 && ( 
+              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -48,7 +49,7 @@ export default async function About() {
                     <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="eager" decoding="async" />
                   </div>
                 )}
-              </a>
+              </Link>
             ))}
           </div> 
 

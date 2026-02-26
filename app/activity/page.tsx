@@ -2,6 +2,7 @@
 import { RecentActivity } from "@/utils/actions";
 import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function Activity() {
 
@@ -17,8 +18,8 @@ export default async function Activity() {
 
         <div className="miniNavCont">
           <div className="trail-cont font-small">
-            <a className="trail-text" href="./">Home</a>{'>'} 
-            <a className="trail-text" href="#">Activity</a>
+            <Link className="trail-text" href="/">Home</Link>{'>'} 
+            <Link className="trail-text" href="/activity">Activity</Link>
           </div>
           <ThemeSlider />
         </div>
@@ -28,8 +29,8 @@ export default async function Activity() {
           <p className="font-normal font-merri flex">My latest activities and events that I have completed or attended:</p> 
 
           <div className="section-cont-row gap-Oride mt-7.5 wrap"> 
-            {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val: any, index: number) => index < 10 && ( 
-              <a id={val.link} key={index} href={val.link} title={"View this " + val.title + " activity..."} className="section-entry-half prefaceOrideStatic"> 
+            {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val, index: number) => index < 10 && ( 
+              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " activity..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
@@ -47,7 +48,7 @@ export default async function Activity() {
                     <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="eager" decoding="async" />
                   </div>
                 )}
-              </a>
+              </Link>
             ))}
           </div> 
 

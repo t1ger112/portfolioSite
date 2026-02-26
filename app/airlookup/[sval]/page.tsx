@@ -1,5 +1,6 @@
 
 import qryWorker from "@/app/actions/sqlWorker";
+import Link from "next/link";
 
 export default async function LookupSval({
     params
@@ -7,14 +8,14 @@ export default async function LookupSval({
     params: Promise<{ sval: string }>;
 }) {
     const lookupIdent = (await params).sval;
-    let result : any = null;
+    let result = null;
     try {
         result = await qryWorker(lookupIdent);
     } catch (error) {
         throw new Error("Bad query input, unable to retrieve data:");
     }
 
-    let titleName: String = "AirLookup - Results";
+    let titleName: string = "AirLookup - Results";
     if (result && result.resIdent) {
         titleName = "AirLookup - " + result.resIdent.values[0][2];
     } else {
@@ -35,7 +36,7 @@ export default async function LookupSval({
 
                 <div className="flex justify-between items-center w-full">
                     <a className="bebas text-[1.5rem] pl-0.5 opacity-90">AIRLOOKUP RESULTS:</a>
-                    <a className="bebas text-red-300 text-[1.5rem] duration-250 hover:opacity-60 pr-0.5" href="/airlookup">BACK TO SEARCH</a>
+                    <Link className="bebas text-red-300 text-[1.5rem] duration-250 hover:opacity-60 pr-0.5" href="/airlookup">BACK TO SEARCH</Link>
                 </div>
 
                 <div className="flex flex-row pl-5 p-3 text-4xl bebas widoride overflow-auto">
@@ -73,7 +74,7 @@ export default async function LookupSval({
                             </div>
                             <div>
                                 <div id="freqData" className={result.sFreqs === true ? 'flex flex-col' : 'hidden'}>
-                                    {result.resFreqs.values.map((val: any, index: any) => (
+                                    {result.resFreqs.values.map((val, index: number) => (
                                         <div key={index} className="grid freqs-grid">
                                             <a className="flex pl-2 g1 items-center">{val[1]}</a>
                                             <a className="flex p-2 pl-2.5 g2 items-center">{val[3]}mhz</a>
@@ -93,7 +94,7 @@ export default async function LookupSval({
                     <h2 className="text-4xl text-blue-300 bebas p-2">Runways</h2>
 
                     <div id="rnyData" className={result.sRunways === true ? 'flex flex-col gap-5 p-2 overflow-hidden text-[1.2rem]' : 'hidden'}>
-                        {result.resRunways.values.map((val: any, index: any) => (
+                        {result.resRunways.values.map((val, index: number) => (
                             <div key={index} className="flex flex-col bg-gray-500/20 rounded-lg p-2 gap-1 overflow-auto">
                                 <div className="flex flex-row">
                                     <a className="flex p-2">Length: {val[3]}ft</a>
@@ -133,7 +134,7 @@ export default async function LookupSval({
                     <h2 className="text-4xl text-blue-300 bebas p-2">Navaids</h2>
 
                     <div id="navData" className={result.sNavaids === true ? 'flex p-1 gap-5 text-[1.2rem]' : 'hidden'}>
-                        {result.resNavaids.values.map((val: any, index: any) => (
+                        {result.resNavaids.values.map((val, index: number) => (
                             <div key={index} className="flex flex-row flex-wrap bg-gray-500/20 rounded-lg p-2 gap-1 overflow-auto">
                                 <a className="flex p-1">Name: {val[11]}</a>
                                 <a className="flex p-1">Ident: {val[12]}</a>
@@ -172,7 +173,7 @@ export default async function LookupSval({
 
 
                 <div className="flex w-full justify-center items-center overflow-hidden">
-                    <h2 className="text-[1.5rem] text-blue-300 bebas p-2"> Lookup data may be inaccurate - Source data available at <a className="duration-250 hover:opacity-70" href="https://ourairports.com">OurAirports.com</a></h2>
+                    <h2 className="text-[1.5rem] text-blue-300 bebas p-2"> Lookup data may be inaccurate - Source data available at <Link className="duration-250 hover:opacity-70" href="https://ourairports.com">OurAirports.com</Link></h2>
                 </div>
 
             </div>
