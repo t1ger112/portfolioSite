@@ -143,7 +143,7 @@ export default async function About() {
               <ul className="ml-3 mt-1">
                 <li>Office 365 Apps Suite</li>
                 <li>Visual Basic (.NET)</li>
-                <li>Python</li>
+                <li>Python (v3.12+)</li>
                 <li>HTML, CSS, JavaScript</li>
                 <li>TypeScript (React)</li>
                 <li>MySQL, SQLite, Access</li>

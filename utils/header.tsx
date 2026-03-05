@@ -19,19 +19,19 @@ export default function Header() {
           </div> */}
 
           <div className="nav-btn">
-            <Link id="navHome" className="font-navbar nav-btn-a" href="/">HOME</Link>
+            <Link id="navHome" className="font-navbar nav-btn-a" href="/" prefetch={true}>HOME</Link>
           </div>
 
           <div className="nav-btn">
-            <Link id="navActivity" className="font-navbar nav-btn-a" href="/activity">ACTIVITY</Link>
+            <Link id="navActivity" className="font-navbar nav-btn-a" href="/activity" prefetch={true}>ACTIVITY</Link>
           </div>
 
           <div className="nav-btn">
-            <Link id="navInfo" className="font-navbar nav-btn-a" href="/info">INFO</Link>
+            <Link id="navInfo" className="font-navbar nav-btn-a" href="/info" prefetch={true}>INFO</Link>
           </div>
 
           <div className="nav-btn">
-            <Link id="navAbout" className="font-navbar nav-btn-a width-hide-Oride" href="/apps">APPS</Link>
+            <Link id="navAbout" className="font-navbar nav-btn-a width-hide-Oride" href="/apps" prefetch={true}>APPS</Link>
           </div>
 
         </div>

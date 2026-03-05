@@ -38,7 +38,7 @@ ul, li {
   --accent1: #3aa3ff;    
 
   --selection-text-col: #d3edff; 
-  --selection-back-col: #636363a8;
+  --selection-back-col: #808080a8; 
 }
 
 ::selection{
@@ -56,6 +56,23 @@ ul, li {
   background-color: var(--background-accent); 
   margin: 2rem 0rem 1.75rem 0rem;  
 }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+} 
+::-webkit-scrollbar-track {
+  background: var(--background-accent);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--selection-back-col);     
+  border-radius: 0.25rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent1);
+  cursor: default;
+}
+
 
 
 
@@ -516,10 +533,14 @@ body{
   display: flex;
   padding: 0.5rem 0.5rem 0.5rem 0.55rem;     
   border-radius: 0.5rem;  
-  width: 49%;
+  width: 49%; 
   max-height: 12.75rem;      
   margin-bottom: 2.5%;  
   overflow: hidden;
+}
+
+.section-minheight{
+  min-height: 12.75rem; 
 }
 
 .section-thumbnail{  

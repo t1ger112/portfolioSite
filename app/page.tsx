@@ -43,7 +43,7 @@ export default async function Home() {
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {activities && (Array.isArray(activities) ? activities : Object.values(activities)).map((val, index: number) => index < 4 && ( 
-              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " activity..."} className="section-entry-half prefaceOrideStatic"> 
+              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " activity..."} className="section-entry-half section-minheight prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
