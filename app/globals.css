@@ -414,6 +414,13 @@ body{
   cursor: pointer;
   color: var(--accent1);
 }
+.themeCont:hover > .themeSliderCont > .theme-btn > .theme-btn-icon{
+  fill: var(--accent1);
+  color: var(--accent1);
+}
+.theme-btn-icon{
+  transition: 0.25s;
+}
 
 .themeSlideLabel{
   display: flex;
