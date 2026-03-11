@@ -31,7 +31,7 @@ export default async function About() {
 
           <div className="section-cont-row gap-Oride mt-5 wrap"> 
             {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val, index: number) => index < 10 && ( 
-              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half section-minheight prefaceOrideStatic"> 
+              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
                 <div className="vert-preface"></div>
                 <div className="prefaced-contents">
                   <div className="font-large font-merri textOride">
