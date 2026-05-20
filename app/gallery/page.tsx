@@ -24,6 +24,9 @@ import {
   MarqueeItem,
 } from "@/components/kibo-ui/marquee";
 
+import { Map, MapControls } from "@/components/ui/map";
+import { Card } from "@/components/ui/card";
+
 
 export default async function Gallery() {
 
@@ -39,7 +42,7 @@ export default async function Gallery() {
         <div className="miniNavCont">
           <div className="trail-cont font-small">
             <Link className="trail-text" href="/">Home</Link>{'>'} 
-            <Link className="trail-text" href="/Gallery">Gallery</Link>
+            <Link className="trail-text" href="/gallery">Gallery</Link>
           </div>
           <ThemeSlider />
         </div>
@@ -57,14 +60,23 @@ export default async function Gallery() {
 
             <div> {/* interactive map links area */} 
 
+              <div className="flex flex-col items-start gap-4">
+                <h2 className="font-heading font-bitcount font-accent text-2xl">Interactive Map:</h2>
+              </div>
 
+              <div className="flex size-full items-center justify-center bg-background">
 
-
-
+                <Card className="h-100 w-full p-0 overflow-hidden">
+                  <Map center={[-74.006, 40.7128]} zoom={11}>
+                    <MapControls />
+                  </Map>
+                </Card>
+                
+              </div>
  
             </div>
 
-
+            <div className="divider"></div>
 
             <div>
               <VideoPlayer className="overflow-hidden rounded-lg">
