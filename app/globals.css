@@ -584,7 +584,7 @@ body{
   max-width: 49%; 
   border-radius: 0.5rem; 
   overflow: hidden;
-  animation: skellyLoader 1s linear infinite alternate;  
+  animation: skellyLoader 1s linear infinite alternate;    
 }
 
 .entry-image{

@@ -2,7 +2,7 @@
 import "./globals.css";
 import Header from "@/utils/header";
 import Footer from "@/utils/footer";
-import { Roboto, Merriweather, Bitcount_Single, Bebas_Neue} from 'next/font/google'
+import { Roboto, Merriweather, Bitcount_Single, Bebas_Neue, Geist } from 'next/font/google'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -59,6 +59,9 @@ import { ThemeProvider } from "next-themes";
 
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/next"
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 
 export default function RootLayout({
@@ -67,7 +70,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning lang="en-GB" className={`${font1.className} ${font2.className} ${font3.className} ${font4.className}`}>
+    <html suppressHydrationWarning lang="en-GB" className={cn(font1.className, font2.className, font3.className, font4.className, "font-sans", geist.variable)}>
       <ReactLenis root>
          <body className="font-roboto"> 
           <ThemeProvider defaultTheme="dark" enableSystem={false} disableTransitionOnChange>

@@ -4,6 +4,7 @@ import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from 'next/navigation'
+import { ImageZoom } from "@/components/kibo-ui/image-zoom";
 
 export default async function Activity({
   params
@@ -59,7 +60,9 @@ export default async function Activity({
             
             {entry.image && (
               <div className="entry-thumbnail">
-                <Image className="entry-image" src={entry.image} width={400} height={400} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></Image>
+                <ImageZoom>
+                  <Image className="entry-image" src={entry.image} width={400} height={400} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></Image>
+                </ImageZoom>
               </div>
             )}
           </div>
