@@ -5,7 +5,19 @@ import Link from "next/link";
 import MapViewer from "@/utils/dynamicMapViewer";
 import TravelCarousel from "@/utils/travelMainCarousel";
 
-export default function Feed() {
+type FeedPageProps = {
+  searchParams?: Promise<{ slideId?: string | string[] }>;
+};
+
+export default async function Feed({ searchParams }: FeedPageProps) {
+  const resolvedSearchParams = await searchParams;
+  const rawSlideId = Array.isArray(resolvedSearchParams?.slideId)
+    ? resolvedSearchParams?.slideId[0]
+    : resolvedSearchParams?.slideId;
+  const parsedSlideId = rawSlideId ? Number(rawSlideId) : undefined;
+  const initialSlideId = Number.isFinite(parsedSlideId as number)
+    ? parsedSlideId
+    : undefined;
 
   return (
     
@@ -34,7 +46,7 @@ export default function Feed() {
                 <MapViewer />
               </div>
               <div className="flex w-4/6 items-center justify-center background-grad2">
-                <TravelCarousel />
+                <TravelCarousel initialSlideId={initialSlideId} />
               </div>
             </div>
           </div>
