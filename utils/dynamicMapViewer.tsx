@@ -9,8 +9,8 @@ export default function MapViewer() {
 
     return (
 
-        <div className="h-100 w-full p-0 overflow-hidden relative"> 
-            <Map attributionControl={false} center={[4.25, 52.25]} zoom={2.5} fadeDuration={250} scrollZoom={false} dragPan={false} touchZoomRotate={false} doubleClickZoom={false} keyboard={false} interactive={false}>   
+        <div className="h-full w-full p-0 overflow-hidden relative"> 
+            <Map attributionControl={false} center={[2.25, 52.25]} zoom={2.5} fadeDuration={250} scrollZoom={false} dragPan={false} touchZoomRotate={false} doubleClickZoom={false} keyboard={false} interactive={false}>   
                 {locations.map((location) => ( 
                     <MapMarker
                         key={location.id}
