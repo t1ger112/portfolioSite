@@ -73,11 +73,6 @@ ul, li {
   cursor: default;
 }
 
-
-
-
-
-
 /*    Text Styles    */
 
 .font-navbar {
@@ -210,7 +205,17 @@ ul {
   display: none;
 }
 
-
+.accent{
+  color: var(--accent1);
+  stroke: var(--accent1);
+  fill: var(--background-accent); 
+}
+.background-grad1{
+  background-color: var(--background-grad1); 
+}
+.background-grad2{
+  background-color: var(--background-grad2); 
+}
 
 /*   Navbar & Footer Styles   */
 
@@ -436,7 +441,6 @@ body{
   animation: themeLoader 0.75s linear infinite;
 }
 
-
 .section-cont{ 
   display: flex;
   flex-direction: column;
@@ -584,7 +588,7 @@ body{
   max-width: 49%; 
   border-radius: 0.5rem; 
   overflow: hidden;
-  animation: skellyLoader 1s linear infinite alternate;  
+  animation: skellyLoader 1s linear infinite alternate;    
 }
 
 .entry-image{
@@ -606,8 +610,6 @@ body{
   padding-left: 0.5rem;
 }
 
-
-
 /* airlookup showcase */
 .hidden{
   display: none;
@@ -628,7 +630,6 @@ body{
 #searchbar-id:focus-visible{
   outline: none;   
 }
-
 
 .runway-grid{
   grid-template-columns: auto 5rem auto 5rem auto; 
@@ -671,14 +672,8 @@ body{
   animation: themeLoader 1s linear infinite; 
 }
 
-
-
-
-
-
 /*   Media queries    */
 
- 
 @media (max-width: 64rem) {
   .app-container {
     width: 90%; 
@@ -775,6 +770,42 @@ body{
   .err-oride{
     flex-direction: column;
   }
+
+  .travelsection-mobile-cont{ 
+    aspect-ratio: 16/8;   
+  }
+  .travelsection-mobile{
+    flex-direction: row;
+  }
+  .width-Oride{
+    width: 100%;
+  }
+  .travel-title-Oride{
+    font-size: 3.5rem; 
+  }
+  .travel-country-Oride{
+    font-size: 1.25rem; 
+    translate: 0 -1.5rem; 
+  }
+}
+
+@media (max-width: 32rem) {     
+  .travelsection-mobile-cont{
+    aspect-ratio: 1/1.80;   
+  }
+  .travelsection-mobile{
+    flex-direction: column;
+  }
+  .width-Oride{
+    width: 100%;
+  }
+  .travel-title-Oride{
+    font-size: 3.5rem; 
+  }
+  .travel-country-Oride{
+    font-size: 1.25rem; 
+    translate: 0 -1.5rem;
+  }
 }
 
 @keyframes skellyLoader {
@@ -785,7 +816,7 @@ body{
   100% {
     background-color: #00000025;
   }
-  
+
 }
 
 @keyframes themeLoader {
@@ -796,5 +827,16 @@ body{
   100% {
     transform: rotate(360deg);
   }
-  
+
+}
+
+/*    ---break---    */
+
+@layer base {
+  .maplibregl-popup-content {
+    @apply bg-transparent! shadow-none! p-0! rounded-none!;    
+  }
+  .maplibregl-popup-tip {
+    @apply hidden!;    
+  }    
 }

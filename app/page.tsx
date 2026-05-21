@@ -1,9 +1,11 @@
 
 import { RecentActivity, App, Certification} from "@/utils/actions";
+import FeedCont from "@/utils/feedCont";
 import { SearchBar } from "@/utils/lookupCont";
 import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 
 export default async function Home() {
 
@@ -70,6 +72,16 @@ export default async function Home() {
           </div>
         </div>
 
+
+        <div className="divider"></div>
+
+
+        <div className="flex flex-col mt-4 mb-5 w-full">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Travel Map!</h1>
+          <Suspense fallback={<div className="w-full h-64 flex items-center justify-center">Loading...</div>}>
+            <FeedCont searchParams={undefined} />
+          </Suspense>
+        </div>
 
         <div className="divider"></div>
 

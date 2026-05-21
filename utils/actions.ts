@@ -1,8 +1,257 @@
 
 'use server'
 
+import { count } from "console";
+
 export default async function Action() {
     console.log("err: bad action call");
+}
+
+
+export async function MapLocations() {    
+
+    const locations = [
+        {
+            id: 1,
+            name: "Stavanger",
+            country: "Norway",
+            lng: 5.73,
+            lat: 58.97, 
+        },
+        {
+            id: 2,
+            name: "Haugesund",
+            country: "Norway",
+            lng: 5.28,
+            lat: 59.41, 
+        },
+        {
+            id: 3,
+            name: "Olden",
+            country: "Norway",
+            lng: 6.97,
+            lat: 61.92, 
+        },
+        {
+            id: 4,
+            name: "Allesund",
+            country: "Norway",
+            lng: 6.15,
+            lat: 62.47, 
+        },
+        {
+            id: 5,
+            name: "Hellesylt",
+            country: "Norway",
+            lng: 6.73,
+            lat: 62.11, 
+        },
+        {
+            id: 6,
+            name: "Manchester",
+            country: "UK",
+            lng: -2.24,
+            lat: 53.48, 
+        },
+        {
+            id: 7,
+            name: "London",
+            country: "UK",
+            lng: -0.13,
+            lat: 51.51, 
+        },
+        {
+            id: 8,
+            name: "Southampton",
+            country: "UK",
+            lng: -1.41,
+            lat: 50.91, 
+        },
+        {
+            id: 9,
+            name: "Cadiz",
+            country: "Spain",
+            lng: -6.28,
+            lat: 36.53,
+        },
+        {
+            id: 10,
+            name: "Barcelona",
+            country: "Spain",
+            lng: 2.18,
+            lat: 41.38,
+        },
+        {
+            id: 11,
+            name: "Malaga",
+            country: "Spain",
+            lng: -4.42,
+            lat: 36.72,
+        },
+        {
+            id: 12,
+            name: "Gijon",
+            country: "Spain",
+            lng: -5.92,
+            lat: 43.56,
+        },
+        {
+            id: 13,
+            name: "Mallorca",
+            country: "Spain",
+            lng: 2.73,
+            lat: 39.57,
+        },
+        {
+            id: 14,
+            name: "Ibiza",
+            country: "Spain",
+            lng: 1.44,
+            lat: 38.91,
+        },
+        {
+            id: 15,
+            name: "Cartagena",
+            country: "Spain",
+            lng: -0.99,
+            lat: 37.62,
+        },
+        {
+            id: 16,
+            name: "Toulon",
+            country: "France",
+            lng: 5.35,
+            lat: 43.13,
+        },
+        {
+            id: 17,
+            name: "Lisbon",
+            country: "Portugal",
+            lng: -9.14,
+            lat: 38.72,
+        },
+        { 
+            id: 18,
+            name: "Porto",    
+            country: "Portugal",
+            lng: -8.61,
+            lat: 41.15,
+        },
+        {
+            id: 19,
+            name: "A Coruna",
+            country: "Spain",
+            lng: -8.41,
+            lat: 43.36,
+        },
+        // {
+        //     id: 20,
+        //     name: "Santander",
+        //     country: "Spain",
+        //     lng: -3.81,
+        //     lat: 43.46,
+        // },
+        {
+            id: 21,
+            name: "Vigo",
+            country: "Spain",
+            lng: -8.73,
+            lat: 42.24,
+        },
+        {
+            id: 22,
+            name: "La Rochelle",
+            country: "France",
+            lng: -1.16,
+            lat: 46.16,
+        },
+        {
+            id: 23,
+            name: "Cherbourg",
+            country: "France",
+            lng: -1.62,
+            lat: 49.63,
+        },
+        {
+            id: 24,
+            name: "Hamburg",
+            country: "Germany",
+            lng: 9.99,
+            lat: 53.55,
+        },
+        {
+            id: 25,
+            name: "Rotterdam",
+            country: "Netherlands",
+            lng: 4.48,
+            lat: 51.92,
+        },
+        {
+            id: 26,
+            name: "Amsterdam",
+            country: "Netherlands",
+            lng: 4.90,
+            lat: 52.37,
+        },
+        {
+            id: 27,
+            name: "Bruges",
+            country: "Belgium",
+            lng: 3.22,
+            lat: 51.21,
+        },
+        { 
+            id: 28,
+            name: "Sunderland",
+            country: "UK",
+            lng: -1.38,
+            lat: 54.90,
+        },
+        // { 
+        //     id: 29,
+        //     name: "Anglesey",
+        //     country: "UK",
+        //     lng: -4.42,
+        //     lat: 53.23,
+        // },
+        {
+            id: 30,
+            name: "Oxford",
+            country: "UK",
+            lng: -1.25,
+            lat: 51.75,
+        },
+        {
+            id: 31,
+            name: "edale",
+            country: "UK",
+            lng: -1.78,
+            lat: 53.37,
+        }, 
+        {
+            id: 32,
+            name: "Chester",
+            country: "UK",
+            lng: -2.89,
+            lat: 53.19,
+        },
+        {
+            id: 33,
+            name: "Liverpool",
+            country: "UK",
+            lng: -2.98,
+            lat: 53.41,
+        },
+        {
+            id: 34,
+            name: "Stratford",
+            country: "UK",
+            lng: -1.71,
+            lat: 52.19,
+        }
+    ];
+
+    return locations;
 }
 
 
