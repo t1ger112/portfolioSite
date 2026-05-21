@@ -125,8 +125,8 @@ export default function TravelMainCarouselClient({
                     src={`/gallery/travel/countryThumbs/${slide.name.toLowerCase()}.jpg`}
                     alt=""
                     className="absolute inset-0 h-full w-full object-cover z-1"
-                    width={800}
-                    height={500}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw"
                     loading="lazy"
                     quality={75}
                     />
