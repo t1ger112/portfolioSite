@@ -340,6 +340,7 @@ ul {
   column-gap: 2%;
 }
 
+
 /*   Main App    */
 
 body{
@@ -769,6 +770,25 @@ body{
   .err-oride{
     flex-direction: column;
   }
+
+  .travelsection-mobile-cont{
+    aspect-ratio: 1/1.75; 
+    
+  }
+  .travelsection-mobile{
+    flex-direction: column;
+  }
+  .width-Oride{
+    width: 100%;
+  }
+  .travel-title-Oride{
+    font-size: 3.5rem; 
+  }
+  .travel-country-Oride{
+    font-size: 1.25rem; 
+    translate: 0 -1.5rem;
+  }
+  
 }
 
 @keyframes skellyLoader {

@@ -3,6 +3,7 @@
 import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
 import Link from "next/link";
+import FeedCont from "@/utils/feedCont";
 
 import {
   VideoPlayer,
@@ -23,6 +24,8 @@ import {
   MarqueeFade,
   MarqueeItem,
 } from "@/components/kibo-ui/marquee";
+
+
 
 export default async function Gallery() {
 
@@ -94,6 +97,11 @@ export default async function Gallery() {
                 </MarqueeContent>
               </Marquee>
             </div> */}
+
+
+            <div>
+               <FeedCont searchParams={undefined} />
+            </div>
 
 
           </div>

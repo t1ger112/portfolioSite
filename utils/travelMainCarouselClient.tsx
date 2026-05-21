@@ -130,8 +130,8 @@ export default function TravelMainCarouselClient({
                 />
                 <div className="absolute z-2 inset-0 bg-gradient-to-tr from-black/50 to-transparent" />
                 <div className="absolute z-3 inset-0 flex flex-col items-center justify-center p-8 text-center text-white pointer-events-none">
-                  <h2 className="font-bebas font-bold text-[7.5rem] text-shadow-lg">{slide.name.toUpperCase()}</h2>
-                  <p className="-translate-y-12 font-bitcount font-accent text-[2.25rem] text-shadow-lg">{slide.country}</p>
+                  <h2 className="font-bebas font-bold text-[7.5rem] text-shadow-lg travel-title-Oride">{slide.name.toUpperCase()}</h2>
+                  <p className="-translate-y-12 font-bitcount font-accent text-[2.25rem] text-shadow-lg travel-country-Oride">{slide.country}</p>
                 </div>
               </div>
             </CarouselItem>
