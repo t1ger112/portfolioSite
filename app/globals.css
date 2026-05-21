@@ -205,6 +205,18 @@ ul {
   display: none;
 }
 
+.accent{
+  color: var(--accent1);
+  stroke: var(--accent1);
+  fill: var(--background-accent); 
+}
+.background-grad1{
+  background-color: var(--background-grad1); 
+}
+.background-grad2{
+  background-color: var(--background-grad2); 
+}
+
 /*   Navbar & Footer Styles   */
 
 .width-container{ 

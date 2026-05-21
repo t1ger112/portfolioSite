@@ -71,9 +71,9 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en-GB" className={cn(font1.className, font2.className, font3.className, font4.className, "font-sans", geist.variable)}>
-      {/* <ReactLenis root> */}
+      <ReactLenis root>
          <body className="font-roboto">   
-          <ThemeProvider defaultTheme="dark" enableSystem={false} attribute={["data-theme", "class"]} value={{ light: 'light', dark: 'dark' }} disableTransitionOnChange> 
+          <ThemeProvider defaultTheme="dark" enableSystem={false} attribute={["data-theme", "class"]} disableTransitionOnChange> 
             <Header />
               {children}
               <SpeedInsights />
@@ -81,7 +81,7 @@ export default function RootLayout({
             <Footer />
           </ThemeProvider>
         </body>
-      {/* </ReactLenis> */}
+      </ReactLenis>
     </html>
   );
 }

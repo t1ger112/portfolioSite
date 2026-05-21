@@ -670,8 +670,8 @@ function MarkerTooltip({
   return createPortal(
     <div
       className={cn(
-        "bg-foreground text-background pointer-events-none rounded-md px-2 py-1 text-xs text-balance shadow-md",
-        "animate-in fade-in-0 zoom-in-95 duration-200 ease-out",
+        "background-grad2 text-background pointer-events-none rounded-md px-2 py-1 text-xs text-balance shadow-md -translate-y-4",
+        "animate-in fade-in-0 zoom-in-95 duration-200 ease-out", 
         className,
       )}
     >

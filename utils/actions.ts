@@ -6,6 +6,196 @@ export default async function Action() {
 }
 
 
+export async function MapLocations() {    
+
+    const locations = [
+        {
+            id: 1,
+            name: "Stavanger, Norway",
+            lng: 5.73,
+            lat: 58.97, 
+        },
+        {
+            id: 2,
+            name: "Haugesund, Norway",
+            lng: 5.28,
+            lat: 59.41, 
+        },
+        {
+            id: 3,
+            name: "Olden, Norway",
+            lng: 6.97,
+            lat: 61.92, 
+        },
+        {
+            id: 4,
+            name: "Allesund, Norway",
+            lng: 6.15,
+            lat: 62.47, 
+        },
+        {
+            id: 5,
+            name: "Hellesylt, Norway",
+            lng: 6.73,
+            lat: 62.11, 
+        },
+        {
+            id: 6,
+            name: "Manchester, UK",
+            lng: -2.24,
+            lat: 53.48, 
+        },
+        {
+            id: 7,
+            name: "London, UK",
+            lng: -0.13,
+            lat: 51.51, 
+        },
+        {
+            id: 8,
+            name: "Southampton, UK",
+            lng: -1.41,
+            lat: 50.91, 
+        },
+        {
+            id: 9,
+            name: "Cadiz, Spain",
+            lng: -6.28,
+            lat: 36.53,
+        },
+        {
+            id: 10,
+            name: "Barcelona, Spain",
+            lng: 2.18,
+            lat: 41.38,
+        },
+        {
+            id: 11,
+            name: "Malaga, Spain",
+            lng: -4.42,
+            lat: 36.72,
+        },
+        {
+            id: 12,
+            name: "Gijon, Spain",
+            lng: -5.92,
+            lat: 43.56,
+        },
+        {
+            id: 13,
+            name: "Mallorca, Spain",
+            lng: 2.73,
+            lat: 39.57,
+        },
+        {
+            id: 14,
+            name: "Ibiza, Spain",
+            lng: 1.44,
+            lat: 38.91,
+        },
+        {
+            id: 15,
+            name: "Cartagena, Spain",
+            lng: -0.99,
+            lat: 37.62,
+        },
+        {
+            id: 16,
+            name: "Toulon, France",
+            lng: 5.35,
+            lat: 43.13,
+        },
+        {
+            id: 17,
+            name: "Lisbon, Portugal",
+            lng: -9.14,
+            lat: 38.72,
+        },
+        { 
+            id: 18,
+            name: "Porto, Portugal",    
+            lng: -8.61,
+            lat: 41.15,
+        },
+        {
+            id: 19,
+            name: "A Coruna, Spain",
+            lng: -8.41,
+            lat: 43.36,
+        },
+        {
+            id: 20,
+            name: "Santander, Spain",
+            lng: -3.81,
+            lat: 43.46,
+        },
+        {
+            id: 21,
+            name: "Vigo, Spain",
+            lng: -8.73,
+            lat: 42.24,
+        },
+        {
+            id: 22,
+            name: "La Rochelle, France",
+            lng: -1.16,
+            lat: 46.16,
+        },
+        {
+            id: 23,
+            name: "Cherbourg, France",
+            lng: -1.62,
+            lat: 49.63,
+        },
+        {
+            id: 24,
+            name: "Hamburg, Germany",
+            lng: 9.99,
+            lat: 53.55,
+        },
+        {
+            id: 25,
+            name: "Rotterdam, Netherlands",
+            lng: 4.48,
+            lat: 51.92,
+        },
+        {
+            id: 26,
+            name: "Amsterdam, Netherlands",
+            lng: 4.90,
+            lat: 52.37,
+        },
+        {
+            id: 27,
+            name: "Bruges, Belgium",
+            lng: 3.22,
+            lat: 51.21,
+        },
+        { 
+            id: 28,
+            name: "Sunderland, UK",
+            lng: -1.38,
+            lat: 54.90,
+        },
+        { 
+            id: 29,
+            name: "Anglesey, Wales",
+            lng: -4.42,
+            lat: 53.23,
+        },
+        {
+            id: 30,
+            name: "Oxford, UK",
+            lng: -1.25,
+            lat: 51.75,
+        }
+
+    ];
+
+    return locations;
+}
+
+
 
 export async function RecentActivity() {
     const activities = {
