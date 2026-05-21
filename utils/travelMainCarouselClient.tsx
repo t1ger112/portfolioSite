@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import {
@@ -119,16 +119,19 @@ export default function TravelMainCarouselClient({
         <CarouselContent>
           {slides.map((slide) => (
             <CarouselItem key={slide.id} data-slide-id={slide.id}>
-              <div className="relative aspect-[16/9] overflow-hidden bg-muted cursor-grab">
-                <Image
-                  src={`/gallery/travel/countryThumbs/${slide.name.toLowerCase()}.jpg`}
-                  alt=""
-                  className="absolute inset-0 h-full w-full object-cover z-1"
-                  fill
-                  loading="lazy"
-                  quality={50}
-                />
-                <div className="absolute z-2 inset-0 bg-gradient-to-tr from-black/50 to-transparent" />
+              <div className="relative aspect-[16/9] overflow-hidden cursor-grab flex">
+                <Suspense fallback={<div className="absolute inset-0 z-5 flex items-center justify-center">Loading...</div>}>
+                    <Image
+                    src={`/gallery/travel/countryThumbs/${slide.name.toLowerCase()}.jpg`}
+                    alt=""
+                    className="absolute inset-0 h-full w-full object-cover z-1"
+                    width={800}
+                    height={500}
+                    loading="lazy"
+                    quality={75}
+                    />
+                </Suspense>
+                <div className="absolute z-2 inset-0 bg-gradient-to-tr from-black/60 to-transparent" />
                 <div className="absolute z-3 inset-0 flex flex-col items-center justify-center p-8 text-center text-white pointer-events-none">
                   <h2 className="font-bebas font-bold text-[7.5rem] text-shadow-lg travel-title-Oride">{slide.name.toUpperCase()}</h2>
                   <p className="-translate-y-12 font-bitcount font-accent text-[2.25rem] text-shadow-lg travel-country-Oride">{slide.country}</p>

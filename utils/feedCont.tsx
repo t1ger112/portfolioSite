@@ -18,12 +18,12 @@ export default async function FeedCont({ searchParams }: FeedPageProps) {
 
     return (
 
-        <div className="flex mt-2 w-full aspect-[24/9] travelsection-mobile-cont rounded-lg overflow-hidden background-grad1 border border-solid border-gray-200/20 ">
+        <div className="flex mt-2 w-full aspect-[24/9] travelsection-mobile-cont rounded-lg overflow-hidden background-grad1 border border-solid border-gray-400/20 ">
             <div className="flex flex-row travelsection-mobile w-full p-0 overflow-hidden" suppressHydrationWarning>
-                <div className="flex w-2/6 h-full relative background-grad1 border-r border-solid border-gray-200/20 width-Oride">
+                <div className="flex w-2/6 h-full relative background-grad1 border-r border-solid border-gray-400/20 width-Oride">
                     <MapViewer />
                 </div>
-                <div className="flex w-4/6 items-center justify-center background-grad2 border-t border-solid border-gray-200/20 width-Oride">
+                <div className="flex w-4/6 items-center justify-center background-grad2 border-t border-solid border-gray-400/20 width-Oride">
                     <TravelCarousel initialSlideId={initialSlideId} />
                 </div>
             </div>

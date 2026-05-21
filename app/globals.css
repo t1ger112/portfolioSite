@@ -771,9 +771,27 @@ body{
     flex-direction: column;
   }
 
+  .travelsection-mobile-cont{ 
+    aspect-ratio: 16/8;   
+  }
+  .travelsection-mobile{
+    flex-direction: row;
+  }
+  .width-Oride{
+    width: 100%;
+  }
+  .travel-title-Oride{
+    font-size: 3.5rem; 
+  }
+  .travel-country-Oride{
+    font-size: 1.25rem; 
+    translate: 0 -1.5rem; 
+  }
+}
+
+@media (max-width: 32rem) {     
   .travelsection-mobile-cont{
-    aspect-ratio: 1/1.75; 
-    
+    aspect-ratio: 1/1.80;   
   }
   .travelsection-mobile{
     flex-direction: column;
@@ -788,7 +806,6 @@ body{
     font-size: 1.25rem; 
     translate: 0 -1.5rem;
   }
-  
 }
 
 @keyframes skellyLoader {

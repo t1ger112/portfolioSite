@@ -220,8 +220,35 @@ export async function MapLocations() {
             country: "UK",
             lng: -1.25,
             lat: 51.75,
+        },
+        {
+            id: 31,
+            name: "edale",
+            country: "UK",
+            lng: -1.78,
+            lat: 53.37,
+        }, 
+        {
+            id: 32,
+            name: "Chester",
+            country: "UK",
+            lng: -2.89,
+            lat: 53.19,
+        },
+        {
+            id: 33,
+            name: "Liverpool",
+            country: "UK",
+            lng: -2.98,
+            lat: 53.41,
+        },
+        {
+            id: 34,
+            name: "Stratford",
+            country: "UK",
+            lng: -1.71,
+            lat: 52.19,
         }
-
     ];
 
     return locations;
