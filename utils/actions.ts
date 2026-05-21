@@ -144,13 +144,13 @@ export async function MapLocations() {
             lng: -8.41,
             lat: 43.36,
         },
-        {
-            id: 20,
-            name: "Santander",
-            country: "Spain",
-            lng: -3.81,
-            lat: 43.46,
-        },
+        // {
+        //     id: 20,
+        //     name: "Santander",
+        //     country: "Spain",
+        //     lng: -3.81,
+        //     lat: 43.46,
+        // },
         {
             id: 21,
             name: "Vigo",
@@ -207,13 +207,13 @@ export async function MapLocations() {
             lng: -1.38,
             lat: 54.90,
         },
-        { 
-            id: 29,
-            name: "Anglesey",
-            country: "UK",
-            lng: -4.42,
-            lat: 53.23,
-        },
+        // { 
+        //     id: 29,
+        //     name: "Anglesey",
+        //     country: "UK",
+        //     lng: -4.42,
+        //     lat: 53.23,
+        // },
         {
             id: 30,
             name: "Oxford",
