@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
     qualities: [25, 50, 75, 100],
     localPatterns: [
       {
-        pathname: '/**',
+        pathname: '/**', 
         search: '',
       },
     ],
