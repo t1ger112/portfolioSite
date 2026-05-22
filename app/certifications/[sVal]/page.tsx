@@ -59,11 +59,11 @@ export default async function Activity({
             </div>
             
             {entry.image && (
-              <div className="entry-thumbnail">
-                <ImageZoom>
-                  <Image className="entry-image" src={entry.image} width={400} height={400} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></Image>
-                </ImageZoom>
-              </div>
+              <ImageZoom>
+                <div className="entry-thumbnail">
+                    <Image className="entry-image" src={entry.image} width={400} height={400} alt={entry.title} loading="eager" decoding="async" fetchPriority="high"></Image>
+                </div>
+              </ImageZoom>
             )}
           </div>
         </div>

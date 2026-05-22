@@ -47,7 +47,7 @@ export default function DynamicMapViewerClient({ locations }: Props) {
         ))}
         <MapControls showZoom={false} showCompass={false} showFullscreen={false} />
       </Map>
-      <div className="bg-background/80 absolute top-2 left-2 z-10 flex flex-wrap gap-x-3 gap-y-1 rounded px-2 py-1 font-mono text-xs text-gray-300 backdrop-blur border border-solid border-gray-400/20 cursor-default">
+      <div className="bg-background/80 absolute top-2 left-2 z-10 flex flex-wrap gap-x-3 gap-y-1 rounded px-2 py-1 font-mono text-xs font-mapbar backdrop-blur border border-solid border-gray-400/20 cursor-default">
         <span>
           <span className="text-muted-foreground">lat:</span> {" "}
           {(52.25).toFixed(2)}
@@ -57,12 +57,15 @@ export default function DynamicMapViewerClient({ locations }: Props) {
           {(4.25).toFixed(2)}
         </span>
       </div>
-      <div className="bg-background/80 absolute bottom-2 right-2 z-10 flex flex-wrap gap-x-1 gap-y-1 rounded px-2 py-1 font-mono text-xs text-gray-300 backdrop-blur border border-solid border-gray-400/20 cursor-default">
+      <div className="bg-background/80 absolute bottom-2 right-2 z-10 flex flex-wrap gap-x-1 gap-y-1 rounded px-2 py-1 font-mono text-xs font-mapbar backdrop-blur border border-solid border-gray-400/20 cursor-default">
+        <span>
+          <a href="https://www.mapcn.dev/" target="_blank" className="text-muted-foreground">MAPCN,</a>
+        </span> 
         <span>
           <a href="https://carto.com/about-carto/" target="_blank" className="text-muted-foreground">©CARTO,</a>
         </span>
         <span>
-          <a href="https://www.mapcn.dev/" target="_blank" className="text-muted-foreground">MAPCN</a>
+          <a href="http://www.openstreetmap.org/about/" target="_blank" className="text-muted-foreground">©OSM</a>
         </span>
       </div>
     </div>

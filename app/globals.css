@@ -20,10 +20,11 @@ ul, li {
   --text-offset: #333333;   
   --content: #ffffff;
   --content-nav: #d1d1d1;   
-  --accent1: #64b5fd;   
+  --accent1: #64b5fd;
+  --mapbox-text: #9e9e9e;
 
   --selection-text-col: #cde9ff; 
-  --selection-back-col: #707070b4;  
+  --selection-back-col: #707070b4;   
 }
 
 [data-theme='light'] {
@@ -31,11 +32,12 @@ ul, li {
   --background-accent-grad: linear-gradient(99deg,rgb(221, 221, 221) 0%, rgb(241, 241, 241) 25%, rgb(241, 241, 241) 75%, rgb(221, 221, 221) 100%);    
   --background-accent: #eeeeee;
   --background-grad1: #f4f4f4;     
-  --background-grad2: #eaeaea;     
+  --background-grad2: #ebebeb;      
   --text-offset: #f5f5f5; 
   --content: #333333;  
   --content-nav: #444444; 
   --accent1: #3aa3ff;    
+  --mapbox-text: #999999;  
 
   --selection-text-col: #d3edff; 
   --selection-back-col: #808080a8; 
@@ -110,6 +112,9 @@ ul, li {
 .font-accent{
   color: var(--accent1); 
   fill: var(--accent1); 
+}
+.font-mapbar{
+  color: var(--mapbox-text);
 }
 .font-link{
   text-decoration: dotted underline; 
@@ -585,10 +590,12 @@ body{
   display: flex;
   height: auto; 
   width: 100%;  
-  max-width: 49%; 
+  max-width: 99%; 
+  max-height: 42rem;
   border-radius: 0.5rem; 
   overflow: hidden;
-  animation: skellyLoader 1s linear infinite alternate;    
+  justify-self: flex-end;
+  /* animation: skellyLoader 1s linear infinite alternate;     */
 }
 
 .entry-image{
