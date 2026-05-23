@@ -156,6 +156,22 @@ function DefaultLoader() {
   );
 }
 
+function MapFallback({ className }: { className?: string }) {
+  return (
+    <div
+      className={cn(
+        "bg-background/80 text-muted-foreground absolute inset-0 flex flex-col items-center justify-center gap-2 p-4 text-center backdrop-blur-xs",
+        className,
+      )}
+    >
+      <p className="text-sm font-medium text-foreground">Map unavailable:</p>
+      <p className="max-w-xs text-xs leading-relaxed">
+        ERROR: Your browser or device could not create a valid WebGL context, please try again later...
+      </p>
+    </div>
+  );
+}
+
 function getViewport(map: MapLibreGL.Map): MapViewport {
   const center = map.getCenter();
   return {
@@ -184,6 +200,7 @@ const Map = forwardRef<MapRef, MapProps>(function Map(
   const [mapInstance, setMapInstance] = useState<MapLibreGL.Map | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [isStyleLoaded, setIsStyleLoaded] = useState(false);
+  const [mapError, setMapError] = useState<string | null>(null);
   const currentStyleRef = useRef<MapStyleOption | null>(null);
   const styleTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const internalUpdateRef = useRef(false);
@@ -216,20 +233,40 @@ const Map = forwardRef<MapRef, MapProps>(function Map(
   useEffect(() => {
     if (!containerRef.current) return;
 
+    const testCanvas = document.createElement("canvas");
+    const webglContext =
+      testCanvas.getContext("webgl2") ?? testCanvas.getContext("webgl");
+
+    if (!webglContext) {
+      setMapError("WebGL is not available in this browser.");
+      return;
+    }
+
     const initialStyle =
       resolvedTheme === "dark" ? mapStyles.dark : mapStyles.light;
     currentStyleRef.current = initialStyle;
 
-    const map = new MapLibreGL.Map({
-      container: containerRef.current,
-      style: initialStyle,
-      renderWorldCopies: false,
-      attributionControl: {
-        compact: true,
-      },
-      ...props,
-      ...viewport,
-    });
+    let map: MapLibreGL.Map;
+
+    try {
+      map = new MapLibreGL.Map({
+        container: containerRef.current,
+        style: initialStyle,
+        renderWorldCopies: false,
+        attributionControl: {
+          compact: true,
+        },
+        ...props,
+        ...viewport,
+      });
+    } catch (error) {
+      setMapError(
+        error instanceof Error ? error.message : "Failed to initialize map.",
+      );
+      return;
+    }
+
+    setMapError(null);
 
     const styleDataHandler = () => {
       clearStyleTimeout();
@@ -327,7 +364,11 @@ const Map = forwardRef<MapRef, MapProps>(function Map(
         ref={containerRef}
         className={cn("relative h-full w-full", className)}
       >
-        {(!isLoaded || loading) && <DefaultLoader />}
+        {mapError ? (
+          <MapFallback />
+        ) : (!isLoaded || loading) ? (
+          <DefaultLoader />
+        ) : null}
         {/* SSR-safe: children render only when map is loaded on client */}
         {mapInstance && children}
       </div>
