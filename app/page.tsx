@@ -1,11 +1,9 @@
 
 import { RecentActivity, App, Certification} from "@/utils/actions";
-import FeedCont from "@/utils/feedCont";
 import { SearchBar } from "@/utils/lookupCont";
 import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense } from "react";
 
 export default async function Home() {
 
@@ -31,7 +29,7 @@ export default async function Home() {
 
 
         <div className="section-cont content-col">  
-          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Hello World, I'm Freddie!</h1>
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Hi, I'm Freddie!</h1>
           <a className="font-normal font-merri flex content-width-limit">Currently studying undergraduate Computer Science at Manchester Metropolitan University. This is my portfolio site showcasing all my activities, certifications, projects, digital CV info, and more:</a>
         </div>
 
@@ -72,19 +70,7 @@ export default async function Home() {
           </div>
         </div>
 
-
         <div className="divider"></div>
-
-
-        <div className="flex flex-col mt-4 mb-5 w-full">
-          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Travel Map!</h1>
-          <Suspense fallback={<div className="w-full h-64 flex items-center justify-center">Loading...</div>}>
-            <FeedCont searchParams={undefined} />
-          </Suspense>
-        </div>
-
-        <div className="divider"></div>
-
 
         <div className="section-cont content-col">
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Digital CV:</h1>
@@ -101,12 +87,14 @@ export default async function Home() {
                       <p>{new Intl.DateTimeFormat("en-GB", { month: "long", year: "numeric" }).format(new Date())} - <i>Current Edition</i></p> 
                   </div>
                   <div className="flex font-normal font-merri fontcol2"> 
-                      <p className="font-merri font-bold ">Yr.2</p>
+                      <p className="font-merri font-bold ">Junior Support Engineer (T1)</p>
+                      <p className="font-merri pl-1.5">Awareness Software Ltd.</p>
+                  </div>
+                  <div className="flex font-normal font-merri fontcol2"> 
+                      <p className="font-merri font-bold ">Between Studying:</p>
                       <p className="font-merri pl-1.5">Computer Science</p>
                       <p className="font-merri font-italic pl-1">BSc (Hons)</p>
-                  </div>
-                   <div className="flex font-normal font-merri fontcol2"> 
-                      <p className="font-merri">At Manchester Metropolitan University</p>
+                      <p className="font-merri pl-1.5">at MMU</p>
                   </div>
               </div>
           </Link>

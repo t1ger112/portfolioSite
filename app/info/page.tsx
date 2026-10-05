@@ -1,8 +1,10 @@
 
 import { FeaturedActivity, App, Certification} from "@/utils/actions";
+import FeedCont from "@/utils/feedCont";
 import ThemeSlider from "@/utils/themeSlider";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 
 export default async function About() {
 
@@ -32,14 +34,11 @@ export default async function About() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">About Me:</h1>
 
           <a className="font-normal content-width-limit font-merri mb-2.5">
-            I have been interested in technology and computing since early primary school, as it required logical thinking and utilising problem solving skills. I further continued my studies into technology throughout high school, college, and into the present day whilst studying at university.
+            I have been interested in technology and computing since early primary school, as it required logical thinking and utilising problem solving skills. I further continued my studies into technology throughout high school, college, and into the present day whilst studying at university and industry placement.
           </a>
           <a className="font-normal content-width-limit font-merri mb-2.5">
             During which timeframes, I have undertaken many different leadership roles and activities within and outside of an academic setting, such as Head Student at my high school, Patrol Leader at Scouts, and much more. These roles often involved speaking in front of large amounts of people, and have helped hone my communication and presentation skills, along with my ability to work effectively alongside both peers and senior figures alike.
           </a>
-          {/* <a className="font-normal content-width-limit font-merri">
-            My hobbies are mostly related to technology, media, and aviation.
-          </a> */}
         </div>
 
         <div className="divider"></div>
@@ -48,21 +47,57 @@ export default async function About() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Education:</h1>
 
           <a className="font-normal font-merri flex pb-5">                            
-              Currently studying degree-level Computer Science at Manchester Metropolitan University:
+              Currently on industry placement while studying degree-level Computer Science at Manchester Metropolitan University:
           </a>
 
           <div className="section-entry prefaceOride mb-2 webkitMask-Oride"> 
-              <div className="vert-preface prefaceBlue"></div>
+              <div className="vert-preface"></div>
               <div className="prefaced-contents" style={{ maskImage: "none", WebkitMaskImage: "none" }}>
                   <div className="font-large font-merri textOride education-oRide">
                       <a className="font-merri font-bold">Manchester Metropolitan University,</a> 
                       <a className="education-padding-oRide">Manchester</a>
                   </div>
                   <div className="font-roboto font-small fontcol1 flex pb-2">
-                      <a>September 2024 - <i>Current</i></a> 
+                      <a>(Upcoming) <i>September 2027 - July 2028</i></a> 
                   </div>
                   <div className="font-normal font-merri fontcol2">
-                      <a className="font-merri font-bold ">Yr.2</a>
+                      <a className="font-merri font-bold ">Level: 6</a>
+                      <a className="font-merri pl-1.5">Computer Science</a>
+                      <a className="font-merri font-italic pl-1">BSc (Hons) - Upcoming</a>
+                  </div>
+              </div>
+          </div>
+
+          <div className="section-entry prefaceOride mb-2 webkitMask-Oride"> 
+              <div className="vert-preface prefaceBlue"></div>
+              <div className="prefaced-contents" style={{ maskImage: "none", WebkitMaskImage: "none" }}>
+                  <div className="font-large font-merri textOride education-oRide">
+                      <a className="font-merri font-bold">Industry Placement,</a> 
+                      <a className="education-padding-oRide">Stockport</a>
+                  </div>
+                  <div className="font-roboto font-small fontcol1 flex pb-2">
+                      <a>July 2026 - <i>Current</i></a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Awareness Software Ltd.</a>
+                      <a className="font-merri pl-1.5">Junior Support Engineer</a>
+                      <a className="font-merri font-italic pl-1">(T1)</a>
+                  </div>
+              </div>
+          </div>
+
+          <div className="section-entry prefaceOride mb-2 webkitMask-Oride"> 
+              <div className="vert-preface"></div>
+              <div className="prefaced-contents" style={{ maskImage: "none", WebkitMaskImage: "none" }}>
+                  <div className="font-large font-merri textOride education-oRide">
+                      <a className="font-merri font-bold">Manchester Metropolitan University,</a> 
+                      <a className="education-padding-oRide">Manchester</a>
+                  </div>
+                  <div className="font-roboto font-small fontcol1 flex pb-2">
+                      <a>September 2024 - July 2026</a> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <a className="font-merri font-bold ">Levels: 4, 5</a>
                       <a className="font-merri pl-1.5">Computer Science</a>
                       <a className="font-merri font-italic pl-1">BSc (Hons)</a>
                   </div>
@@ -158,8 +193,52 @@ export default async function About() {
                 <li>Java (Applications)</li>
                 <li>Cloudflare (Workers, D1)</li>
                 <li>Drizzle ORM (D1 Integ.)</li>
+                <li>IT Systems Administration</li>
               </ul>
             </a>
+          </div>
+        </div>
+
+        <div className="divider"></div>
+
+        <div className="flex flex-col mt-4 mb-5 w-full">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px]">Travel Map!</h1>
+          <Suspense fallback={<div className="w-full h-64 flex items-center justify-center">Loading...</div>}>
+            <FeedCont searchParams={undefined} />
+          </Suspense>
+        </div>
+
+        <div className="divider"></div>
+
+        <div className="section-cont-col">
+          <h1 className="font-heading font-bitcount font-accent pl-[1px] pb-2">Certifications:</h1>
+
+          <div className="section-cont-row gap-Oride mt-1 wrap"> 
+            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val, index: number) => index < 4 && ( 
+              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
+                <div className="vert-preface"></div>
+                <div className="prefaced-contents">
+                  <div className="font-large font-merri textOride">
+                      <p className="font-merri font-bold">{val.title}</p>
+                  </div>
+                  <div className="font-roboto font-small fontcol1 flex pb-2">
+                      <p>{val.date}</p> 
+                  </div>
+                  <div className="font-normal font-merri fontcol2">
+                      <p className="font-merri">{val.body}</p>
+                  </div>
+                </div>
+                {val.image && (
+                  <div className="section-thumbnail">
+                    <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="lazy" decoding="async" />
+                  </div>
+                )}
+              </Link>
+            ))}
+          </div> 
+
+          <div className="nav-btn more-button mt-2.5 font-accent flex"> 
+            <Link className="flex font-bitcount nav-btn-a font-navbar " href="/certifications">VIEW MORE</Link>
           </div>
         </div>
 
@@ -194,40 +273,6 @@ export default async function About() {
 
           <div className="nav-btn more-button mt-2.5 font-accent flex"> 
             <Link className="flex font-bitcount nav-btn-a font-navbar " href="/activity">VIEW MORE</Link>
-          </div>
-        </div>
-
-        <div className="divider"></div>
-
-        <div className="section-cont-col">
-          <h1 className="font-heading font-bitcount font-accent pl-[1px] pb-2">Certifications:</h1>
-
-          <div className="section-cont-row gap-Oride mt-1 wrap"> 
-            {certifications && (Array.isArray(certifications) ? certifications : Object.values(certifications)).map((val, index: number) => index < 4 && ( 
-              <Link id={val.link} key={index} href={val.link} title={"View this " + val.title + " certification..."} className="section-entry-half prefaceOrideStatic"> 
-                <div className="vert-preface"></div>
-                <div className="prefaced-contents">
-                  <div className="font-large font-merri textOride">
-                      <p className="font-merri font-bold">{val.title}</p>
-                  </div>
-                  <div className="font-roboto font-small fontcol1 flex pb-2">
-                      <p>{val.date}</p> 
-                  </div>
-                  <div className="font-normal font-merri fontcol2">
-                      <p className="font-merri">{val.body}</p>
-                  </div>
-                </div>
-                {val.image && (
-                  <div className="section-thumbnail">
-                    <Image className="section-image" src={val.image} width={250} height={250} alt={val.title} loading="lazy" decoding="async" />
-                  </div>
-                )}
-              </Link>
-            ))}
-          </div> 
-
-          <div className="nav-btn more-button mt-2.5 font-accent flex"> 
-            <Link className="flex font-bitcount nav-btn-a font-navbar " href="/certifications">VIEW MORE</Link>
           </div>
         </div>
 

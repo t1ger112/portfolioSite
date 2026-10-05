@@ -10,7 +10,7 @@ export default function error() {
           
           <div className="pt-[1.75rem]">
             <a className="flex pl-6 text-[4rem] bebas"> OOPS, Something Went Wrong!</a>
-            <a className="flex pl-6 text-[1.5rem] bebas">Try reloading the page...</a>
+            <a className="flex pl-6 text-[1.5rem] bebas">Try reloading the page, or check back later...</a>
           </div>
 
         </div>

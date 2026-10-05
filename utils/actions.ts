@@ -46,13 +46,13 @@ export async function MapLocations() {
             lng: 6.73,
             lat: 62.11, 
         },
-        {
-            id: 6,
-            name: "Manchester",
-            country: "UK",
-            lng: -2.24,
-            lat: 53.48, 
-        },
+        // {
+        //     id: 6,
+        //     name: "Manchester",
+        //     country: "UK",
+        //     lng: -2.24,
+        //     lat: 53.48, 
+        // },
         {
             id: 7,
             name: "London",
@@ -235,13 +235,13 @@ export async function MapLocations() {
             lng: -2.89,
             lat: 53.19,
         },
-        {
-            id: 33,
-            name: "Liverpool",
-            country: "UK",
-            lng: -2.98,
-            lat: 53.41,
-        },
+        // {
+        //     id: 33,
+        //     name: "Liverpool",
+        //     country: "UK",
+        //     lng: -2.98,
+        //     lat: 53.41,
+        // },
         {
             id: 34,
             name: "Stratford",

@@ -49,13 +49,13 @@ export default async function Gallery() {
           <h1 className="font-heading font-bitcount font-accent pl-[1px]">Gallery:</h1>
           <p className="font-normal font-merri flex">Page currently under construction, please check back again soon...</p> 
           
-          <div className="divider"></div>
+          {/* <div className="divider"></div> */}
 
           {/* <GalleryViewer /> */}
 
           <div>
 
-            <div>
+            {/* <div>
               <VideoPlayer className="overflow-hidden rounded-lg">
                 <VideoPlayerContent
                   crossOrigin=""
@@ -76,7 +76,7 @@ export default async function Gallery() {
                   <VideoPlayerTimeDisplay showDuration />
                 </VideoPlayerControlBar>
               </VideoPlayer>
-            </div>
+            </div> */}
             
             {/* <div className="divider"></div> */}
 
@@ -97,12 +97,6 @@ export default async function Gallery() {
                 </MarqueeContent>
               </Marquee>
             </div> */}
-
-
-            <div>
-               <FeedCont searchParams={undefined} />
-            </div>
-
 
           </div>
           
