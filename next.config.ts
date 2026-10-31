@@ -19,6 +19,22 @@ const nextConfig: NextConfig = {
     ],
   },
 
+  async redirects() {
+    return [
+      {
+        source: '/youtube',
+        destination: 'https://www.youtube.com/@t1ger-112',
+        permanent: false,
+      },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'youtube.freddierobinson.com' }],
+        destination: 'https://www.youtube.com/@t1ger-112',
+        permanent: false,
+      },
+    ]
+  },
+
 };
 
 export default nextConfig;
